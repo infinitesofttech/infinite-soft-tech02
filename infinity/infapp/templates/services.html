@@ -1,0 +1,234 @@
+﻿{% extends "index.html" %}
+{% load static %}
+{% block content %}
+        <section class="page-header">
+            <div class="page-header__bg" style="background-image: url({% static 'images/backgrounds/page-header-bg.jpg' %});"></div>
+            <div class="container">
+                <div class="page-header__content">
+                    <h2 class="page-header__title">our services</h2>
+                    <ul class="aigence-breadcrumb list-unstyled">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><span>our services</span></li>
+                    </ul><!-- /.aigence-breadcrumb list-unstyled -->
+                </div><!-- /.page-header__content -->
+            </div><!-- /.container -->
+        </section><!-- /.page-header -->
+
+        <section class="services-page section-space">
+            <div class="container">
+                <div class="row gutter-y-30">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                        <div class="service-card">
+                            <div class="service-card__bg">
+                                <div class="service-card__bg__one" style="background-image: url({% static 'images/shapes/service-card-bg-1-1.png' %});"></div>
+                                <div class="service-card__bg__two" style="background-image: url({% static 'images/shapes/service-card-bg-1-2.png' %});"></div>
+                            </div><!-- /.service-card__bg -->
+                            <div class="service-card__content">
+                                <a href="{% url 'service_details' %}" class="service-card__btn">
+                                    <span class="service-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a><!-- /.service-card__btn -->
+                                <h3 class="service-card__title"><a href="{% url 'service_details' %}">Mobile App Development</a></h3>
+                                <p class="service-card__text">As a leading mobile app development company, we specialize in creating native and cross-platform apps tailored to meet the needs of various business verticals.</p>
+                                <div class="service-card__image">
+                                    <img src="{% static 'images/services/service-1-1.png' %}" alt="AI-Data Analytics">
+                                </div><!-- /.service-card__image -->
+                            </div><!-- /.service-card__content -->
+                        </div><!-- /.service-card -->
+                    </div><!-- /.col-lg-4 col-md-6 -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+                        <div class="service-card">
+                            <div class="service-card__bg">
+                                <div class="service-card__bg__one" style="background-image: url({% static 'images/shapes/service-card-bg-1-1.png' %});"></div>
+                                <div class="service-card__bg__two" style="background-image: url({% static 'images/shapes/service-card-bg-1-2.png' %});"></div>
+                            </div><!-- /.service-card__bg -->
+                            <div class="service-card__content">
+                                <a href="{% url 'service_details' %}" class="service-card__btn">
+                                    <span class="service-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a><!-- /.service-card__btn -->
+                                <h3 class="service-card__title"><a href="{% url 'service_details' %}">E-Commerce Development </a></h3>
+                                <p class="service-card__text"> Our E-Commerce solutions offer custom online stores with user-friendly interfaces, secure payment gateways, and seamless integration, designed to boost sales, enhance user experience, and drive business growth.</p>
+                                <div class="service-card__image">
+                                    <img src="{% static 'images/services/service-1-2.png' %}" alt="AI-Development">
+                                </div><!-- /.service-card__image -->
+                            </div><!-- /.service-card__content -->
+                        </div><!-- /.service-card -->
+                    </div><!-- /.col-lg-4 col-md-6 -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+                        <div class="service-card">
+                            <div class="service-card__bg">
+                                <div class="service-card__bg__one" style="background-image: url({% static 'images/shapes/service-card-bg-1-1.png' %});"></div>
+                                <div class="service-card__bg__two" style="background-image: url({% static 'images/shapes/service-card-bg-1-2.png' %});"></div>
+                            </div><!-- /.service-card__bg -->
+                            <div class="service-card__content">
+                                <a href="{% url 'service_details' %}" class="service-card__btn">
+                                    <span class="service-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a><!-- /.service-card__btn -->
+                                <h3 class="service-card__title"><a href="{% url 'service_details' %}">Software Development</a></h3>
+                                <p class="service-card__text"> Commercial software development is booming as the user market's needs are unpredictable. We help your business deliver market-ready products faster, including the most demanding features that your users embrace over time, aligning seamlessly with your brand.</p>
+                                <div class="service-card__image">
+                                    <img src="{% static 'images/services/service-1-3.png' %}" alt="AI-Design Mystery">
+                                </div><!-- /.service-card__image -->
+                            </div><!-- /.service-card__content -->
+                        </div><!-- /.service-card -->
+                    </div><!-- /.col-lg-4 col-md-6 -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                        <div class="service-card">
+                            <div class="service-card__bg">
+                                <div class="service-card__bg__one" style="background-image: url({% static 'images/shapes/service-card-bg-1-1.png' %});"></div>
+                                <div class="service-card__bg__two" style="background-image: url({% static 'images/shapes/service-card-bg-1-2.png' %});"></div>
+                            </div><!-- /.service-card__bg -->
+                            <div class="service-card__content">
+                                <a href="{% url 'service_details' %}" class="service-card__btn">
+                                    <span class="service-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a><!-- /.service-card__btn -->
+                                <h3 class="service-card__title"><a href="{% url 'service_details' %}">Product Development</a></h3>
+                                <p class="service-card__text">We develop superior, data-backed software products fuelled by our affordable product development services and innovative design thinking. We have a team of experienced product developers ready to partner closely with clients to quickly and successfully build products.</p>
+                                <div class="service-card__image">
+                                    <img src="{% static 'images/services/service-1-4.png' %}" alt="AI-Integration">
+                                </div><!-- /.service-card__image -->
+                            </div><!-- /.service-card__content -->
+                        </div><!-- /.service-card -->
+                    </div><!-- /.col-lg-4 col-md-6 -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+                        <div class="service-card">
+                            <div class="service-card__bg">
+                                <div class="service-card__bg__one" style="background-image: url({% static 'images/shapes/service-card-bg-1-1.png' %});"></div>
+                                <div class="service-card__bg__two" style="background-image: url({% static 'images/shapes/service-card-bg-1-2.png' %});"></div>
+                            </div><!-- /.service-card__bg -->
+                            <div class="service-card__content">
+                                <a href="{% url 'service_details' %}" class="service-card__btn">
+                                    <span class="service-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a><!-- /.service-card__btn -->
+                                <h3 class="service-card__title"><a href="{% url 'service_details' %}">Saas Development</a></h3>
+                                <p class="service-card__text">Our extensive suite of SaaS development tools is meant to let companies create, grow, and maintain strong Software as a Service system. Working with a team of SaaS experts, we guarantee your project is handled creatively and precisely. </p>
+                                <div class="service-card__image">
+                                    <img src="{% static 'images/services/service-1-5.png' %}" alt="AI-Chatbots">
+                                </div><!-- /.service-card__image -->
+                            </div><!-- /.service-card__content -->
+                        </div><!-- /.service-card -->
+                    </div><!-- /.col-lg-4 col-md-6 -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+                        <div class="service-card">
+                            <div class="service-card__bg">
+                                <div class="service-card__bg__one" style="background-image: url({% static 'images/shapes/service-card-bg-1-1.png' %});"></div>
+                                <div class="service-card__bg__two" style="background-image: url({% static 'images/shapes/service-card-bg-1-2.png' %});"></div>
+                            </div><!-- /.service-card__bg -->
+                            <div class="service-card__content">
+                                <a href="{% url 'service_details' %}" class="service-card__btn">
+                                    <span class="service-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a><!-- /.service-card__btn -->
+                                <h3 class="service-card__title"><a href="{% url 'service_details' %}">CRM Development</a></h3>
+                                <p class="service-card__text">Custom CRM Software Development Company specializes in developing customized customer relationship management (CRM) solutions meant to satisfy the tailored demands of companies. Unlike off-the-shelf CRM systems, custom solutions are created to fit your specific company's operations. Working with a custom software development company like GMTA Online Solutions can help you maximize processes, automate tedious procedures, and get insightful data analytics results.</p>
+                                <div class="service-card__image">
+                                    <img src="{% static 'images/services/service-1-6.png' %}" alt="AI-Driven Automation">
+                                </div><!-- /.service-card__image -->
+                            </div><!-- /.service-card__content -->
+                        </div><!-- /.service-card -->
+                    </div><!-- /.col-lg-4 col-md-6 -->
+
+                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+                        <div class="service-card">
+                            <div class="service-card__bg">
+                                <div class="service-card__bg__one" style="background-image: url({% static 'images/shapes/service-card-bg-1-1.png' %});"></div>
+                                <div class="service-card__bg__two" style="background-image: url({% static 'images/shapes/service-card-bg-1-2.png' %});"></div>
+                            </div><!-- /.service-card__bg -->
+                            <div class="service-card__content">
+                                <a href="{% url 'service_details' %}" class="service-card__btn">
+                                    <span class="service-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a><!-- /.service-card__btn -->
+                                <h3 class="service-card__title"><a href="{% url 'service_details' %}">Software Testing</a></h3>
+                                <p class="service-card__text">We streamline operations using intelligent task automation, smart systems, real-time monitoring, and AI insights.</p>
+                                <div class="service-card__image">
+                                    <img src="{% static 'images/services/service-1-6.png' %}" alt="AI-Driven Automation">
+                                </div><!-- /.service-card__image -->
+                            </div><!-- /.service-card__content -->
+                        </div><!-- /.service-card -->
+                    </div><!-- /.col-lg-4 col-md-6 -->
+
+                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+                        <div class="service-card">
+                            <div class="service-card__bg">
+                                <div class="service-card__bg__one" style="background-image: url({% static 'images/shapes/service-card-bg-1-1.png' %});"></div>
+                                <div class="service-card__bg__two" style="background-image: url({% static 'images/shapes/service-card-bg-1-2.png' %});"></div>
+                            </div><!-- /.service-card__bg -->
+                            <div class="service-card__content">
+                                <a href="{% url 'service_details' %}" class="service-card__btn">
+                                    <span class="service-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a><!-- /.service-card__btn -->
+                                <h3 class="service-card__title"><a href="{% url 'service_details' %}">Cloud Development</a></h3>
+                                <p class="service-card__text">We streamline operations using intelligent task automation, smart systems, real-time monitoring, and AI insights.</p>
+                                <div class="service-card__image">
+                                    <img src="{% static 'images/services/service-1-6.png' %}" alt="AI-Driven Automation">
+                                </div><!-- /.service-card__image -->
+                            </div><!-- /.service-card__content -->
+                        </div><!-- /.service-card -->
+                    </div><!-- /.col-lg-4 col-md-6 -->
+
+                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+                        <div class="service-card">
+                            <div class="service-card__bg">
+                                <div class="service-card__bg__one" style="background-image: url({% static 'images/shapes/service-card-bg-1-1.png' %});"></div>
+                                <div class="service-card__bg__two" style="background-image: url({% static 'images/shapes/service-card-bg-1-2.png' %});"></div>
+                            </div><!-- /.service-card__bg -->
+                            <div class="service-card__content">
+                                <a href="{% url 'service_details' %}" class="service-card__btn">
+                                    <span class="service-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a><!-- /.service-card__btn -->
+                                <h3 class="service-card__title"><a href="{% url 'service_details' %}">API integration & Development</a></h3>
+                                <p class="service-card__text">We streamline operations using intelligent task automation, smart systems, real-time monitoring, and AI insights.</p>
+                                <div class="service-card__image">
+                                    <img src="{% static 'images/services/service-1-6.png' %}" alt="AI-Driven Automation">
+                                </div><!-- /.service-card__image -->
+                            </div><!-- /.service-card__content -->
+                        </div><!-- /.service-card -->
+                    </div><!-- /.col-lg-4 col-md-6 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.services-page section-space -->
+
+        <section class="newsletter ">
+            <div class="newsletter__wrapper">
+                <div class="newsletter__inner">
+                    <div class="newsletter__bg" style="background-image: url({% static 'images/shapes/newsletter-bg-shape-1-1.png' %});"></div><!-- /.newsletter__bg -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 order-1 order-lg-0 wow fadeInLeft" data-wow-duration="1500ms">
+                                <div class="newsletter__image">
+                                    <img src="{% static 'images/resources/newsletter-1-1.png' %}" alt="newsletter">
+                                </div><!-- /.newsletter__image -->
+                            </div><!-- /.col-lg-6 -->
+                            <div class="col-lg-6 order-0 order-lg-1 wow fadeInUp" data-wow-duration="1500ms">
+                                <div class="newsletter__content">
+                                    <h2 class="sec-title bw-split-in-left">Join our AI-driven Creative Community!</h2><!-- /.sec-title -->
+                                    <div class="customers">
+                                        <div class="customers__inner">
+                                            <div class="customers__image">
+                                                <img src="{% static 'images/resources/customer-1.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-2.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-3.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-4.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-5.png' %}" alt="customer">
+                                            </div><!-- /.customers__image -->
+                                        </div><!-- /.customers__inner -->
+                                        <p class="customers__text">3860 weekly subscribe</p>
+                                    </div><!-- /.customers -->
+                                    <form action="#" data-url="MAILCHIMP_FORM_URL" class="newsletter__form mc-form">
+                                        <input type="email" name="EMAIL" placeholder="Email Address">
+                                        <button type="submit" class="aigence-btn">
+                                            <span class="aigence-btn__text">Subscribe</span>
+                                        </button>
+                                    </form><!-- /. mc-form -->
+                                    <div class="mc-form__response"></div><!-- /.mc-form__response -->
+                                    <div class="newsletter__check-box">
+                                        <input type="checkbox" name="agree" id="agree">
+                                        <label for="agree">I Agree To The Terms, Privacy Policy.<span></span></label>
+                                    </div><!-- /.newsletter__check-box -->
+                                </div><!-- /.newsletter__content -->
+                            </div><!-- /.col-lg-6 -->
+                        </div><!-- /.row gutter-y-40 -->
+                    </div><!-- /.container -->
+                    <img src="{% static 'images/shapes/newsletter-shape-1-1.png' %}" alt="shape" class="newsletter__shape">
+                </div><!-- /.newsletter__inner -->
+            </div><!-- /.newsletter__wrapper -->
+        </section><!-- /.newsletter -->
+{% endblock %}

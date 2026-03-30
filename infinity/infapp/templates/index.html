@@ -1,0 +1,2459 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from bracketweb.com/aigence-html/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Dec 2025 09:23:36 GMT -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infinite Soft Tech || AI Powered Mobile and Web Development Company</title>
+    <!-- favicons Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/favicons/favicon-32x32.png' %}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicons/favicon-32x32.png' %}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicons/favicon-16x16.png' %}" />
+    <link rel="manifest" href="{% static 'images/favicons/site.webmanifest' %}" />
+    <meta name="description" content="Aigence is the perfect solution for all AI agencies and Technology businesses. It is a sleek and modern AI HTML Template designed for AI agencies, tech consultants, machine learning firms, data science experts, AI developers, and all other AI-related businesses and websites." />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="{% static 'vendors/bootstrap/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendors/bootstrap-select/bootstrap-select.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendors/animate/animate.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendors/fontawesome/css/all.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendors/jquery-ui/jquery-ui.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendors/jarallax/jarallax.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendors/jquery-magnific-popup/jquery.magnific-popup.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendors/aigence-icons/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendors/swiper/css/swiper-bundle.min.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/owl-carousel/css/owl.carousel.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendors/owl-carousel/css/owl.theme.default.min.css' %}" />
+
+    <!-- template styles -->
+    <link rel="stylesheet" href="{% static 'css/aigence.css' %}" />
+</head>
+
+<body class="custom-cursor">
+
+    <div class="custom-cursor__cursor"></div>
+    <div class="custom-cursor__cursor-two"></div>
+
+    <div class="preloader">
+        <div class="preloader__image" style="background-image: url({% static 'images/loader.png' %});"></div>
+    </div>
+    <!-- /.preloader -->
+    <div class="page-wrapper">
+           <header class="header">
+            <div class="topbar">
+                <div class="container">
+                    <div class="topbar__inner">
+                        <ul class="list-unstyled topbar__info">
+                            <li>
+                                <span class="topbar__info__icon"><i class="icon-location"></i></span>
+                                <span><a href="https://maps.app.goo.gl/JTC3G42trKtcSL3y6">205,Emerald Complex, CG Road, ABD, India </a></span>
+                            </li>
+                            <li>
+                                <span class="topbar__info__icon"><i class="icon-email"></i></span>
+                                <span><a href="mailto:info@infinitesofttech.com">info@infinitesofttech.com</a></span>
+                            </li>
+                            <li>
+                                <span class="topbar__info__icon"><i class="icon-phone"></i></span>
+                                <span><a href="tel:+91(9409259294)">+91 94092 59294</a></span>
+                            </li>
+                        </ul><!-- /.list-unstyled topbar__info -->
+                        <div class="topbar__social">
+                            <div class="main-header__btn">
+                                <a href="{% url 'contact' %}" class="aigence-btn">
+                                    <span class="aigence-btn__text">Get in Touch</span>
+                                </a><!-- /.aigence-btn -->
+                            
+                                
+                            </div><!-- /.main-header__btn -->
+                            <a href="https://www.linkedin.com/company/infinite-softtech/">
+                                <i class="fab fa-linkedin" aria-hidden="true"></i>
+                                <span class="sr-only">LinkedIn</span>
+                            </a>
+                            <a href="https://www.instagram.com/infinitesofttech_?igsh=MXRxMDB2dzNocm0xdw==">
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
+                                <span class="sr-only">Instagram</span>
+                            </a>
+                            <a href="https://youtube.com/@infinitesofttech?si=ty_zXfSPYsxZIwah">
+                                <i class="icon-youtube" aria-hidden="true"></i>
+                                <span class="sr-only">Youtube</span>
+                            </a>
+                            <a href="https://wa.me/919409259294">
+                                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                                <span class="sr-only">WhatsApp</span>
+                            </a>
+                            
+                        </div><!-- /.topbar__social -->
+                    </div><!-- /.topbar__inner -->
+                </div><!-- /.container -->
+            </div><!-- /.topbar -->
+            <nav class="main-header sticky-header sticky-header--normal">
+                <div class="main-header__container container">
+                    <div class="main-header__inner">
+                        <div class="main-header__logo logo-retina">
+                            <a href="{% url 'home' %}">
+                                <img src="{% static 'images/logo-light.png' %}" alt="Aigence HTML" width="150">
+                            </a>
+                        </div><!-- /.main-header__logo -->
+                        <div class="main-header__right">
+                            <nav class="main-header__nav main-menu">
+                                <ul class="main-menu__list">
+
+                                     
+
+                                    <li class="dropdown">
+                                        <a href="{% url 'product' %}">Product</a>
+                                        <ul>
+                                            <li><a href="{% url 'product_details' %}">Infinite Employee - HR management</a></li>
+                                            <li><a href="{% url 'product_details' %}">Infinite Society Management </a></li>
+                                            <li><a href="{% url 'product_details' %}">Infinite E Commerce</a></li>
+                                            <li><a href="{% url 'project_details' %}">Infinite Family Tree</a></li>
+                                            <li><a href="{% url 'product_details' %}">View All Products</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown">
+                                        <a href="{% url 'services' %}">Service</a>
+                                        <ul>
+                                            <li><a href="{% url 'service_details' %}">Mobile App Development</a></li>
+                                            <li><a href="{% url 'service_details' %}">Website Development</a></li>
+                                            <li><a href="{% url 'services' %}">E Commerce Development</a></li>
+                                            <li><a href="{% url 'contact' %}">Software Developmet</a></li>
+                                            <li><a href="{% url 'services' %}">View All Services</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a href="{% url 'portfolio' %}">Portfolio</a>
+                                    </li>
+
+                                    <li class="dropdown">
+                                        <a href="{% url 'technology' %}">Technology</a>
+                                        <ul>
+                                            <li class="dropdown">
+                                                    <a href="{% url 'technology_backend' %}">Backend Technology</a>
+                                                <ul>
+                                                        <li><a href="{% url 'technology_python_django' %}">Python - Django</a></li>
+                                                        <li><a href="{% url 'technology_spring_boot' %}">Java - SpringBoot</a></li>
+                                                        <li><a href="{% url 'technology_php_laravel' %}">PHP - Laravel</a></li>
+                                                        <li><a href="{% url 'technology_dotnet' %}">.Net</a></li>
+                                                        <li><a href="{% url 'technology_nodejs' %}">NodeJS</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="{% url 'technology_frontend' %}">Frontend Technology</a>
+                                                <ul>
+                                                    <li><a href="{% url 'technology_react' %}">React</a></li>
+                                                    <li><a href="{% url 'technology_javascript' %}">Javascript</a></li>
+                                                    <li><a href="{% url 'technology_angular' %}">Angular</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="{% url 'technology_mobile' %}">Mobile</a>
+                                                <ul>
+                                                    <li><a href="{% url 'technology_react_native' %}">React Native</a></li>
+                                                    <li><a href="{% url 'technology_flutter' %}">Flutter</a></li>
+                                                    <li><a href="{% url 'technology_android' %}">Android</a></li>
+                                                    <li><a href="{% url 'technology_ios' %}">IOS </a></li>
+                                                    <li><a href="{% url 'technology_xamarin' %}">Xamarin</a></li>
+                                                     
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="{% url 'technology_cloud_devops' %}">Cloud & DevOps</a>
+                                                <ul>
+                                                    <li><a href="{% url 'technology_aws' %}">Amazon Web Services(AWS)</a></li>
+                                                    <li><a href="{% url 'technology_azure' %}">Microsoft Azure</a></li>
+                                                    <li><a href="{% url 'technology_gcp' %}">Google Cloud Platform (GCP)</a></li>
+                                                   
+                                                </ul>
+                                            </li>
+
+                                            <li class="dropdown">
+                                                <a href="{% url 'technology_database' %}">Database</a>
+                                                <ul>
+                                                    <li><a href="{% url 'technology_mongodb' %}">MongoDB</a></li>
+                                                    <li><a href="{% url 'technology_mysql' %}">My SQL</a></li>
+                                                    <li><a href="{% url 'technology_postgresql' %}">PostgreSQL</a></li>
+                                                    <li><a href="{% url 'technology_oracle' %}">Oracle</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="dropdown">
+                                                <a href="{% url 'technology_testing' %}">Testing</a>
+                                                <ul>
+                                                    <li><a href="{% url 'technology_selenium' %}">Selenium for Web</a></li>
+                                                    <li><a href="{% url 'technology_postman' %}">Postman for API</a></li>
+                                                    <li><a href="{% url 'technology_appium' %}">Appium for mobile</a></li>
+                                                   
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="{% url 'technology_other' %}">Other</a>
+                                                <ul>
+                                                    <li><a href="{% url 'technology_shopify' %}">Shopify</a></li>
+                                                    <li><a href="{% url 'technology_magento' %}">Magento</a></li>
+                                                    <li><a href="{% url 'technology_themeforest' %}">Themeforest</a></li>
+                                                   
+                                                </ul>
+                                            </li>
+                                            <li><a href="{% url 'technology' %}">View All Technology</a></li>
+                                             
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown">
+                                        <a href="{% url 'industries' %}">Industries</a>
+                                    </li>
+
+                                    <li class="dropdown">
+                                        <a href="{% url 'about' %}">About</a>
+                                        <ul>
+                                            <li><a href="{% url 'about' %}">About Us</a></li>
+                                            <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                                            <li><a href="{% url 'team' %}">Our Team</a></li>
+                            
+                                            <li><a href="{% url 'gallery_filter' %}">Gallery</a></li>
+                                            <li><a href="{% url 'faq' %}">FAQS</a></li>
+                                        </ul>
+                                    </li>
+
+                                    
+                                     
+                                      
+                                </ul>
+                            </nav><!-- /.main-header__nav -->
+                            <div class="mobile-nav__btn mobile-nav__toggler">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div><!-- /.mobile-nav__toggler -->
+                            <div class="main-header__btn">
+                                <a href="{% url 'contact' %}" class="aigence-btn">
+                                    <span class="aigence-btn__text">Let's Talk AI</span>
+                                </a><!-- /.aigence-btn -->
+                            
+                            </div><!-- /.main-header__btn -->
+                            <a href="#" class="main-header__search search-toggler">
+                                <i class="icon-search" aria-hidden="true"></i>
+                                <span class="sr-only">Search</span>
+                            </a><!-- /.main-header__search -->
+                            
+                        </div><!-- /.main-header__right -->
+                    </div><!-- /.main-header__inner -->
+                </div><!-- /.main-header__container container -->
+            </nav><!-- /.main-header -->
+        </header><!-- /.header -->
+{% block content %}
+        <section class="hero-one">
+            <div class="hero-one__bg" style="background-image: url({% static 'images/shapes/hero-bg-shape-1-1.png' %});"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-10">
+                        <div class="hero-one__content">
+                             <h4 class="hero-one__title wow fadeInUp" data-wow-duration="1500ms">
+                                   Infinite Technology.
+                            </h4>
+                            <h4 class="hero-one__name">
+                                    Beyond  Limits.  
+                                </h3>
+                            <p class="customers__text">Future-ready AI, Mobile App,Websites and software solution for mordern businesses.</p>
+                            <!-- /.hero-one__title -->
+                            <div class="hero-one__button wow fadeInUp"  >
+                                
+                                
+                            </div><!-- /.hero-one__button -->
+
+                           <div class="client-carousel__carousel aigence-owl__carousel owl-theme owl-carousel" data-owl-options='{
+                "items": 5,
+                "margin": 65,
+                "smartSpeed": 700,
+                "loop": true,
+                "autoplay": 6000,
+                "nav": false,
+                "dots": false,
+                "navText": ["<i class=\"icon-left-arrow\"></i>","<i class=\"icon-right-arrow\"></i>"],
+                "responsive":{
+                    "0":{
+                        "items": 2,
+                        "margin": 40
+                    },
+                    "500":{
+                        "items": 3,
+                        "margin": 40
+                    },
+                    "768":{
+                        "items": 3,
+                        "margin": 80
+                    },
+                    "992":{
+                        "items": 4,
+                        "margin": 60
+                    },
+                    "1200":{
+                        "items": 5,
+                        "margin": 109
+                    }
+                }
+                }'>
+                        <div class="client-carousel__item">
+                            <img src="{% static 'images/resources/Product-1.png' %}" alt="aigence" class="client-carousel__image">
+                            <img src="{% static 'images/resources/Product-1.png' %}" alt="aigence" class="client-carousel__hover-image">
+                        </div><!-- /.owl-slide-item-->
+                        <div class="client-carousel__item">
+                            <img src="{% static 'images/resources/Product-2.png' %}" alt="aigence" class="client-carousel__image">
+                            <img src="{% static 'images/resources/Product-2.png' %}" alt="aigence" class="client-carousel__hover-image">
+                        </div><!-- /.owl-slide-item-->
+                        <div class="client-carousel__item">
+                            <img src="{% static 'images/resources/Product-3.png' %}" alt="aigence" class="client-carousel__image">
+                            <img src="{% static 'images/resources/Product-3.png' %}" alt="aigence" class="client-carousel__hover-image">
+                        </div><!-- /.owl-slide-item-->
+                         <div class="client-carousel__item">
+                            <img src="{% static 'images/resources/Product-4.png' %}" alt="aigence" class="client-carousel__image">
+                            <img src="{% static 'images/resources/Product-4.png' %}" alt="aigence" class="client-carousel__hover-image">
+                        </div><!-- /.owl-slide-item-->
+                        <div class="client-carousel__item">
+                            <img src="{% static 'images/resources/Product-5.png' %}" alt="aigence" class="client-carousel__image">
+                            <img src="{% static 'images/resources/Product-5.png' %}" alt="aigence" class="client-carousel__hover-image">
+                        </div><!-- /.owl-slide-item-->
+                        <div class="client-carousel__item">
+                            <img src="{% static 'images/resources/Product-6.png' %}" alt="aigence" class="client-carousel__image">
+                            <img src="{% static 'images/resources/Product-6.png' %}" alt="aigence" class="client-carousel__hover-image">
+                        </div><!-- /.owl-slide-item-->
+                    </div><!-- /.client-carousel__carousel -->
+                    <p class="customers__text">New world of Innovative Products.</p>
+                        </div><!-- /.hero-one__content -->
+                    </div><!-- /.col-xl-8 -->
+                </div><!-- /.row -->
+                <div class="hero-one__image wow fadeInRight" data-wow-duration="1500ms">
+                    <img src="{% static 'images/hero/hero-1-2.png' %}" alt="hero">
+                    <img src="{% static 'images/shapes/hero-shape-1-2.png' %}" alt="shape" class="hero-one__image__shape">
+                </div><!-- /.hero-one__image -->
+            </div><!-- /.container -->
+            <img src="{% static 'images/shapes/hero-shape-1-1.png' %}" alt="shape" class="hero-one__shape">
+
+             
+        </section><!-- /.hero-one -->
+
+        <section class="services-one section-space-2">
+            <div class="services-one__bg">
+                <div class="services-one__bg__1" style="background-image: url({% static 'images/shapes/services-bg-shape-1-1.png' %});"></div>
+                <div class="services-one__bg__2" style="background-image: url({% static 'images/shapes/services-bg-shape-1-2.png' %});"></div>
+            </div><!-- /.services-one__bg -->
+            <div class="container">
+                <div class="row gutter-y-30">
+                    <div class="col-xl-6">
+                        <div class="services-one__content">
+                            <h2 class="sec-title bw-split-in-left">Solutions That Power Our Growth</h2><!-- /.sec-title -->
+                            <p class="services-one__text">As a pioneer software development company, we offer exclusive software development services for various enterprises. Our products are scalable, streamlined, and focused on your business goals.</p><!-- /.services-one__text -->
+                            <div class="services-one__item services-one__item--3 wow fadeInRight" data-wow-duration="1500ms">
+                                <div class="service-card">
+                                    <div class="service-card__bg">
+                                        <div class="service-card__bg__one" style="background-image: url({% static 'images/shapes/service-card-bg-1-1.png' %});"></div>
+                                        <div class="service-card__bg__two" style="background-image: url({% static 'images/shapes/service-card-bg-1-2.png' %});"></div>
+                                    </div><!-- /.service-card__bg -->
+                                    <div class="service-card__content">
+                                        <a href="{% url 'service_details' %}" class="service-card__btn">
+                                            <span class="service-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                        </a><!-- /.service-card__btn -->
+                                        <h3 class="service-card__title"><a href="{% url 'service_details' %}">Website Development </a></h3>
+                                        <p class="service-card__text">We extract actionable insights from data using machine learning and predictive analytics.</p>
+                                        <div class="service-card__image">
+                                            <img src="{% static 'images/services/service-1-7.png' %}" alt="AI-Driven Automation">
+                                        </div><!-- /.service-card__image -->
+                                    </div><!-- /.service-card__content -->
+                                </div><!-- /.service-card -->
+                            </div><!-- /.services-one__item -->
+                        </div><!-- /.services-one__content -->
+                    </div><!-- /.col-xl-6 -->
+                    <div class="col-xl-6">
+                        <div class="services-one__service-wrapper">
+                            <div class="services-one__item services-one__item--1 wow fadeInRight" data-wow-duration="1500ms">
+                                <div class="service-card">
+                                    <div class="service-card__bg">
+                                        <div class="service-card__bg__one" style="background-image: url({% static 'images/shapes/service-card-bg-1-1.png' %});"></div>
+                                        <div class="service-card__bg__two" style="background-image: url({% static 'images/shapes/service-card-bg-1-2.png' %});"></div>
+                                    </div><!-- /.service-card__bg -->
+                                    <div class="service-card__content">
+                                        <a href="{% url 'service_details' %}" class="service-card__btn">
+                                            <span class="service-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                        </a><!-- /.service-card__btn -->
+                                        <h3 class="service-card__title"><a href="{% url 'service_details' %}">App Development</a></h3>
+                                        <p class="service-card__text">Expand your business globally by connecting it with your industrial mobile application.Making reaching many with a mobile app feasible.</p>
+                                        <div class="service-card__image">
+                                            <img src="{% static 'images/services/service-1-7.png' %}" alt="AI-Data Analytics">
+                                        </div><!-- /.service-card__image -->
+                                    </div><!-- /.service-card__content -->  
+                                </div><!-- /.service-card -->
+                            </div><!-- /.services-one__item -->
+                            <div class="services-one__item services-one__item--2 wow fadeInRight" data-wow-duration="1500ms">
+                                <div class="service-card">
+                                    <div class="service-card__bg">
+                                        <div class="service-card__bg__one" style="background-image: url({% static 'images/shapes/service-card-bg-1-1.png' %});"></div>
+                                        <div class="service-card__bg__two" style="background-image: url({% static 'images/shapes/service-card-bg-1-2.png' %});"></div>
+                                    </div><!-- /.service-card__bg -->
+                                    <div class="service-card__content">
+                                        <a href="{% url 'service_details' %}" class="service-card__btn">
+                                            <span class="service-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                        </a><!-- /.service-card__btn -->
+                                        <h3 class="service-card__title"><a href="{% url 'service_details' %}">Software Development</a></h3>
+                                        <p class="service-card__text">We design conversational agents to automate customer engagement, support queries, lead.</p>
+                                        <div class="service-card__image">
+                                            <img src="{% static 'images/services/service-1-7.png' %}" alt="AI-Chatbots">
+                                        </div><!-- /.service-card__image -->
+                                    </div><!-- /.service-card__content -->
+                                </div><!-- /.service-card -->
+                                
+                            </div><!-- /.services-one__item -->
+                            
+                        </div><!-- /.services-one__service-wrapper -->
+                        <div class="why-choose__button wow fadeInUp" data-wow-duration="1500ms">
+                                <a href="{% url 'technology' %}" class="aigence-btn">
+                                    <span class="aigence-btn__text">More Services</span>
+                                    <span class="aigence-btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a><!-- /.aigence-btn -->
+                            </div><!-- /.why-choose__button -->
+                    </div><!-- /.col-xl-6 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+            <img src="{% static 'images/shapes/services-shape-1-1.png' %}" alt="shape" class="services-one__shape">
+        </section><!-- /.services-one -->
+
+
+        <section class="why-choose-three section-space-top-2">
+            <div class="why-choose-three__bg">
+                <div class="why-choose-three__bg__inner" style="background-image: url({% static 'images/shapes/why-choose-bg-shape-3-1.png' %});"></div>
+            </div><!-- /.why-choose-three__bg -->
+            <div class="container">
+            </br>
+                <h2 class="sec-title sec-title--center">Next-Gen AI Solutions</h2><!-- /.sec-title -->
+                <div class="row gutter-y-30 align-items-center">
+                    <div class="col-xl-3 col-lg-4">
+                        <div class="why-choose-three__item-box">
+                            <div class="why-choose-three__item wow fadeInUp" data-wow-duration="1500ms">
+                                <div class="why-choose-three__item__icon-box">
+                                    <span class="why-choose-three__item__icon"><i class="icon-ai-network"></i></span>
+                                </div>
+                                <h3 class="why-choose-three__item__title">AI-Powered Apps</h3>
+                                <p class="why-choose-three__item__text">Machine-based AI tools boost the operational flow of a business, offering them a power-packed environment of modern technology.</p>
+                            </div><!-- /.why-choose-three__item -->
+                            <div class="why-choose-three__item wow fadeInUp" data-wow-duration="1500ms">
+                                <div class="why-choose-three__item__icon-box">
+                                    <span class="why-choose-three__item__icon"><i class="icon-ai-connectivity"></i></span>
+                                </div>
+                                <h3 class="why-choose-three__item__title">Intelligent Automation</h3>
+                                <p class="why-choose-three__item__text">Intelligent automation is most effective at automating functions, reducing costs, and increasing business efficiency.</p>
+                            </div><!-- /.why-choose-three__item -->
+                        </div><!-- /.why-choose-three__item-box -->
+                    </div><!-- /.col-xl-3 col-lg-4 -->
+                    <div class="col-xl-6 col-lg-4 d-none d-lg-block wow fadeInUp" data-wow-duration="1500ms">
+                        <div class="why-choose-three__image">
+                            <img src="{% static 'images/shapes/why-choose-shape-3-1.png' %}" alt="shape">
+                        </div><!-- /.why-choose-three__image -->
+                    </div><!-- /.col-xl-6 col-lg-4 -->
+                    <div class="col-xl-3 col-lg-4">
+                        <div class="why-choose-three__item-box">
+                            <div class="why-choose-three__item wow fadeInUp" data-wow-duration="1500ms">
+                                <div class="why-choose-three__item__icon-box">
+                                    <span class="why-choose-three__item__icon"><i class="icon-ai-face"></i></span>
+                                </div>
+                                <h3 class="why-choose-three__item__title">Generative AI Solutions</h3>
+                                <p class="why-choose-three__item__text">Generative AI is a form of intelligence that responds based on a large database stored within it.</p>
+                            </div><!-- /.why-choose-three__item -->
+                            <div class="why-choose-three__item wow fadeInUp" data-wow-duration="1500ms">
+                                <div class="why-choose-three__item__icon-box">
+                                    <span class="why-choose-three__item__icon"><i class="icon-ai-chip"></i></span>
+                                </div>
+                                <h3 class="why-choose-three__item__title">Data-Driven Insights</h3>
+                                <p class="why-choose-three__item__text">Businesses gain more access to their data with AI-driven insights, helping them improve their operations and user experiences.</p>
+                            </div><!-- /.why-choose-three__item -->
+                        </div><!-- /.why-choose-three__item-box -->
+                    </div><!-- /.col-xl-3 col-lg-4 -->
+                </div><!-- /.row -->
+                <div class="why-choose-three__bottom">
+                    <div class="row gutter-y-40 align-items-center">
+                        <div class="col-lg-8 wow fadeInUp" data-wow-duration="1500ms">
+                            <h3 class="why-choose-three__bottom__title">
+                                We develop scalable and responsive software solutions by integrating <span>AI Tool</span> that promote business success.
+                            </h3>
+                        </div><!-- /.col-lg-8 -->
+                        <div class="col-lg-4 wow fadeInUp" data-wow-duration="1500ms">
+                            <div class="why-choose-three__button">
+                                <a href="{% url 'about' %}" class="aigence-btn">
+                                    <span class="aigence-btn__text">Discover More</span>
+                                    <span class="aigence-btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a><!-- /.aigence-btn -->
+                            </div><!-- /.why-choose-three__button -->
+                        </div><!-- /.col-lg-4 -->
+                    </div><!-- /.row gutter-y-40 -->
+                </div><!-- /.why-choose-three__bottom -->
+            </div><!-- /.container -->
+        </section><!-- /.why-choose-three -->
+
+        <section class="services-three section-space-2">
+            <div class="container">
+                <div class="row gutter-y-50">
+                    <div class="col-xl-5 col-lg-9">
+                        <div class="services-three__content">
+                            <h2 class="sec-title">Our Clients Receive the Highest Quality Technology</h2><!-- /.sec-title -->
+                            <p class="services-three__text wow fadeInUp" data-wow-duration="1500ms">
+                                We are dedicated to delivering the highest quality service clients, ensuring that every interaction is marked by professionalism, expertise, and attention to detail.
+                            </p><!-- /.services-three__text -->
+                            <div class="why-choose__button wow fadeInUp" data-wow-duration="1500ms">
+                                <a href="{% url 'technology' %}" class="aigence-btn">
+                                    <span class="aigence-btn__text">More Technology</span>
+                                    <span class="aigence-btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a><!-- /.aigence-btn -->
+                            </div><!-- /.why-choose__button -->
+                        </div><!-- /.services-three__content -->
+                    </div><!-- /.col-xl-5 -->
+                    <div class="col-xl-7">
+                        <div class="aigence-stretch-element-inside-column">
+                            <div class="services-three__carousel aigence-owl__carousel aigence-owl__carousel--with-shadow aigence-owl__carousel--basic-nav owl-carousel owl-theme" data-owl-options='{
+						"items": 1,
+						"margin": 10,
+						"loop": true,
+						"smartSpeed": 700,
+						"nav": false,
+						"dots": false,
+						"navText": ["<i class=\"icon-left-arrow\"></i>","<i class=\"icon-right-arrow\"></i>"],
+						"autoplay": true,
+						"responsive": {
+							"0": {
+								"items": 1,
+								"nav": true,
+								"margin": 10
+							},
+							"576": {
+								"items": 1.4,
+								"margin": 30
+							},
+							"768": {
+								"items": 1.8,
+								"margin": 30
+							},
+							"992": {
+								"items": 2.55,
+								"margin": 30
+							},
+							"1200": {
+								"items": 2.15,
+								"margin": 30
+							},
+							"1400": {
+								"items": 2.15,
+								"margin": 30
+							},
+							"1600": {
+								"items": 2.29,
+								"margin": 30
+							},
+							"1800": {
+								"items": 2.66,
+								"margin": 30
+							}
+						}
+					}'>
+                                <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                                    <div class="service-card-three">
+                                        <div class="service-card-three__bg">
+                                            <img src="{% static 'images/shapes/service-card-shape-3-1.png' %}" alt="shape" class="service-card-three__shape">
+                                        </div><!-- /.service-card-three__bg -->
+                                        <div class="service-card-three__content">
+                                            <h3 class="service-card-three__title"><a href="{% url 'technology_details' %}">Backend <br> Technology</a></h3>
+                                            <img src="{% static 'images/services/backend.png' %}" alt="AI-Data <br> Analytics" class="service-card-three__image">
+                                            <ul class="service-card-three__text two-column-list">
+                                                <li>Python</li>
+                                                <li>Java</li>
+                                                <li>Node</li>
+                                                <li>PHP</li>
+                                                <li>Go</li>
+                                                <li>Rust</li>
+                                            </ul>
+                                            <a href="{% url 'technology_details' %}" class="service-card-three__btn">
+                                                <span class="service-card-three__btn__icon"><i class="icon-right-arrow"></i></span>
+                                            </a><!-- /.service-card-three__btn -->
+                                        </div><!-- /.service-card-three__content -->
+                                    </div><!-- /.service-card-three -->
+                                </div><!-- /.item -->
+                                <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+                                    <div class="service-card-three">
+                                        <div class="service-card-three__bg">
+                                            <img src="{% static 'images/shapes/service-card-shape-3-1.png' %}" alt="shape" class="service-card-three__shape">
+                                        </div><!-- /.service-card-three__bg -->
+                                        <div class="service-card-three__content">
+                                            <h3 class="service-card-three__title"><a href="{% url 'technology_frontend' %}">Frontend <br> Technology</a></h3>
+                                            <img src="{% static 'images/services/frontend.png' %}" alt="AI <br> Development" class="service-card-three__image">
+                                            <ul class="service-card-three__text two-column-list">
+                                                <li>React</li>
+                                                <li>JavaScript</li>
+                                                <li>Angular</li>
+                                                <li>Vue.js</li>
+                                                <li>Next.js</li>
+                                                <li>HTML</li>
+                                            </ul>
+                                            <a href="{% url 'technology_frontend' %}" class="service-card-three__btn">
+                                                <span class="service-card-three__btn__icon"><i class="icon-right-arrow"></i></span>
+                                            </a><!-- /.service-card-three__btn -->
+                                        </div><!-- /.service-card-three__content -->
+                                    </div><!-- /.service-card-three -->
+                                </div><!-- /.item -->
+                                <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+                                    <div class="service-card-three">
+                                        <div class="service-card-three__bg">
+                                            <img src="{% static 'images/shapes/service-card-shape-3-1.png' %}" alt="shape" class="service-card-three__shape">
+                                        </div><!-- /.service-card-three__bg -->
+                                        <div class="service-card-three__content">
+                                            <h3 class="service-card-three__title"><a href="{% url 'technology_mobile' %}">Mobile   <br> Technology</a></h3>
+                                            <img src="{% static 'images/services/mobile.png' %}" alt="AI-Design <br> Mystery" class="service-card-three__image">
+                                            <ul class="service-card-three__text two-column-list">
+                                                <li>React Native</li>
+                                                <li>Flutter</li>
+                                                <li>Kotlin</li>
+                                                <li>Swift</li>
+                                                <li>ionic</li>
+                                                <li>And/Ios</li>
+                                            </ul>
+                                            <a href="{% url 'technology_mobile' %}" class="service-card-three__btn">
+                                                <span class="service-card-three__btn__icon"><i class="icon-right-arrow"></i></span>
+                                            </a><!-- /.service-card-three__btn -->
+                                        </div><!-- /.service-card-three__content -->
+                                    </div><!-- /.service-card-three -->
+                                </div><!-- /.item -->
+                                <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                                    <div class="service-card-three">
+                                        <div class="service-card-three__bg">
+                                            <img src="{% static 'images/shapes/service-card-shape-3-1.png' %}" alt="shape" class="service-card-three__shape">
+                                        </div><!-- /.service-card-three__bg -->
+                                        <div class="service-card-three__content">
+                                            <h3 class="service-card-three__title"><a href="{% url 'technology_database' %}"> <br>Database </a></h3>
+                                            <img src="{% static 'images/services/database.png' %}" alt="AI <br> Integration" class="service-card-three__image">
+                                            <ul class="service-card-three__text two-column-list">
+                                                <li>MongoDB</li>
+                                                <li>PostgreSQL</li>
+                                                <li>Firebase</li>
+                                                <li>MySQL</li>
+                                                <li>Oracle</li>
+                                                
+                                            </ul>
+                                            <a href="{% url 'technology_database' %}" class="service-card-three__btn">
+                                                <span class="service-card-three__btn__icon"><i class="icon-right-arrow"></i></span>
+                                            </a><!-- /.service-card-three__btn -->
+                                        </div><!-- /.service-card-three__content -->
+                                    </div><!-- /.service-card-three -->
+                                </div><!-- /.item -->
+                                <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+                                    <div class="service-card-three">
+                                        <div class="service-card-three__bg">
+                                            <img src="{% static 'images/shapes/service-card-shape-3-1.png' %}" alt="shape" class="service-card-three__shape">
+                                        </div><!-- /.service-card-three__bg -->
+                                        <div class="service-card-three__content">
+                                            <h3 class="service-card-three__title"><a href="{% url 'technology_testing' %}"><br>Testing </a></h3>
+                                            <img src="{% static 'images/services/testing.png' %}" alt="AI <br> Chatbots" class="service-card-three__image">
+                                           <ul class="service-card-three__text two-column-list">
+                                                <li>Selenium</li>
+                                                <li>Cypress</li>
+                                                <li>Postman</li>
+                                                <li>Swagger </li>
+                                                <li> </li>
+                                                
+                                            </ul>
+                                            <a href="{% url 'technology_testing' %}" class="service-card-three__btn">
+                                                <span class="service-card-three__btn__icon"><i class="icon-right-arrow"></i></span>
+                                            </a><!-- /.service-card-three__btn -->
+                                        </div><!-- /.service-card-three__content -->
+                                    </div><!-- /.service-card-three -->
+                                </div><!-- /.item -->
+                                <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+                                    <div class="service-card-three">
+                                        <div class="service-card-three__bg">
+                                            <img src="{% static 'images/shapes/service-card-shape-3-1.png' %}" alt="shape" class="service-card-three__shape">
+                                        </div><!-- /.service-card-three__bg -->
+                                        <div class="service-card-three__content">
+                                            <h3 class="service-card-three__title"><a href="{% url 'technology_cloud_devops' %}">cloude &  <br>DevOps</a></h3>
+                                            <img src="{% static 'images/services/cloud.png' %}" alt="AI-Driven <br> Automation" class="service-card-three__image">
+                                            <ul class="service-card-three__text two-column-list">
+                                                <li>AWS</li>
+                                                <li>Azure</li>
+                                                <li>Digital Ocean</li>
+                                                <li>HTML5</li>
+                                                <li>CSS3</li>
+                                                <li>Bootstrap</li>
+                                            </ul>
+                                            <a href="{% url 'technology_cloud_devops' %}" class="service-card-three__btn">
+                                                <span class="service-card-three__btn__icon"><i class="icon-right-arrow"></i></span>
+                                            </a><!-- /.service-card-three__btn -->
+                                        </div><!-- /.service-card-three__content -->
+                                    </div><!-- /.service-card-three -->
+                                </div><!-- /.item -->
+                            </div><!-- /.services-three__carousel -->
+                        </div><!-- /.eduhive-stretch-element-inside-column -->
+                    </div><!-- /.col-xl-7 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.services-three -->
+
+
+        <section class="client-carousel section-space-bottom">
+            <div class="container">
+                <div class="client-carousel__content">
+                     <h2 class="sec-title sec-title--center">Industries We Serve</h2>
+                </div><!-- /.client-carousel__content -->
+                <div class="client-carousel__carousel aigence-owl__carousel owl-theme owl-carousel" data-owl-options='{
+            "items": 5,
+            "margin": 65,
+            "smartSpeed": 700,
+            "loop": true,
+            "autoplay": 6000,
+            "nav": false,
+            "dots": false,
+            "navText": ["<i class=\"icon-left-arrow\"></i>","<i class=\"icon-right-arrow\"></i>"],
+            "responsive":{
+                "0":{
+                    "items": 2,
+                    "margin": 40
+                },
+                "500":{
+                    "items": 3,
+                    "margin": 40
+                },
+                "768":{
+                    "items": 3,
+                    "margin": 80
+                },
+                "992":{
+                    "items": 4,
+                    "margin": 60
+                },
+                "1200":{
+                    "items": 5,
+                    "margin": 109
+                }
+            }
+            }'>
+                    <div class="client-carousel__item">
+                         <p>Healthcare</p>
+                        <img src="{% static 'images/blog/hower- (1).png' %}" alt="aigence" class="client-carousel__image">
+                        <img src="{% static 'images/blog/ind (1).png' %}" alt="aigence" class="client-carousel__hover-image">
+                        <p>_</p>
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__item">
+                        <p>Education </p> 
+                        <img src="{% static 'images/blog/hower- (2).png' %}" alt="aigence" class="client-carousel__image">
+                        <img src="{% static 'images/blog/ind (2).png' %}" alt="aigence" class="client-carousel__hover-image">
+                         <p>_</p> 
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__item">
+                        <p>Banking </p> 
+                        <img src="{% static 'images/blog/hower- (3).png' %}" alt="aigence" class="client-carousel__image">
+                        <img src="{% static 'images/blog/ind (3).png' %}" alt="aigence" class="client-carousel__hover-image">
+                        <p>_</p>  
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__item">
+                         <p>Retail</p>
+                        <img src="{% static 'images/blog/hower- (4).png' %}" alt="aigence" class="client-carousel__image">
+                        <img src="{% static 'images/blog/ind (4).png' %}" alt="aigence" class="client-carousel__hover-image">
+                        <p>_</p>
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__item">
+                        <p>Agriculture</p>
+                        <img src="{% static 'images/blog/hower- (5).png' %}" alt="aigence" class="client-carousel__image">
+                        <img src="{% static 'images/blog/ind (5).png' %}" alt="aigence" class="client-carousel__hover-image">
+                        <p>_</p>
+                    </div><!-- /.owl-slide-item-->
+                </div><!-- /.client-carousel__carousel -->
+
+
+                
+            </div><!-- /.container -->
+        </section><!-- /.client-carousel -->
+    </br> 
+
+        <section class="client-carousel section-space-bottom">
+            <div class="container">
+                 
+                <div class="client-carousel__carousel aigence-owl__carousel owl-theme owl-carousel" data-owl-options='{
+            "items": 5,
+            "margin": 65,
+            "smartSpeed": 700,
+            "loop": true,
+            "autoplay": 6000,
+            "nav": false,
+            "dots": false,
+            "navText": ["<i class=\"icon-left-arrow\"></i>","<i class=\"icon-right-arrow\"></i>"],
+            "responsive":{
+                "0":{
+                    "items": 2,
+                    "margin": 40
+                },
+                "500":{
+                    "items": 3,
+                    "margin": 40
+                },
+                "768":{
+                    "items": 3,
+                    "margin": 80
+                },
+                "992":{
+                    "items": 4,
+                    "margin": 60
+                },
+                "1200":{
+                    "items": 5,
+                    "margin": 109
+                }
+            }
+            }'>
+                    <div class="client-carousel__item"><p>Travel</p>
+                        <img src="{% static 'images/blog/hower- (6).png' %}" alt="aigence" class="client-carousel__image">
+                        <img src="{% static 'images/blog/ind (6).png' %}" alt="aigence" class="client-carousel__hover-image"> <p>_</p>
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__item"><P>Hospitality</P>
+                        <img src="{% static 'images/blog/hower- (7).png' %}" alt="aigence" class="client-carousel__image">
+                        <img src="{% static 'images/blog/ind (7).png' %}" alt="aigence" class="client-carousel__hover-image"> <p>_</p>
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__item"><P>Food & Restorant</P>
+                        <img src="{% static 'images/blog/hower- (8).png' %}" alt="aigence" class="client-carousel__image">
+                        <img src="{% static 'images/blog/ind (8).png' %}" alt="aigence" class="client-carousel__hover-image"> <p>_</p>
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__item"><P>Entertainment</P>
+                        <img src="{% static 'images/blog/hower- (9).png' %}" alt="aigence" class="client-carousel__image">
+                        <img src="{% static 'images/blog/ind (9).png' %}" alt="aigence" class="client-carousel__hover-image"> <p>_</p>
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__item"><P>Real Estate</P>
+                        <img src="{% static 'images/blog/hower- (10).png' %}" alt="aigence" class="client-carousel__image">
+                        <img src="{% static 'images/blog/ind (10).png' %}" alt="aigence" class="client-carousel__hover-image"> <p>_</p>
+                    </div><!-- /.owl-slide-item-->
+                </div><!-- /.client-carousel__carousel -->
+            </div><!-- /.container -->
+        </section><!-- /.client-carousel -->
+
+        
+
+        <section class="about-one section-space-2">
+            <div class="container">
+                <div class="row gutter-y-40 align-items-center">
+                    <div class="col-lg-7 wow fadeInUp" data-wow-duration="1500ms">
+                        <h2 class="sec-title bw-split-in-left">
+                            Leveraging AI to solve <br> real-world challenges, our <br> team blends <span>creativity</span>, <br> expertise, and strategy to <br> drive innovation and growth.
+                        </h2><!-- /.sec-title -->
+                    </div><!-- /.col-xl-7 -->
+                    <div class="col-lg-5">
+                        <div class="about-one__content">
+                            <div class="about-one__item wow fadeInUp" data-wow-duration="1500ms">
+                                <h4 class="about-one__item__title">Data Evaluation and Intelligence</h4>
+                                <div class="about-one__item__bottom">
+                                    <span class="about-one__item__icon"><i class="icon-ai-chip"></i></span>
+                                    <p class="about-one__item__text">By combining creativity, technical expertise, and strategic insight, we deliver solutions.</p>
+                                </div><!-- /.about-one__item__bottom -->
+                            </div><!-- /.about-one__item -->
+                            <div class="about-one__item wow fadeInUp" data-wow-duration="1500ms">
+                                <h4 class="about-one__item__title">Analytics and Business Insights</h4>
+                                <div class="about-one__item__bottom">
+                                    <span class="about-one__item__icon"><i class="icon-ai-face"></i></span>
+                                    <p class="about-one__item__text">Quick sync unlock meaningful moments of relaxation, but high turnaround rate, so nail it.</p>
+                                </div><!-- /.about-one__item__bottom -->
+                            </div><!-- /.about-one__item -->
+                        </div><!-- /.about-one__content -->
+                    </div><!-- /.col-xl-5 -->
+                </div><!-- /.row gutter-y-50 -->
+            </div><!-- /.container -->
+            <div class="about-one__video">
+                <div class="container">
+                    <div class="about-one__video__inner">
+                        <div class="about-one__video__bg" style="background-image: url({% static 'images/about/about-1-1.png' %});"></div>
+                        <div class="about-one__video__content">
+                            <a href="https://youtu.be/J_IacIun034?si=ESBukucSjmuo8HBq" class="about-one__video__btn video-popup">
+                                <i class="fas fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="about-one__experience">
+                            <h3 class="about-one__experience__year">2+</h3>
+                            <p class="about-one__experience__title">year of <br> experience</p>
+                        </div>
+                    </div><!-- /.about-one__video__inner -->
+                </div><!-- /.container -->
+                <img src="{% static 'images/shapes/about-shape-1-1.png' %}" alt="shape" class="about-one__video__shape">
+            </div><!-- /.about-one__video -->
+        </section><!-- /.about-one section-space -->
+
+        <section class="funfact-one">
+            <div class="funfact-one__bg-1" style="background-image: url({% static 'images/shapes/funfact-bg-shape-1-1.png' %});"></div>
+            <div class="funfact-one__bg-2" style="background-image: url({% static 'images/shapes/funfact-bg-shape-1-2.png' %});"></div>
+            <div class="container">
+                <div class="funfact-one__carousel aigence-owl__carousel aigence-owl__carousel--basic-nav owl-carousel owl-theme" data-owl-options='{
+				"items": 1,
+				"margin": 10,
+				"autoplay": true,
+				"loop": false,
+				"smartSpeed": 700,
+				"nav": false,
+				"dots": true,
+                "navText": ["<i class=\"icon-left-arrow\"></i>","<i class=\"icon-right-arrow\"></i>"],
+                "responsive": {
+                    "0": {
+                        "items": 1,
+                        "nav": true,
+                        "dots": false
+                    },
+                     "576": {
+                        "items": 2
+                    },
+                    "768": {
+                        "items": 3
+                    },
+                    "992": {
+                        "items": 4
+                    },
+                    "1200": {
+                        "items": 5,
+                        "dots": false
+                    }
+			    }
+			}'>
+                    <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                        <div class="funfact-one__item">
+                            <h2 class="funfact-one__item__count count-box">
+                                <span class="count-text" data-stop="13" data-speed="1500">0</span>
+                                <span>+</span>
+                            </h2><!-- /.funfact-one__item__count -->
+                            <img src="{% static 'images/shapes/funfact-shape-1-1.png' %}" alt="shape" class="funfact-one__item__shape">
+                            <h3 class="funfact-one__item__title">Industry Served</h3>
+                        </div><!-- /.funfact-one__item -->
+                    </div><!-- /.item -->
+                    <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+                        <div class="funfact-one__item">
+                            <h2 class="funfact-one__item__count count-box">
+                                <span class="count-text" data-stop="88" data-speed="1500">0</span>
+                                <span>%</span>
+                            </h2><!-- /.funfact-one__item__count -->
+                            <img src="{% static 'images/shapes/funfact-shape-1-2.png' %}" alt="shape" class="funfact-one__item__shape">
+                            <h3 class="funfact-one__item__title">Repeat customer</h3>
+                        </div><!-- /.funfact-one__item -->
+                    </div><!-- /.item -->
+                    <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+                        <div class="funfact-one__item">
+                            <h2 class="funfact-one__item__count count-box">
+                                <span class="count-text" data-stop="9" data-speed="1500">0</span>
+                                <span>+</span>
+                            </h2><!-- /.funfact-one__item__count -->
+                            <img src="{% static 'images/shapes/funfact-shape-1-3.png' %}" alt="shape" class="funfact-one__item__shape">
+                            <h3 class="funfact-one__item__title">IT Professional</h3>
+                        </div><!-- /.funfact-one__item -->
+                    </div><!-- /.item -->
+                    <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="300ms">
+                        <div class="funfact-one__item">
+                            <h2 class="funfact-one__item__count count-box">
+                                <span class="count-text" data-stop="33" data-speed="1500">0</span>
+                                <span>+</span>
+                            </h2><!-- /.funfact-one__item__count -->
+                            <img src="{% static 'images/shapes/funfact-shape-1-4.png' %}" alt="shape" class="funfact-one__item__shape">
+                            <h3 class="funfact-one__item__title">CLIENT REVIEWS</h3>
+                        </div><!-- /.funfact-one__item -->
+                    </div><!-- /.item -->
+                    <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="400ms">
+                        <div class="funfact-one__item">
+                            <h2 class="funfact-one__item__count count-box">
+                                <span class="count-text" data-stop="20" data-speed="1500">0</span>
+                                <span>+</span>
+                            </h2><!-- /.funfact-one__item__count -->
+                            <img src="{% static 'images/shapes/funfact-shape-1-5.png' %}" alt="shape" class="funfact-one__item__shape">
+                            <h3 class="funfact-one__item__title">Completed Project</h3>
+                        </div><!-- /.funfact-one__item -->
+                    </div><!-- /.item -->
+                </div><!-- /.funfact-one__carousel -->
+                <div class="client-carousel client-carousel--two">
+                    <div class="client-carousel__content">
+                        <h4 class="client-carousel__title">Happy Customers</h4>
+                    </div><!-- /.client-carousel__content -->
+                    <div class="client-carousel__carousel aigence-owl__carousel owl-theme owl-carousel" data-owl-options='{
+                "items": 5,
+                "margin": 65,
+                "smartSpeed": 700,
+                "loop": true,
+                "autoplay": 6000,
+                "nav": false,
+                "dots": false,
+                "navText": ["<i class=\"icon-left-arrow\"></i>","<i class=\"icon-right-arrow\"></i>"],
+                "responsive":{
+                    "0":{
+                        "items": 2,
+                        "margin": 40
+                    },
+                    "500":{
+                        "items": 3,
+                        "margin": 40
+                    },
+                    "768":{
+                        "items": 3,
+                        "margin": 80
+                    },
+                    "992":{
+                        "items": 4,
+                        "margin": 60
+                    },
+                    "1200":{
+                        "items": 5,
+                        "margin": 109
+                    }
+                }
+                }'>
+                        <div class="client-carousel__item">
+                            <img src="{% static 'images/resources/brand-2-1.png' %}" alt="aigence" class="client-carousel__image">
+                            <img src="{% static 'images/resources/brand-2-1hover.png' %}" alt="aigence" class="client-carousel__hover-image">
+                        </div><!-- /.owl-slide-item-->
+                        <div class="client-carousel__item">
+                            <img src="{% static 'images/resources/brand-2-2.png' %}" alt="aigence" class="client-carousel__image">
+                            <img src="{% static 'images/resources/brand-2-2.png' %}" alt="aigence" class="client-carousel__hover-image">
+                        </div><!-- /.owl-slide-item-->
+                        <div class="client-carousel__item">
+                            <img src="{% static 'images/resources/brand-2-4.png' %}" alt="aigence" class="client-carousel__image">
+                            <img src="{% static 'images/resources/brand-2-4.png' %}" alt="aigence" class="client-carousel__hover-image">
+                        </div><!-- /.owl-slide-item-->
+                         <div class="client-carousel__item">
+                            <img src="{% static 'images/resources/brand-2-5.png' %}" alt="aigence" class="client-carousel__image">
+                            <img src="{% static 'images/resources/brand-2-5.png' %}" alt="aigence" class="client-carousel__hover-image">
+                        </div><!-- /.owl-slide-item-->
+                        <div class="client-carousel__item">
+                            <img src="{% static 'images/resources/brand-2-3.png' %}" alt="aigence" class="client-carousel__image">
+                            <img src="{% static 'images/resources/brand-2-3.png' %}" alt="aigence" class="client-carousel__hover-image">
+                        </div><!-- /.owl-slide-item-->
+                    </div><!-- /.client-carousel__carousel -->
+                </div><!-- /.client-carousel -->
+            </div><!-- /.container -->
+        </section><!-- /.funfact-one -->
+
+        <section class="gallery-page section-space">
+            <div class="client-carousel__content">
+                     <h2 class="sec-title sec-title--center">Our Portfolio</h2>
+                </div><!-- /.client-carousel__content -->
+            <div class="container-fluid">
+                <div class="gallery-page__filter">
+                    <ul class="list-unstyled post-filter gallery-page__filter__list">
+                        <li class="aigence-btn active" data-filter=".filter-item">
+                            <span class="aigence-btn__text">All</span>
+                        </li>
+                        <li class="aigence-btn " data-filter=".neural">
+                            <span class="aigence-btn__text">Mobile Apps</span>
+                        </li>
+                        <li class="aigence-btn" data-filter=".cybernetic">
+                            <span class="aigence-btn__text">Web</span>
+                        </li>
+
+                        <li class="aigence-btn" data-filter=".emotion-ai">
+                            <span class="aigence-btn__text">Software</span>
+                        </li>
+                        <li class="aigence-btn" data-filter=".development">
+                            <span class="aigence-btn__text">Ai</span>
+                        </li>
+                    </ul><!-- /.list-unstyledf -->
+                </div><!-- /.gallery-page__filter -->
+                <div class="row gutter-y-30 filter-layout">
+
+                    <div class="col-xl-3 col-md-6 filter-item cybernetic  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Web/Digital.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">Digital Ocean</a>
+                                    </h3>
+                                    <p class="project-card__tagline">AI Portrait</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div><!-- /.item -->
+
+                    <div class="col-xl-3 col-md-6 filter-item cybernetic  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Web/express.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">Express </a></h3>
+                                    <p class="project-card__tagline">AI Portrait</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div><!-- /.item -->
+
+                    <div class="col-xl-3 col-md-6 filter-item cybernetic  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Web/Hashsale.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">Hashsale </a></h3>
+                                    <p class="project-card__tagline">AI Portrait</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div><!-- /.item -->
+
+                    <div class="col-xl-3 col-md-6 filter-item cybernetic  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Web/little pre.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">little </a></h3>
+                                    <p class="project-card__tagline">AI Portrait</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div><!-- /.item -->
+
+                    <div class="col-xl-3 col-md-6 filter-item cybernetic  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Web/Pizzass.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">Pizzass </a></h3>
+                                    <p class="project-card__tagline">AI Portrait</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div><!-- /.item -->
+
+                    <div class="col-xl-3 col-md-6 filter-item cybernetic  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Web/reliable.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">reliable </a></h3>
+                                    <p class="project-card__tagline">AI Portrait</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div><!-- /.item -->
+
+                    <div class="col-xl-3 col-md-6 filter-item cybernetic  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Web/SALFORD & CO.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">SALFORD </a></h3>
+                                    <p class="project-card__tagline">AI Portrait</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div><!-- /.item -->
+
+                    <div class="col-xl-3 col-md-6 filter-item cybernetic  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Web/wardiere.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">wardiere</a></h3>
+                                    <p class="project-card__tagline">AI Portrait</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div><!-- /.item -->
+
+                      <div class="col-xl-3 col-md-6 filter-item neural  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Mobile apps/borcelle.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">borcelle</a></h3>
+                                    <p class="project-card__tagline">AI Portrait</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div>
+                    <div class="col-xl-3 col-md-6 filter-item neural  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Mobile apps/fau.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">Faugy</a></h3>
+                                    <p class="project-card__tagline">AI Portrait</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 filter-item neural  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Mobile apps/fauget.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">Fauget</a></h3>
+                                    <p class="project-card__tagline">AI Portrait</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div>
+                    <div class="col-xl-3 col-md-6 filter-item neural  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Mobile apps/rimberio.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">Rimberio</a></h3>
+                                    <p class="project-card__tagline">AI Portrait</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div>
+                    <div class="col-xl-3 col-md-6 filter-item neural  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Mobile apps/shozzz.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">Shozzz</a></h3>
+                                    <p class="project-card__tagline">AI Portrait</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div>
+                    <div class="col-xl-3 col-md-6 filter-item neural  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Mobile apps/skin.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">Skin Tone</a></h3>
+                                    <p class="project-card__tagline">AI Portrait</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div>
+                    <div class="col-xl-3 col-md-6 filter-item neural  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Mobile apps/templetes.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">Template</a></h3>
+                                    <p class="project-card__tagline">AI Portrait</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div>
+                    <div class="col-xl-3 col-md-6 filter-item neural  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Mobile apps/thynk.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">Thynk </a></h3>
+                                    <p class="project-card__tagline">AI Portrait</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div>
+
+
+
+
+                    <!-- Ai  -->
+
+                     <div class="col-xl-3 col-md-6 filter-item development  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/AI/ai power.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">AI power </a></h3>
+                                    <p class="project-card__tagline">Automation  </p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div>
+                    <div class="col-xl-3 col-md-6 filter-item development  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/AI/ai.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">Ai Boost </a></h3>
+                                    <p class="project-card__tagline">AI Automation</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div>
+                    <div class="col-xl-3 col-md-6 filter-item development  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/AI/chat.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">Ai Chatbots </a></h3>
+                                    <p class="project-card__tagline">AI Automation</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div>
+                    <div class="col-xl-3 col-md-6 filter-item development  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/AI/optimiz.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">optimization </a></h3>
+                                    <p class="project-card__tagline">AI Automation</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div>
+
+
+                    <!-- Software  -->
+                     <div class="col-xl-3 col-md-6 filter-item emotion-ai  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Software/Book.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">Study </a></h3>
+                                    <p class="project-card__tagline">Software</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div>
+                     <div class="col-xl-3 col-md-6 filter-item emotion-ai  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Software/travels.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">Travels </a></h3>
+                                    <p class="project-card__tagline">Software</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div>
+                     <div class="col-xl-3 col-md-6 filter-item emotion-ai  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Software/restaurant.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">Restaurant </a></h3>
+                                    <p class="project-card__tagline">Software</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div>
+                     <div class="col-xl-3 col-md-6 filter-item emotion-ai  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Software/Retail.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">Retail </a></h3>
+                                    <p class="project-card__tagline">Software</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div>
+
+
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </section><!-- /.gallery-page section-space -->
+
+       
+
+        <section class="team-one  section-space-bottom">
+            <div class="team-one__bg" style="background-image: url({% static 'images/shapes/team-bg-shape-1-1.png' %});"></div><!-- /.team-one__bg -->
+            <div class="container">
+                <h2 class="sec-title sec-title--center bw-split-in-left">Meet The Professionals <br> Behind Our Success</h2><!-- /.sec-title -->
+                <div class="team-one__carousel aigence-owl__carousel aigence-owl__carousel--with-shadow aigence-owl__carousel--basic-nav owl-carousel owl-theme" data-owl-options='{
+			"items": 1,
+			"margin": 10,
+			"loop": true,
+			"smartSpeed": 700,
+			"nav": false,
+			"dots": true,
+			"navText": ["<i class=\"icon-left-arrow\"></i>","<i class=\"icon-right-arrow\"></i>"],
+			"autoplay": true,
+			"responsive": {
+				"0": {
+					"items": 1,
+					"nav": true,
+					"dots": false,
+					"margin": 10
+				},
+				"768": {
+					"items": 2,
+					"margin": 30
+				},
+				"992": {
+					"items": 3,
+					"dots": false,
+					"margin": 30
+				}
+			}
+		}'>
+                    <div class="item">
+                        <div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='00ms'>
+                            <div class="team-card__shape"></div><!-- /.team-card__shape -->
+                            <div class="team-card__image">
+                                <img src="{% static 'images/team/team-1-1.jpg' %}" alt="Annette Black">
+                            </div><!-- /.team-card__image -->
+                            <div class="team-card__social">
+                                <span class="team-card__social__icon"></span><!-- /.team-card__social__icon -->
+                                <div class="team-card__social__links social-links">
+                                    <a href="https://facebook.com/">
+                                        <span class="social-links__icon">
+                                            <i class="icon-facebook" aria-hidden="true"></i>
+                                            <span class="sr-only">Facebook</span>
+                                        </span>
+                                    </a>
+                                    <a href="https://x.com/">
+                                        <span class="social-links__icon">
+                                            <i class="icon-twitter-x" aria-hidden="true"></i>
+                                            <span class="sr-only">Twitter X</span>
+                                        </span>
+                                    </a>
+                                    <a href="https://pinterest.com/">
+                                        <span class="social-links__icon">
+                                            <i class="icon-pinterest" aria-hidden="true"></i>
+                                            <span class="sr-only">Pinterest</span>
+                                        </span>
+                                    </a>
+                                    <a href="https://youtube.com/">
+                                        <span class="social-links__icon">
+                                            <i class="icon-youtube" aria-hidden="true"></i>
+                                            <span class="sr-only">Youtube</span>
+                                        </span>
+                                    </a>
+                                </div><!-- /.team-card__social__links -->
+                            </div><!-- /.team-card__social -->
+                            <div class="team-card__info">
+                                <h3 class="team-card__name">
+                                    <a href="{% url 'team_details' %}">Hardik Daki</a>
+                                </h3><!-- /.team-card__name -->
+                                <p class="team-card__designation">CEO & Founder</p><!-- /.team-card__designation -->
+                            </div><!-- /.team-card__info -->
+                        </div><!-- /.team-card -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
+                            <div class="team-card__shape"></div><!-- /.team-card__shape -->
+                            <div class="team-card__image">
+                                <img src="{% static 'images/team/team-1-2.jpg' %}" alt="Clara Ross">
+                            </div><!-- /.team-card__image -->
+                            <div class="team-card__social">
+                                <span class="team-card__social__icon"></span><!-- /.team-card__social__icon -->
+                                <div class="team-card__social__links social-links">
+                                    <a href="https://facebook.com/">
+                                        <span class="social-links__icon">
+                                            <i class="icon-facebook" aria-hidden="true"></i>
+                                            <span class="sr-only">Facebook</span>
+                                        </span>
+                                    </a>
+                                    <a href="https://x.com/">
+                                        <span class="social-links__icon">
+                                            <i class="icon-twitter-x" aria-hidden="true"></i>
+                                            <span class="sr-only">Twitter X</span>
+                                        </span>
+                                    </a>
+                                    <a href="https://pinterest.com/">
+                                        <span class="social-links__icon">
+                                            <i class="icon-pinterest" aria-hidden="true"></i>
+                                            <span class="sr-only">Pinterest</span>
+                                        </span>
+                                    </a>
+                                    <a href="https://youtube.com/">
+                                        <span class="social-links__icon">
+                                            <i class="icon-youtube" aria-hidden="true"></i>
+                                            <span class="sr-only">Youtube</span>
+                                        </span>
+                                    </a>
+                                </div><!-- /.team-card__social__links -->
+                            </div><!-- /.team-card__social -->
+                            <div class="team-card__info">
+                                <h3 class="team-card__name">
+                                    <a href="{% url 'team_details' %}">Durgesh Jadav</a>
+                                </h3><!-- /.team-card__name -->
+                                <p class="team-card__designation">CTO & Founder</p><!-- /.team-card__designation -->
+                            </div><!-- /.team-card__info -->
+                        </div><!-- /.team-card -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='200ms'>
+                            <div class="team-card__shape"></div><!-- /.team-card__shape -->
+                            <div class="team-card__image">
+                                <img src="{% static 'images/team/team-1-3.jpg' %}" alt="Floyd Miles">
+                            </div><!-- /.team-card__image -->
+                            <div class="team-card__social">
+                                <span class="team-card__social__icon"></span><!-- /.team-card__social__icon -->
+                                <div class="team-card__social__links social-links">
+                                    <a href="https://facebook.com/">
+                                        <span class="social-links__icon">
+                                            <i class="icon-facebook" aria-hidden="true"></i>
+                                            <span class="sr-only">Facebook</span>
+                                        </span>
+                                    </a>
+                                    <a href="https://x.com/">
+                                        <span class="social-links__icon">
+                                            <i class="icon-twitter-x" aria-hidden="true"></i>
+                                            <span class="sr-only">Twitter X</span>
+                                        </span>
+                                    </a>
+                                    <a href="https://pinterest.com/">
+                                        <span class="social-links__icon">
+                                            <i class="icon-pinterest" aria-hidden="true"></i>
+                                            <span class="sr-only">Pinterest</span>
+                                        </span>
+                                    </a>
+                                    <a href="https://youtube.com/">
+                                        <span class="social-links__icon">
+                                            <i class="icon-youtube" aria-hidden="true"></i>
+                                            <span class="sr-only">Youtube</span>
+                                        </span>
+                                    </a>
+                                </div><!-- /.team-card__social__links -->
+                            </div><!-- /.team-card__social -->
+                            <div class="team-card__info">
+                                <h3 class="team-card__name">
+                                    <a href="{% url 'team_details' %}">Vinesh Jadav</a>
+                                </h3><!-- /.team-card__name -->
+                                <p class="team-card__designation">Business Head - Service</p><!-- /.team-card__designation -->
+                            </div><!-- /.team-card__info -->
+                        </div><!-- /.team-card -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='00ms'>
+                            <div class="team-card__shape"></div><!-- /.team-card__shape -->
+                            <div class="team-card__image">
+                                <img src="{% static 'images/team/team-1-4.png' %}" alt="Guy Hawkins">
+                            </div><!-- /.team-card__image -->
+                            <div class="team-card__social">
+                                <span class="team-card__social__icon"></span><!-- /.team-card__social__icon -->
+                                <div class="team-card__social__links social-links">
+                                    <a href="https://facebook.com/">
+                                        <span class="social-links__icon">
+                                            <i class="icon-facebook" aria-hidden="true"></i>
+                                            <span class="sr-only">Facebook</span>
+                                        </span>
+                                    </a>
+                                    <a href="https://x.com/">
+                                        <span class="social-links__icon">
+                                            <i class="icon-twitter-x" aria-hidden="true"></i>
+                                            <span class="sr-only">Twitter X</span>
+                                        </span>
+                                    </a>
+                                    <a href="https://pinterest.com/">
+                                        <span class="social-links__icon">
+                                            <i class="icon-pinterest" aria-hidden="true"></i>
+                                            <span class="sr-only">Pinterest</span>
+                                        </span>
+                                    </a>
+                                    <a href="https://youtube.com/">
+                                        <span class="social-links__icon">
+                                            <i class="icon-youtube" aria-hidden="true"></i>
+                                            <span class="sr-only">Youtube</span>
+                                        </span>
+                                    </a>
+                                </div><!-- /.team-card__social__links -->
+                            </div><!-- /.team-card__social -->
+                            <div class="team-card__info">
+                                <h3 class="team-card__name">
+                                    <a href="{% url 'team_details' %}">Jainish Gamit</a>
+                                </h3><!-- /.team-card__name -->
+                                <p class="team-card__designation">React Developer</p><!-- /.team-card__designation -->
+                            </div><!-- /.team-card__info -->
+                        </div><!-- /.team-card -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
+                            <div class="team-card__shape"></div><!-- /.team-card__shape -->
+                            <div class="team-card__image">
+                                <img src="{% static 'images/team/team-1-5.jpg' %}" alt="Theresa Webb">
+                            </div><!-- /.team-card__image -->
+                            <div class="team-card__social">
+                                <span class="team-card__social__icon"></span><!-- /.team-card__social__icon -->
+                                <div class="team-card__social__links social-links">
+                                    <a href="https://facebook.com/">
+                                        <span class="social-links__icon">
+                                            <i class="icon-facebook" aria-hidden="true"></i>
+                                            <span class="sr-only">Facebook</span>
+                                        </span>
+                                    </a>
+                                    <a href="https://x.com/">
+                                        <span class="social-links__icon">
+                                            <i class="icon-twitter-x" aria-hidden="true"></i>
+                                            <span class="sr-only">Twitter X</span>
+                                        </span>
+                                    </a>
+                                    <a href="https://pinterest.com/">
+                                        <span class="social-links__icon">
+                                            <i class="icon-pinterest" aria-hidden="true"></i>
+                                            <span class="sr-only">Pinterest</span>
+                                        </span>
+                                    </a>
+                                    <a href="https://youtube.com/">
+                                        <span class="social-links__icon">
+                                            <i class="icon-youtube" aria-hidden="true"></i>
+                                            <span class="sr-only">Youtube</span>
+                                        </span>
+                                    </a>
+                                </div><!-- /.team-card__social__links -->
+                            </div><!-- /.team-card__social -->
+                            <div class="team-card__info">
+                                <h3 class="team-card__name">
+                                    <a href="{% url 'team_details' %}">Pratham Vaghela</a>
+                                </h3><!-- /.team-card__name -->
+                                <p class="team-card__designation">Python Developer</p><!-- /.team-card__designation -->
+                            </div><!-- /.team-card__info -->
+                        </div><!-- /.team-card -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='200ms'>
+                            <div class="team-card__shape"></div><!-- /.team-card__shape -->
+                            <div class="team-card__image">
+                                <img src="{% static 'images/team/team-1-6.jpg' %}" alt="Darrell Steward">
+                            </div><!-- /.team-card__image -->
+                            <div class="team-card__social">
+                                <span class="team-card__social__icon"></span><!-- /.team-card__social__icon -->
+                                <div class="team-card__social__links social-links">
+                                    <a href="https://facebook.com/">
+                                        <span class="social-links__icon">
+                                            <i class="icon-facebook" aria-hidden="true"></i>
+                                            <span class="sr-only">Facebook</span>
+                                        </span>
+                                    </a>
+                                    <a href="https://x.com/">
+                                        <span class="social-links__icon">
+                                            <i class="icon-twitter-x" aria-hidden="true"></i>
+                                            <span class="sr-only">Twitter X</span>
+                                        </span>
+                                    </a>
+                                    <a href="https://pinterest.com/">
+                                        <span class="social-links__icon">
+                                            <i class="icon-pinterest" aria-hidden="true"></i>
+                                            <span class="sr-only">Pinterest</span>
+                                        </span>
+                                    </a>
+                                    <a href="https://youtube.com/">
+                                        <span class="social-links__icon">
+                                            <i class="icon-youtube" aria-hidden="true"></i>
+                                            <span class="sr-only">Youtube</span>
+                                        </span>
+                                    </a>
+                                </div><!-- /.team-card__social__links -->
+                            </div><!-- /.team-card__social -->
+                            <div class="team-card__info">
+                                <h3 class="team-card__name">
+                                    <a href="{% url 'team_details' %}">Kenil Shah</a>
+                                </h3><!-- /.team-card__name -->
+                                <p class="team-card__designation">React Developer</p><!-- /.team-card__designation -->
+                            </div><!-- /.team-card__info -->
+                        </div><!-- /.team-card -->
+                    </div><!-- /.item -->
+                </div><!-- /.team-one__carousel -->
+            </div><!-- /.container -->
+        </section><!-- /.team-one -->
+
+        <section class="slide-text slide-text--home1">
+            <div class="slide-text__wrapper">
+                <h1 class="slide-text__scroll">
+                    <span>*AI-Driven Solutions</span>
+                    <span>*Unlocking AIÃ¢â‚¬â„¢s Full Potential</span>
+                    <span>*Inspired by Innovation</span>
+                    <span>*AI Design Mastery</span>
+                    <span>*Turning Ideas into Reality</span>
+                    <span>*AI-Driven Solutions</span>
+                    <span>*Unlocking AIÃ¢â‚¬â„¢s Full Potential</span>
+                    <span>*Inspired by Innovation</span>
+                    <span>*AI Design Mastery</span>
+                    <span>*Turning Ideas into Reality</span>
+                    <span>*AI-Driven Solutions</span>
+                    <span>*Unlocking AIÃ¢â‚¬â„¢s Full Potential</span>
+                    <span>*Inspired by Innovation</span>
+                    <span>*AI Design Mastery</span>
+                    <span>*Turning Ideas into Reality</span>
+                </h1><!-- /.slide-text__scroll -->
+            </div><!-- /.slide-text__wrapper -->
+        </section><!-- /.slide-text -->
+
+        <section class="why-choose section-space-top">
+            <div class="container">
+                <div class="row gutter-y-40">
+                    <div class="col-xl-5 wow fadeInUp" data-wow-duration="1500ms">
+                        <div class="why-choose__image">
+                            <img src="{% static 'images/resources/why-choose-1-1.png' %}" alt="why choose" class="why-choose__image__top">
+                            <img src="{% static 'images/shapes/why-choose-shape-1-1.png' %}" alt="shape" class="why-choose__image__shape">
+                        </div><!-- /.why-choose__image -->
+                    </div><!-- /.col-xl-5 -->
+                    <div class="col-xl-7 col-lg-10">
+                        <div class="why-choose__content">
+                            <h2 class="sec-title bw-split-in-left">Our Engagement Model</h2><!-- /.sec-title -->
+                            <h3 class="why-choose__sm-title  wow fadeInUp" data-wow-duration="1500ms">At Infinite Soft Tech</h3><!-- /.why-choose__sm-title -->
+                            <p class="why-choose__text wow fadeInUp" data-wow-duration="1500ms">
+                             we provide full-cycle custom software development services to meet your financial requirements. Our software development team leverages their expertise in delivering process-oriented and high-performance software products for Cloud, Mobile, and Web.
+                            </p><!-- /.why-choose__text -->
+                            <div class="why-choose__inner">
+                                <div class="why-choose__inner__left">
+                                    <div class="why-choose__inner__content">
+                                         <div class="why-choose__item wow fadeInUp" data-wow-duration="1500ms">
+                                            <div class="why-choose__item__left">
+                                                <span class="why-choose__item__icon"><i class="icon-check"></i></span>
+                                                <h4 class="why-choose__item__title">Dedicated Hiring  </h4>
+                                            </div><!-- /.why-choose__item__left -->
+                                            <p class="why-choose__item__text">
+                                               Ideal for dynamic requirements, unclear scope, short-term consulting, POC.
+                                            </p><!-- /.why-choose__item__text -->
+                                        </div><!-- /.why-choose__item -->
+                                        <div class="why-choose__item wow fadeInUp" data-wow-duration="1500ms">
+                                            <div class="why-choose__item__left">
+                                                <span class="why-choose__item__icon"><i class="icon-check"></i></span>
+                                                <h4 class="why-choose__item__title">Time Material  </h4>
+                                            </div><!-- /.why-choose__item__left -->
+                                            <p class="why-choose__item__text">
+                                               Best for full-time support, long-term projects, fast scaling, and expert development.
+                                            </p><!-- /.why-choose__item__text -->
+                                        </div><!-- /.why-choose__item -->
+                                        <div class="why-choose__item wow fadeInUp" data-wow-duration="1500ms">
+                                            <div class="why-choose__item__left">
+                                                <span class="why-choose__item__icon"><i class="icon-check"></i></span>
+                                                <h4 class="why-choose__item__title">Buckets Approach </h4>
+                                            </div><!-- /.why-choose__item__left -->
+                                            <p class="why-choose__item__text">
+                                               Convenient payment option after successful project completion.
+                                            </p><!-- /.why-choose__item__text -->
+                                        </div><!-- /.why-choose__item -->
+                                    </div><!-- /.why-choose__inner__content -->
+                                     
+                                </div><!-- /.why-choose__inner__left -->
+                                <img src="{% static 'images/resources/why-choose-1-2.png' %}" alt="why choose" class="why-choose__inner__image wow fadeInUp" data-wow-duration="1500ms">
+                            </div><!-- /.why-choose__inner -->
+                        </div><!-- /.why-choose__content -->
+                    </div><!-- /.col-xl-7 -->
+                </div><!-- /.row gutter-y-40 -->
+            </div><!-- /.container -->
+        </section><!-- /.why-choose section-space -->
+
+        <section class="faq-one section-space-2">
+            <div class="container">
+                <h2 class="sec-title sec-title--center bw-split-in-left">Questions You Need <br> Answered?</h2><!-- /.sec-title -->
+                <div class="faq-accordion aigence-accordion" data-grp-name="aigence-accordion">
+                    <div class="accordion active">
+                        <div class="accordion-title">
+                            <h4> What software development services do you offer?   </h4>
+                            <span class="accordion-title__icon"></span>
+                        </div><!-- /.accordion-title -->
+                        <div class="accordion-content">
+                            <div class="inner">
+                                <div class="accordion-content__inner">
+                                    <div class="accordion-content__image">
+                                        <img src="{% static 'images/resources/faq-item-1.jpg' %}" alt="faq">
+                                    </div><!-- /.accordion-content__image -->
+                                    <div class="accordion-content__box">
+                                        <div class="accordion-content__title">
+                                            <h4> What software development services do you offer?</h4>
+                                            <span class="accordion-content__title__icon"></span>
+                                        </div><!-- /.accordion-title -->
+                                        <p>We offer different industry solutions and services such as:</br>Mobile app development,Website development,UX/UI designing,SaaS development,CRM development.</p>
+                                    </div><!-- /.accordion-content__box -->
+                                </div><!-- /.accordion-content__inner -->
+                            </div><!-- /.inner -->
+                        </div><!-- /.accordion-content -->
+                    </div><!-- /.accordion-item -->
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <h4> What is the average development cost and time?</h4>
+                            <span class="accordion-title__icon"></span>
+                        </div><!-- /.accordion-title -->
+                        <div class="accordion-content">
+                            <div class="inner">
+                                <div class="accordion-content__inner">
+                                    <div class="accordion-content__image">
+                                        <img src="{% static 'images/resources/faq-item-2.jpg' %}" alt="faq">
+                                    </div><!-- /.accordion-content__image -->
+                                    <div class="accordion-content__box">
+                                        <div class="accordion-content__title">
+                                            <h4> What is the average development cost and time?</h4>
+                                            <span class="accordion-content__title__icon"></span>
+                                        </div><!-- /.accordion-title -->
+                                        <p>The average cost of development is around $200-$18,000, depending on your software type, business model, and other relevant factors. For a basic app, this development period spans between 3 and 6 months. But if you go with custom app development, the time and cost differ.</p>
+                                    </div><!-- /.accordion-content__box -->
+                                </div><!-- /.accordion-content__inner -->
+                            </div><!-- /.inner -->
+                        </div><!-- /.accordion-content -->
+                    </div><!-- /.accordion-item -->
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <h4>Which hiring model do you provide?</h4>
+                            <span class="accordion-title__icon"></span>
+                        </div><!-- /.accordion-title -->
+                        <div class="accordion-content">
+                            <div class="inner">
+                                <div class="accordion-content__inner">
+                                    <div class="accordion-content__image">
+                                        <img src="{% static 'images/resources/faq-item-3.jpg' %}" alt="faq">
+                                    </div><!-- /.accordion-content__image -->
+                                    <div class="accordion-content__box">
+                                        <div class="accordion-content__title">
+                                            <h4>Which hiring model do you provide?</h4>
+                                            <span class="accordion-content__title__icon"></span>
+                                        </div><!-- /.accordion-title -->
+                                        <p>We offer different hiring models catered to business needs. Basically, there are three types of hiring you can opt for:</br>
+                                            Dedicated team hiring,
+                                            Fixed project cost,
+                                            Hourly cost model.</p>
+                                    </div><!-- /.accordion-content__box -->
+                                </div><!-- /.accordion-content__inner -->
+                            </div><!-- /.inner -->
+                        </div><!-- /.accordion-content -->
+                    </div><!-- /.accordion-item -->
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <h4> How do you ensure the security of my app?</h4>
+                            <span class="accordion-title__icon"></span>
+                        </div><!-- /.accordion-title -->
+                        <div class="accordion-content">
+                            <div class="inner">
+                                <div class="accordion-content__inner">
+                                    <div class="accordion-content__image">
+                                        <img src="{% static 'images/resources/faq-item-4.jpg' %}" alt="faq">
+                                    </div><!-- /.accordion-content__image -->
+                                    <div class="accordion-content__box">
+                                        <div class="accordion-content__title">
+                                            <h4> How do you ensure the security of my app?</h4>
+                                            <span class="accordion-content__title__icon"></span>
+                                        </div><!-- /.accordion-title -->
+                                        <p>We rely on industry-standard security compliance to ensure that business-specific policies are followed. By utilizing multiple layers of encryption and third-party security systems, we provide comprehensive protection for your app.</p>
+                                    </div><!-- /.accordion-content__box -->
+                                </div><!-- /.accordion-content__inner -->
+                            </div><!-- /.inner -->
+                        </div><!-- /.accordion-content -->
+                    </div><!-- /.accordion-item -->
+                </div><!-- /.faq-accordion -->
+            </div><!-- /.container -->
+        </section><!-- /.faq-one -->
+
+        <section class="our-process section-space-2">
+            <div class="our-process__bg">
+                <div class="our-process__bg__1" style="background-image: url({% static 'images/shapes/our-process-bg-shape-1-1.png' %});"></div>
+                <div class="our-process__bg__2" style="background-image: url({% static 'images/shapes/our-process-bg-shape-1-2.png' %});"></div>
+                <img src="{% static 'images/shapes/our-process-shape-1-1.png' %}" alt="shape" class="our-process__bg__shape">
+            </div><!-- /.our-process__bg -->
+            <div class="container">
+                <div class="row gutter-y-40">
+                    <div class="col-xl-5 col-lg-10">
+                        <div class="our-process__content">
+                            <h2 class="sec-title bw-split-in-left">Exploring the Three Core Phases of our Process</h2><!-- /.sec-title -->
+                            <p class="our-process__text wow fadeInUp" data-wow-duration="1500ms">The AI Agency Audit evaluates your AI systems and strategies to identify improvements, optimize performance, and align with business goals for better efficiency and impact.</p><!-- /.our-process__text -->
+                            <div class="our-process__button wow fadeInUp" data-wow-duration="1500ms">
+                                <a href="{% url 'about' %}" class="aigence-btn">
+                                    <span class="aigence-btn__text">Discover More</span>
+                                    <span class="aigence-btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a><!-- /.aigence-btn -->
+                            </div><!-- /.our-process__button -->
+                        </div><!-- /.our-process__content -->
+                    </div><!-- /.col-xl-5 -->
+                    <div class="col-xl-7 wow fadeInUp" data-wow-duration="1500ms">
+                        <div class="our-process__item-box">
+                            <div class="our-process__item our-process__item--1">
+                                <div class="our-process__item__bg"></div>
+                                <div class="our-process__item__content">
+                                    <div class="our-process__item__top">
+                                        <h3 class="our-process__item__title">Desing</h3>
+                                        <p class="our-process__item__step">Step</p>
+                                    </div><!-- /.our-process__item__top -->
+                                    <div class="our-process__item__bottom">
+                                        <h4 class="our-process__item__number"></h4>
+                                        <p class="our-process__item__text"> We design solutions that are scalable, secure, and user-focused.</br>Requirement analysis</br>UI/UX planning</br>System architecture design</br>Technology stack selection</p>
+                                    </div><!-- /.our-process__item__bottom -->
+                                </div><!-- /.our-process__item__content -->
+                            </div><!-- /.our-process__item -->
+                            <div class="our-process__item our-process__item--2">
+                                <div class="our-process__item__bg"></div>
+                                <div class="our-process__item__content">
+                                    <div class="our-process__item__top">
+                                        <h3 class="our-process__item__title">Develop</h3>
+                                        <p class="our-process__item__step">Step</p>
+                                    </div><!-- /.our-process__item__top -->
+                                    <div class="our-process__item__bottom">
+                                        <h4 class="our-process__item__number"></h4>
+                                        <p class="our-process__item__text">We build robust applications using modern technologies.</br>Frontend & backend development</br>Database integration</br>API development</br>Security implementation</br>Continuous testing</p>
+                                    </div><!-- /.our-process__item__bottom -->
+                                </div><!-- /.our-process__item__content -->
+                            </div><!-- /.our-process__item -->
+                            <div class="our-process__item our-process__item--3">
+                                <div class="our-process__item__bg"></div>
+                                <div class="our-process__item__content">
+                                    <div class="our-process__item__top">
+                                        <h3 class="our-process__item__title">Deliver</h3>
+                                        <p class="our-process__item__step">Step</p>
+                                    </div><!-- /.our-process__item__top -->
+                                    <div class="our-process__item__bottom">
+                                        <h4 class="our-process__item__number"></h4>
+                                        <p class="our-process__item__text">We deliver results that drive growth and innovation.</br>Quality assurance Performance optimization</br>Cloud/server deployment</br>Ongoing maintenance & support</p>
+                                    </div><!-- /.our-process__item__bottom -->
+                                </div><!-- /.our-process__item__content -->
+                            </div><!-- /.our-process__item -->
+                        </div><!-- /.our-process__item-box -->
+                    </div><!-- /.col-xl-7 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.our-process -->
+
+
+        
+
+
+        <section class="testimonials-one section-space-bottom">
+            <div class="testimonials-one__bg" style="background-image: url({% static 'images/shapes/testimonials-bg-shape-1-1.jpg' %});"></div>
+            <div class="container">
+                <h2 class="sec-title sec-title--center bw-split-in-left">What They Are Talking <br> About Infinite Soft Tech</h2><!-- /.sec-title -->
+                <div class="testimonials-one__carousel aigence-owl__carousel aigence-owl__carousel--with-shadow aigence-owl__carousel--basic-nav owl-carousel owl-theme" data-owl-options='{
+			"items": 1,
+			"margin": 10,
+			"loop": true,
+			"smartSpeed": 700,
+			"nav": false,
+			"dots": true,
+			"navText": ["<i class=\"icon-left-arrow\"></i>","<i class=\"icon-right-arrow\"></i>"],
+			"autoplay": true,
+			"responsive": {
+				"0": {
+					"items": 1,
+					"nav": true,
+					"dots": false,
+					"margin": 10
+				},
+				"992": {
+					"items": 2,
+					"margin": 30
+				},
+				"1400": {
+					"items": 3,
+					"dots": false,
+					"margin": 30
+				}
+			}
+		}'>
+                    <div class="item">
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__shape"></div>
+                            <div class="testimonial-card__content">
+                                <div class="testimonial-card__inner">
+                                    <div class="aigence-ratings">
+                                        <span class="aigence-ratings__icon"><i class="fas fa-star"></i></span>
+                                        <span class="aigence-ratings__icon"><i class="fas fa-star"></i></span>
+                                        <span class="aigence-ratings__icon"><i class="fas fa-star"></i></span>
+                                        <span class="aigence-ratings__icon"><i class="fas fa-star"></i></span>
+                                        <span class="aigence-ratings__icon"><i class="fas fa-star"></i></span>
+                                    </div><!-- /.aigence-ratings -->
+                                    <p class="testimonial-card__quote">Our AI enables systems to perform tasks like problem-solving and language processing, often surpassing human capabilities.</p><!-- /.testimonial-card__quote -->
+                                    <div class="testimonial-card__info">
+                                        <span class="testimonial-card__icon"><i class="icon-quote"></i></span>
+                                        <div class="testimonial-card__identity">
+                                            <h4 class="testimonial-card__name">Ronald Richards</h4>
+                                            <p class="testimonial-card__designation">Customer</p>
+                                        </div><!-- /.testimonial-card__identity -->
+                                    </div><!-- /.testimonial-card__info -->
+                                </div><!-- /.testimonial-card__inner -->
+                                <img src="{% static 'images/team/team-1-2-.jpg' %}" alt="Ronald Richards" class="testimonial-card__image">
+                            </div><!-- /.testimonial-card__content -->
+                        </div><!-- /.testimonial-card -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__shape"></div>
+                            <div class="testimonial-card__content">
+                                <div class="testimonial-card__inner">
+                                    <div class="aigence-ratings">
+                                        <span class="aigence-ratings__icon"><i class="fas fa-star"></i></span>
+                                        <span class="aigence-ratings__icon"><i class="fas fa-star"></i></span>
+                                        <span class="aigence-ratings__icon"><i class="fas fa-star"></i></span>
+                                        <span class="aigence-ratings__icon"><i class="fas fa-star"></i></span>
+                                        <span class="aigence-ratings__icon"><i class="fas fa-star"></i></span>
+                                    </div><!-- /.aigence-ratings -->
+                                    <p class="testimonial-card__quote">Just Photoshop out the dog, add a baby, and make the curtains blue make it pop i was wondering if my cat could be placed over the logo in the flyer, for.</p><!-- /.testimonial-card__quote -->
+                                    <div class="testimonial-card__info">
+                                        <span class="testimonial-card__icon"><i class="icon-quote"></i></span>
+                                        <div class="testimonial-card__identity">
+                                            <h4 class="testimonial-card__name">Martin Jhon</h4>
+                                            <p class="testimonial-card__designation">Customer</p>
+                                        </div><!-- /.testimonial-card__identity -->
+                                    </div><!-- /.testimonial-card__info -->
+                                </div><!-- /.testimonial-card__inner -->
+                                <img src="{% static 'images/team/team-1-6.jpg' %}" alt="Martin Jhon" class="testimonial-card__image">
+                            </div><!-- /.testimonial-card__content -->
+                        </div><!-- /.testimonial-card -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__shape"></div>
+                            <div class="testimonial-card__content">
+                                <div class="testimonial-card__inner">
+                                    <div class="aigence-ratings">
+                                        <span class="aigence-ratings__icon"><i class="fas fa-star"></i></span>
+                                        <span class="aigence-ratings__icon"><i class="fas fa-star"></i></span>
+                                        <span class="aigence-ratings__icon"><i class="fas fa-star"></i></span>
+                                        <span class="aigence-ratings__icon"><i class="fas fa-star"></i></span>
+                                        <span class="aigence-ratings__icon"><i class="fas fa-star"></i></span>
+                                    </div><!-- /.aigence-ratings -->
+                                    <p class="testimonial-card__quote">There are many variations of passages about of Lorem Ipsum avalable, but the majority have suffered alteration free in some form, by injected humour or free.</p><!-- /.testimonial-card__quote -->
+                                    <div class="testimonial-card__info">
+                                        <span class="testimonial-card__icon"><i class="icon-quote"></i></span>
+                                        <div class="testimonial-card__identity">
+                                            <h4 class="testimonial-card__name">Kevin Martin</h4>
+                                            <p class="testimonial-card__designation">Customer</p>
+                                        </div><!-- /.testimonial-card__identity -->
+                                    </div><!-- /.testimonial-card__info -->
+                                </div><!-- /.testimonial-card__inner -->
+                                <img src="{% static 'images/team/team-2-1.png' %}" alt="Kevin Martin" class="testimonial-card__image">
+                            </div><!-- /.testimonial-card__content -->
+                        </div><!-- /.testimonial-card -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__shape"></div>
+                            <div class="testimonial-card__content">
+                                <div class="testimonial-card__inner">
+                                    <div class="aigence-ratings">
+                                        <span class="aigence-ratings__icon"><i class="fas fa-star"></i></span>
+                                        <span class="aigence-ratings__icon"><i class="fas fa-star"></i></span>
+                                        <span class="aigence-ratings__icon"><i class="fas fa-star"></i></span>
+                                        <span class="aigence-ratings__icon"><i class="fas fa-star"></i></span>
+                                        <span class="aigence-ratings__icon"><i class="fas fa-star"></i></span>
+                                    </div><!-- /.aigence-ratings -->
+                                    <p class="testimonial-card__quote">We need to make the new version clean and sexy can you lower the price for the website? make it high quality and please use html.</p><!-- /.testimonial-card__quote -->
+                                    <div class="testimonial-card__info">
+                                        <span class="testimonial-card__icon"><i class="icon-quote"></i></span>
+                                        <div class="testimonial-card__identity">
+                                            <h4 class="testimonial-card__name">Jane Cooper</h4>
+                                            <p class="testimonial-card__designation">Customer</p>
+                                        </div><!-- /.testimonial-card__identity -->
+                                    </div><!-- /.testimonial-card__info -->
+                                </div><!-- /.testimonial-card__inner -->
+                                <img src="{% static 'images/team/team-1-4.png' %}" alt="Jane Cooper" class="testimonial-card__image">
+                            </div><!-- /.testimonial-card__content -->
+                        </div><!-- /.testimonial-card -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__shape"></div>
+                            <div class="testimonial-card__content">
+                                <div class="testimonial-card__inner">
+                                    <div class="aigence-ratings">
+                                        <span class="aigence-ratings__icon"><i class="fas fa-star"></i></span>
+                                        <span class="aigence-ratings__icon"><i class="fas fa-star"></i></span>
+                                        <span class="aigence-ratings__icon"><i class="fas fa-star"></i></span>
+                                        <span class="aigence-ratings__icon"><i class="fas fa-star"></i></span>
+                                        <span class="aigence-ratings__icon"><i class="fas fa-star"></i></span>
+                                    </div><!-- /.aigence-ratings -->
+                                    <p class="testimonial-card__quote">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet it uses.</p><!-- /.testimonial-card__quote -->
+                                    <div class="testimonial-card__info">
+                                        <span class="testimonial-card__icon"><i class="icon-quote"></i></span>
+                                        <div class="testimonial-card__identity">
+                                            <h4 class="testimonial-card__name">Nicola Scott</h4>
+                                            <p class="testimonial-card__designation">Customer</p>
+                                        </div><!-- /.testimonial-card__identity -->
+                                    </div><!-- /.testimonial-card__info -->
+                                </div><!-- /.testimonial-card__inner -->
+                                <img src="{% static 'images/team/team-1-5.jpg' %}" alt="Nicola Scott" class="testimonial-card__image">
+                            </div><!-- /.testimonial-card__content -->
+                        </div><!-- /.testimonial-card -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__shape"></div>
+                            <div class="testimonial-card__content">
+                                <div class="testimonial-card__inner">
+                                    <div class="aigence-ratings">
+                                        <span class="aigence-ratings__icon"><i class="fas fa-star"></i></span>
+                                        <span class="aigence-ratings__icon"><i class="fas fa-star"></i></span>
+                                        <span class="aigence-ratings__icon"><i class="fas fa-star"></i></span>
+                                        <span class="aigence-ratings__icon"><i class="fas fa-star"></i></span>
+                                        <span class="aigence-ratings__icon"><i class="fas fa-star"></i></span>
+                                    </div><!-- /.aigence-ratings -->
+                                    <p class="testimonial-card__quote">Professional & Expert Cleaning Service cleaning or construction are cleaning passages this market Our expert team success available areas conservation.</p><!-- /.testimonial-card__quote -->
+                                    <div class="testimonial-card__info">
+                                        <span class="testimonial-card__icon"><i class="icon-quote"></i></span>
+                                        <div class="testimonial-card__identity">
+                                            <h4 class="testimonial-card__name">Mike Hardson</h4>
+                                            <p class="testimonial-card__designation">Customer</p>
+                                        </div><!-- /.testimonial-card__identity -->
+                                    </div><!-- /.testimonial-card__info -->
+                                </div><!-- /.testimonial-card__inner -->
+                                <img src="{% static 'images/team/team-1-6.jpg' %}" alt="Mike Hardson" class="testimonial-card__image">
+                            </div><!-- /.testimonial-card__content -->
+                        </div><!-- /.testimonial-card -->
+                    </div><!-- /.item -->
+                </div><!-- /.testimonials-one__carousel -->
+            </div><!-- /.container -->
+        </section><!-- /.testimonials-one -->
+
+        
+    </br></br></br></br>
+         
+
+        
+        <section class="newsletter ">
+            <div class="newsletter__wrapper">
+                <div class="newsletter__inner">
+                    <div class="newsletter__bg" style="background-image: url({% static 'images/shapes/newsletter-bg-shape-1-1.png' %});"></div><!-- /.newsletter__bg -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 order-1 order-lg-0 wow fadeInLeft" data-wow-duration="1500ms">
+                                <div class="newsletter__image">
+                                    <img src="{% static 'images/shapes/why-choose-shape-3-1.png' %}" alt="newsletter">
+                                </div><!-- /.newsletter__image -->
+                            </div><!-- /.col-lg-6 -->
+                            <div class="col-lg-6 order-0 order-lg-1 wow fadeInUp" data-wow-duration="1500ms">
+                                <div class="newsletter__content">
+                                    <h2 class="sec-title bw-split-in-left"> Starts Your First-Ever  AI Software Development With Us!</h2><!-- /.sec-title -->
+                                    <a  href="{% url 'contact' %}" class="aigence-btn__text">Get In Touch</a>
+                               </div><!-- /.newsletter__content -->
+                            </div><!-- /.col-lg-6 -->
+                        </div><!-- /.row gutter-y-40 -->
+                    </div><!-- /.container -->
+                    <img src="{% static 'images/shapes/newsletter-shape-1-1.png' %}" alt="shape" class="newsletter__shape">
+                </div><!-- /.newsletter__inner -->
+            </div><!-- /.newsletter__wrapper -->
+        </section><!-- /.newsletter -->
+
+{% endblock %}
+
+
+        <footer class="main-footer main-footer--two">
+            <div class="main-footer__bg" style="background-image: url({% static 'images/shapes/footer-bg-shape-2-1.png' %});"></div><!-- /.main-footer__bg -->
+            <div class="main-footer__top">
+                <div class="container">
+                    <div class="row gutter-y-40 align-items-center">
+                        <div class="col-xl-3 col-lg-4 col-md-5 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                            <div class="footer-widget footer-widget--about">
+                                <a href="{% url 'home' %}" class="footer-widget__logo logo-retina">
+                                    <img src="{% static 'images/logo-light.png' %}" alt="Aigence HTML Template" width="150">
+                                </a>
+                            </div><!-- /.footer-widget -->
+                        </div><!-- /.col-xl-3 -->
+                         <div class="col-xl-3 col-lg-4 col-md-7 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+                            <div class="footer-widget footer-widget--contact">
+                                <ul class="list-unstyled footer-widget__info">
+                                    <li>
+                                        <span class="footer-widget__info__icon"><i class="icon-email"></i></span>
+                                        <span><a href="mailto:info@infinitesofttech.com">info@infinitesofttech.com</a></span>
+                                    </li>
+                                    <li>
+                                        <span class="footer-widget__info__icon"><i class="icon-phone-2"></i></span>
+                                        <span><a href="tel:+91 9409259294">+91 9429259294</a></span>
+                                    </li>
+                                </ul><!-- /.list-unstyled footer-widget__info -->
+                            </div><!-- /.footer-widget -->
+                        </div><!-- /.col-xl-3 -->
+                        <div class="col-xl-6 col-lg-4 col-md-7 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+                            <div class="footer-widget footer-widget--social">
+                                <h3 class="footer-widget__social-title">Get in Touch</h3>
+                                <div class="social-links">
+                                    <a href="mailto:info@infinitesofttech.com">
+                                        <span class="social-links__icon">
+                                            <i class="icon-email" aria-hidden="true"></i>
+                                            <span class="sr-only">Email</span>
+                                        </span>
+                                    </a>
+                                    <a href="tel:+91 9409259294">
+                                        <span class="social-links__icon">
+                                            <i class="icon-phone" aria-hidden="true"></i>
+                                            <span class="sr-only">Mobile</span>
+                                        </span>
+                                    </a>
+                                    <a href="https://wa.me/919409259294">
+                                        <span class="social-links__icon">
+                                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                                            <span class="sr-only">WhatsApp</span>
+                                        </span>
+                                    </a>
+                                    <a href="https://www.linkedin.com/company/infinite-softtech/">
+                                        <span class="social-links__icon">
+                                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                                            <span class="sr-only">LinkedIn</span>
+                                        </span>
+                                    </a>
+                                    <a href="https://www.instagram.com/infinitesofttech_?igsh=MXRxMDB2dzNocm0xdw==">
+                                        <span class="social-links__icon">
+                                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                                            <span class="sr-only">Instagram</span>
+                                        </span>
+                                    </a>
+                                    <a href="https://youtube.com/@infinitesofttech?si=ty_zXfSPYsxZIwah">
+                                        <span class="social-links__icon">
+                                            <i class="icon-youtube" aria-hidden="true"></i>
+                                            <span class="sr-only">Youtube</span>
+                                        </span>
+                                    </a>
+                                </div><!-- /.social-links -->
+                            </div><!-- /.footer-widget -->
+                        </div><!-- /.col-xl-6 -->
+                       
+                    </div><!-- /.row gutter-y-40 -->
+                </div><!-- /.container -->
+            </div><!-- /.main-footer__top -->
+            <div class="container">
+                <div class="main-footer__wrapper">
+                    <div class="row gutter-y-40">
+                        <div class="col-lg-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                            <div class="footer-widget footer-widget--about">
+                                <h3 class="footer-widget__about-title">Beyond Technology. Into <br> <span>Infinite</span></h3>
+                            </div><!-- /.footer-widget -->
+                        </div><!-- /.col-lg-6 -->
+                        <div class="col-lg-2 col-sm-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+                            <div class="footer-widget footer-widget--links">
+                                <h2 class="footer-widget__title">Links</h2><!-- /.footer-widget__title -->
+                                <ul class="list-unstyled footer-widget__links">
+                                    <li><a href="{% url 'about' %}">About</a></li>
+                                    <li><a href="{% url 'services' %}">Our Services</a></li>
+                                    <li><a href="{% url 'projects' %}">Recent Projects</a></li>
+                                    <li><a href="{% url 'blog_grid_2' %}">Upcoming News</a></li>
+                                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                                </ul><!-- /.list-unstyled footer-widget__links -->
+                            </div><!-- /.footer-widget -->
+                        </div><!-- /.col-lg-3 -->
+                        <div class="col-lg-2 col-sm-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+                            <div class="footer-widget footer-widget--links">
+                                <h2 class="footer-widget__title">Links</h2><!-- /.footer-widget__title -->
+                                <ul class="list-unstyled footer-widget__links">
+                                    <li><a href="{% url 'about' %}">About</a></li>
+                                    <li><a href="{% url 'services' %}">Our Services</a></li>
+                                    <li><a href="{% url 'projects' %}">Recent Projects</a></li>
+                                    <li><a href="{% url 'blog_grid_2' %}">Upcoming News</a></li>
+                                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                                </ul><!-- /.list-unstyled footer-widget__links -->
+                            </div><!-- /.footer-widget -->
+                        </div><!-- /.col-lg-3 -->
+                        <div class="col-lg-2 col-sm-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+                            <div class="footer-widget footer-widget--links">
+                                <h2 class="footer-widget__title">Explore</h2><!-- /.footer-widget__title -->
+                                <ul class="list-unstyled footer-widget__links">
+                                    <li><a href="{% url 'team' %}">Meet the Team</a></li>
+                                    <li><a href="{% url 'contact' %}">Support</a></li>
+                                    <li><a href="{% url 'about' %}">Privacy Policy</a></li>
+                                    <li><a href="{% url 'about' %}">Terms of Use</a></li>
+                                </ul><!-- /.list-unstyled footer-widget__links -->
+                            </div><!-- /.footer-widget -->
+                        </div><!-- /.col-lg-3 -->
+                    </div><!-- /.row gutter-y-40 -->
+                </div><!-- /.main-footer__wrapper -->
+            </div><!-- /.container -->
+            <div class="main-footer__bottom">
+                <div class="container">
+                    <div class="main-footer__bottom__inner">
+                        <p class="main-footer__copyright">
+                            &copy;   <span class="dynamic-year"></span> Infinite Soft Tech. All Right Reserved
+                        </p>
+                    </div><!-- /.main-footer__inner -->
+                </div><!-- /.container -->
+            </div><!-- /.main-footer__bottom -->
+        </footer><!-- /.main-footer -->
+
+         
+
+    </div><!-- /.page-wrapper -->
+
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div><!-- /.mobile-nav__overlay -->
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="icon-close"></i></span>
+            <div class="logo-box">
+                <a href="{% url 'home' %}" aria-label="logo image"><img src="{% static 'images/logo-light.png' %}" width="150" alt="Aigence HTML" /></a>
+            </div><!-- /.logo-box -->
+            <div class="mobile-nav__container"></div><!-- /.mobile-nav__container -->
+            <ul class="mobile-nav__contact list-unstyled">
+                <li>
+                    <span class="mobile-nav__contact__icon"><i class="fa fa-envelope"></i></span>
+                    <a href="mailto:info@infinitesofttech.com">info@infinitesofttech.com</a>
+                </li>
+                <li>
+                    <span class="mobile-nav__contact__icon"><i class="fa fa-phone-alt"></i></span>
+                    <a href="tel:+91 9409259294">+91 9409259294</a>
+                </li>
+            </ul><!-- /.mobile-nav__contact -->
+            <div class="social-links">
+                <a href="https://facebook.com/">
+                    <span class="social-links__icon">
+                        <i class="icon-facebook" aria-hidden="true"></i>
+                        <span class="sr-only">Facebook</span>
+                    </span>
+                </a>
+                <a href="https://x.com/">
+                    <span class="social-links__icon">
+                        <i class="icon-twitter-x" aria-hidden="true"></i>
+                        <span class="sr-only">Twitter X</span>
+                    </span>
+                </a>
+                <a href="https://pinterest.com/">
+                    <span class="social-links__icon">
+                        <i class="icon-pinterest" aria-hidden="true"></i>
+                        <span class="sr-only">Pinterest</span>
+                    </span>
+                </a>
+                <a href="https://youtube.com/">
+                    <span class="social-links__icon">
+                        <i class="icon-youtube" aria-hidden="true"></i>
+                        <span class="sr-only">Youtube</span>
+                    </span>
+                </a>
+            </div><!-- /.social-links -->
+        </div><!-- /.mobile-nav__content -->
+    </div><!-- /.mobile-nav__wrapper -->
+    <div class="search-popup">
+        <div class="search-popup__overlay search-toggler"></div><!-- /.search-popup__overlay -->
+        <div class="search-popup__content">
+            <form role="search" method="get" class="search-popup__form" action="#">
+                <input type="text" id="search" placeholder="Search Here..." />
+                <button type="submit" aria-label="search submit">
+                    <i class="icon-search"></i>
+                </button>
+            </form>
+        </div><!-- /.search-popup__content -->
+    </div><!-- /.search-popup -->
+
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top">
+        <span class="scroll-to-top__text">back top</span>
+        <span class="scroll-to-top__wrapper"><span class="scroll-to-top__inner"></span></span>
+    </a>
+
+
+    <script src="{% static 'vendors/jquery/jquery-3.7.1.min.js' %}"></script>
+    <script src="{% static 'vendors/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'vendors/bootstrap-select/bootstrap-select.min.js' %}"></script>
+    <script src="{% static 'vendors/jarallax/jarallax.min.js' %}"></script>
+    <script src="{% static 'vendors/jquery-ui/jquery-ui.js' %}"></script>
+    <script src="{% static 'vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js' %}"></script>
+    <script src="{% static 'vendors/jquery-appear/jquery.appear.min.js' %}"></script>
+    <script src="{% static 'vendors/jquery-magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'vendors/jquery-validate/jquery.validate.min.js' %}"></script>
+    <script src="{% static 'vendors/wnumb/wNumb.min.js' %}"></script>
+    <script src="{% static 'vendors/owl-carousel/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'vendors/wow/wow.js' %}"></script>
+    <script src="{% static 'vendors/imagesloaded/imagesloaded.min.js' %}"></script>
+    <script src="{% static 'vendors/isotope/isotope.js' %}"></script>
+    <script src="{% static 'vendors/swiper/js/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'vendors/countdown/countdown.min.js' %}"></script>
+    <script src="{% static 'vendors/jquery-circleType/jquery.circleType.js' %}"></script>
+    <script src="{% static 'vendors/jquery-lettering/jquery.lettering.min.js' %}"></script>
+    <!-- gsap js -->
+    <script src="{% static 'vendors/gsap/gsap.js' %}"></script>
+    <script src="{% static 'vendors/gsap/scrolltrigger.min.js' %}"></script>
+    <script src="{% static 'vendors/gsap/splittext.min.js' %}"></script>
+    <script src="{% static 'vendors/gsap/aigence-split.js' %}"></script>
+    <!-- template js -->
+    <script src="{% static 'js/aigence.js' %}"></script>
+</body>
+
+
+<!-- Mirrored from bracketweb.com/aigence-html/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Dec 2025 09:24:40 GMT -->
+</html>
+
+

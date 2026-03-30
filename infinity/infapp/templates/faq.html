@@ -1,0 +1,175 @@
+﻿{% extends "index.html" %}
+{% load static %}
+{% block content %}
+        <section class="page-header">
+            <div class="page-header__bg" style="background-image: url({% static 'images/backgrounds/page-header-bg.jpg' %});"></div>
+            <div class="container">
+                <div class="page-header__content">
+                    <h2 class="page-header__title">FAQS</h2>
+                    <ul class="aigence-breadcrumb list-unstyled">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><span>FAQS</span></li>
+                    </ul><!-- /.aigence-breadcrumb list-unstyled -->
+                </div><!-- /.page-header__content -->
+            </div><!-- /.container -->
+        </section><!-- /.page-header -->
+
+        <section class="faq-page-search section-space-2">
+            <div class="container">
+                <div class="faq-page-search__content wow fadeInUp animated" data-wow-duration="1500ms">
+                    <h2 class="faq-page-search__title">Search Your Questions <br> Queries Here.</h2><!-- /.faq-page-search__title -->
+                    <form action="#" class="faq-page-search__form">
+                        <input type="text" id="error-search" placeholder="Search Here">
+                        <button type="submit" class="faq-page-search__form__btn" aria-label="search submit">
+                            <i class="icon-search"></i>
+                        </button>
+                    </form><!-- /.faq-page-search__form -->
+                </div><!-- /.faq-page-search__content -->
+            </div><!-- /.container -->
+        </section><!-- /.faq-page-search -->
+
+        <section class="faq-one section-space-2">
+            <div class="container">
+                <h2 class="sec-title sec-title--center bw-split-in-left">Questions You Need <br> Answered?</h2><!-- /.sec-title -->
+                <div class="faq-accordion aigence-accordion" data-grp-name="aigence-accordion">
+                    <div class="accordion active">
+                        <div class="accordion-title">
+                            <h4> What software development services do you offer?   </h4>
+                            <span class="accordion-title__icon"></span>
+                        </div><!-- /.accordion-title -->
+                        <div class="accordion-content">
+                            <div class="inner">
+                                <div class="accordion-content__inner">
+                                    <div class="accordion-content__image">
+                                        <img src="{% static 'images/resources/faq-item-1.jpg' %}" alt="faq">
+                                    </div><!-- /.accordion-content__image -->
+                                    <div class="accordion-content__box">
+                                        <div class="accordion-content__title">
+                                            <h4> What software development services do you offer?</h4>
+                                            <span class="accordion-content__title__icon"></span>
+                                        </div><!-- /.accordion-title -->
+                                        <p>We offer different industry solutions and services such as:</br>Mobile app development,Website development,UX/UI designing,SaaS development,CRM development.</p>
+                                    </div><!-- /.accordion-content__box -->
+                                </div><!-- /.accordion-content__inner -->
+                            </div><!-- /.inner -->
+                        </div><!-- /.accordion-content -->
+                    </div><!-- /.accordion-item -->
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <h4> What is the average development cost and time?</h4>
+                            <span class="accordion-title__icon"></span>
+                        </div><!-- /.accordion-title -->
+                        <div class="accordion-content">
+                            <div class="inner">
+                                <div class="accordion-content__inner">
+                                    <div class="accordion-content__image">
+                                        <img src="{% static 'images/resources/faq-item-2.jpg' %}" alt="faq">
+                                    </div><!-- /.accordion-content__image -->
+                                    <div class="accordion-content__box">
+                                        <div class="accordion-content__title">
+                                            <h4> What is the average development cost and time?</h4>
+                                            <span class="accordion-content__title__icon"></span>
+                                        </div><!-- /.accordion-title -->
+                                        <p>The average cost of development is around $200-$18,000, depending on your software type, business model, and other relevant factors. For a basic app, this development period spans between 3 and 6 months. But if you go with custom app development, the time and cost differ.</p>
+                                    </div><!-- /.accordion-content__box -->
+                                </div><!-- /.accordion-content__inner -->
+                            </div><!-- /.inner -->
+                        </div><!-- /.accordion-content -->
+                    </div><!-- /.accordion-item -->
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <h4>Which hiring model do you provide?</h4>
+                            <span class="accordion-title__icon"></span>
+                        </div><!-- /.accordion-title -->
+                        <div class="accordion-content">
+                            <div class="inner">
+                                <div class="accordion-content__inner">
+                                    <div class="accordion-content__image">
+                                        <img src="{% static 'images/resources/faq-item-3.jpg' %}" alt="faq">
+                                    </div><!-- /.accordion-content__image -->
+                                    <div class="accordion-content__box">
+                                        <div class="accordion-content__title">
+                                            <h4>Which hiring model do you provide?</h4>
+                                            <span class="accordion-content__title__icon"></span>
+                                        </div><!-- /.accordion-title -->
+                                        <p>We offer different hiring models catered to business needs. Basically, there are three types of hiring you can opt for:</br>
+                                            Dedicated team hiring,
+                                            Fixed project cost,
+                                            Hourly cost model.</p>
+                                    </div><!-- /.accordion-content__box -->
+                                </div><!-- /.accordion-content__inner -->
+                            </div><!-- /.inner -->
+                        </div><!-- /.accordion-content -->
+                    </div><!-- /.accordion-item -->
+                    <div class="accordion">
+                        <div class="accordion-title">
+                            <h4> How do you ensure the security of my app?</h4>
+                            <span class="accordion-title__icon"></span>
+                        </div><!-- /.accordion-title -->
+                        <div class="accordion-content">
+                            <div class="inner">
+                                <div class="accordion-content__inner">
+                                    <div class="accordion-content__image">
+                                        <img src="{% static 'images/resources/faq-item-4.jpg' %}" alt="faq">
+                                    </div><!-- /.accordion-content__image -->
+                                    <div class="accordion-content__box">
+                                        <div class="accordion-content__title">
+                                            <h4> How do you ensure the security of my app?</h4>
+                                            <span class="accordion-content__title__icon"></span>
+                                        </div><!-- /.accordion-title -->
+                                        <p>We rely on industry-standard security compliance to ensure that business-specific policies are followed. By utilizing multiple layers of encryption and third-party security systems, we provide comprehensive protection for your app.</p>
+                                    </div><!-- /.accordion-content__box -->
+                                </div><!-- /.accordion-content__inner -->
+                            </div><!-- /.inner -->
+                        </div><!-- /.accordion-content -->
+                    </div><!-- /.accordion-item -->
+                </div><!-- /.faq-accordion -->
+            </div><!-- /.container -->
+        </section><!-- /.faq-one -->
+
+        <section class="newsletter ">
+            <div class="newsletter__wrapper">
+                <div class="newsletter__inner">
+                    <div class="newsletter__bg" style="background-image: url({% static 'images/shapes/newsletter-bg-shape-1-1.png' %});"></div><!-- /.newsletter__bg -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 order-1 order-lg-0 wow fadeInLeft" data-wow-duration="1500ms">
+                                <div class="newsletter__image">
+                                    <img src="{% static 'images/resources/newsletter-1-1.png' %}" alt="newsletter">
+                                </div><!-- /.newsletter__image -->
+                            </div><!-- /.col-lg-6 -->
+                            <div class="col-lg-6 order-0 order-lg-1 wow fadeInUp" data-wow-duration="1500ms">
+                                <div class="newsletter__content">
+                                    <h2 class="sec-title bw-split-in-left">Join our AI-driven Creative Community!</h2><!-- /.sec-title -->
+                                    <div class="customers">
+                                        <div class="customers__inner">
+                                            <div class="customers__image">
+                                                <img src="{% static 'images/resources/customer-1.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-2.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-3.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-4.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-5.png' %}" alt="customer">
+                                            </div><!-- /.customers__image -->
+                                        </div><!-- /.customers__inner -->
+                                        <p class="customers__text">3860 weekly subscribe</p>
+                                    </div><!-- /.customers -->
+                                    <form action="#" data-url="MAILCHIMP_FORM_URL" class="newsletter__form mc-form">
+                                        <input type="email" name="EMAIL" placeholder="Email Address">
+                                        <button type="submit" class="aigence-btn">
+                                            <span class="aigence-btn__text">Subscribe</span>
+                                        </button>
+                                    </form><!-- /. mc-form -->
+                                    <div class="mc-form__response"></div><!-- /.mc-form__response -->
+                                    <div class="newsletter__check-box">
+                                        <input type="checkbox" name="agree" id="agree">
+                                        <label for="agree">I Agree To The Terms, Privacy Policy.<span></span></label>
+                                    </div><!-- /.newsletter__check-box -->
+                                </div><!-- /.newsletter__content -->
+                            </div><!-- /.col-lg-6 -->
+                        </div><!-- /.row gutter-y-40 -->
+                    </div><!-- /.container -->
+                    <img src="{% static 'images/shapes/newsletter-shape-1-1.png' %}" alt="shape" class="newsletter__shape">
+                </div><!-- /.newsletter__inner -->
+            </div><!-- /.newsletter__wrapper -->
+        </section><!-- /.newsletter -->
+{% endblock %}

@@ -1,0 +1,454 @@
+﻿{% extends "index.html" %}
+{% load static %}
+{% block content %}
+
+        <section class="page-header">
+            <div class="page-header__bg" style="background-image: url({% static 'images/backgrounds/page-header-bg.jpg' %});"></div>
+            <div class="container">
+                <div class="page-header__content">
+                    <h2 class="page-header__title">About Us</h2>
+                    <ul class="aigence-breadcrumb list-unstyled">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><span>About Us</span></li>
+                    </ul><!-- /.aigence-breadcrumb list-unstyled -->
+                </div><!-- /.page-header__content -->
+            </div><!-- /.container -->
+        </section><!-- /.page-header -->
+
+        <section class="about-four section-space">
+            <div class="container">
+                <div class="row gutter-y-40">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-duration="1500ms">
+                        <div class="about-four__image">
+                            <div class="about-four__image__left">
+                                <img src="{% static 'images/about/about-4-1.jpg' %}" alt="about" class="about-four__image__1">
+                                <img src="{% static 'images/about/about-4-2.jpg' %}" alt="about" class="about-four__image__2">
+                                <div class="about-four__circle">
+                                    <div class="about-four__circle__logo">
+                                        <img src="{% static 'images/shapes/about-award-4-1.png' %}" alt="award">
+                                    </div>
+                                    <div class="curved-circle">
+                                        <div class="curved-circle--item" data-circle-text-options='{
+								"radius": 62,
+								"forceWidth": true,
+								"forceHeight": true
+							}'>
+                                            company award winning
+                                        </div>
+                                    </div>
+                                </div><!--/.curved-circle end-->
+                            </div><!-- /.about-four__image__left -->
+                            <div class="about-four__image__right">
+                                <img src="{% static 'images/about/about-4-3.jpg' %}" alt="about" class="about-four__image__3">
+                            </div><!-- /.about-four__image__right -->
+                        </div><!-- /.about-four__image -->
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6">
+                        <div class="about-four__content">
+                            <h2 class="sec-title bw-split-in-left">The Advantages Of Collaborating With An Infinite Soft Tech</h2><!-- /.sec-title -->
+                            <h3 class="about-four__title wow fadeInUp" data-wow-duration="1500ms">IST may assist in developing AI-driven products</h3><!-- /.about-four__title -->
+                            <p class="about-four__text wow fadeInUp" data-wow-duration="1500ms"> </p><!-- /.about-four__text -->
+                            <div class="row gutter-y-30">
+                                <div class="col-xl-6 col-lg-12 col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                                    <div class="about-four__item">
+                                        <div class="about-four__item__top">
+                                            <div class="about-four__item__icon-box">
+                                                <span class="about-four__item__icon"><i class="icon-ai-network"></i></span>
+                                            </div>
+                                            <h4 class="about-four__item__title">Who We Are ? <br></h4>
+                                        </div><!-- /.about-four__item__top -->
+                                        <p class="about-four__item__text">
+                                            IST Software Solutions is a custom software development company that partners with businesses to build, design and scale reliable digital products. We'll help you implement a structured engineering process, dependable delivery systems and scalable technologies.
+                                        </p><!-- /.about-four__item__text -->
+                                    </div><!-- /.about-four__item -->
+                                </div><!-- /.col-xl-6 -->
+                                <div class="col-xl-6 col-lg-12 col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+                                    <div class="about-four__item">
+                                        <div class="about-four__item__top">
+                                            <div class="about-four__item__icon-box">
+                                                <span class="about-four__item__icon"><i class="icon-ai-connectivity"></i></span>
+                                            </div>
+                                            <h4 class="about-four__item__title">Our Vision &  <br> Mission</h4>
+                                        </div><!-- /.about-four__item__top -->
+                                        <p class="about-four__item__text">
+                                            Our vision is to build dependable digital systems that help businesses operate efficiently, adapt to change, and remain competitive in evolving markets.</br>Empower Through Engineering</br>Scale with Purpose</br>Learn & Improve Continuously
+                                        </p><!-- /.about-four__item__text -->
+                                    </div><!-- /.about-four__item -->
+                                </div><!-- /.col-xl-6 -->
+                            </div><!-- /.row gutter-y-30 -->
+                            <div class="about-four__button wow fadeInUp" data-wow-duration="1500ms">
+                                <a href="{% url 'projects' %}" class="aigence-btn">
+                                    <span class="aigence-btn__text">View Our Work</span>
+                                    <span class="aigence-btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a><!-- /.aigence-btn -->
+                            </div><!-- /.about-four__button -->
+                        </div><!-- /.about-four__content -->
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row gutter-y-40 -->
+            </div><!-- /.container -->
+        </section><!-- /.about-four -->
+
+        <section class="team-two team-two--technology section-space-2">
+            <div class="container">
+                <h2 class="sec-title sec-title--center">We Deliver Technology That Works<br></h2><!-- /.sec-title -->
+                <div class="team-two__wrapper">
+
+                    <div class="team-two__item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+                        <div class="team-two__item__bg">
+                            <div class="team-two__item__bg__inner" style="background-image: url({% static 'images/shapes/team-card-bg-2-1.png' %});"></div>
+                        </div><!-- /.team-two__item__bg -->
+                        <div class="row gutter-y-10 align-items-center">
+                            <div class="col-xxl-6 col-lg-6">
+                                <h3 class="team-two__name"><a href="{% url 'team_details' %}">Custom Software & Product Development </a></h3>
+                            </div><!-- /.col-xl-5 -->
+                            <div class="col-xl-4 col-lg-3">
+                                <span class="team-two__designation">
+                                <ul>
+                                    <li>Custom Software Engineering</li>
+                                    <li>SaaS Product Design & Development</li>
+                                    <li>Web & Mobile Application Development</li>
+                                </ul>
+                                </span>
+                            </div><!-- /.col-xl-3 -->
+                            <div class="col-xl-2 col-lg-3">
+                                <div class="team-two__image">
+                                    <img src="{% static 'images/technology/custom.png' %}" alt="Custom Software and Product Development">
+                                </div><!-- /.team-two__image -->
+                            </div><!-- /.col-xl-4 -->
+                        </div><!-- /.row -->
+                    </div><!-- /.team-two__item -->
+
+
+                    <div class="team-two__item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+                        <div class="team-two__item__bg">
+                            <div class="team-two__item__bg__inner" style="background-image: url({% static 'images/shapes/team-card-bg-2-1.png' %});"></div>
+                        </div><!-- /.team-two__item__bg -->
+                        <div class="row gutter-y-10 align-items-center">
+                            <div class="col-xxl-6 col-lg-6">
+                                <h3 class="team-two__name"><a href="{% url 'team_details' %}">Cloud, Data & Intelligent Systems</a></h3>
+                            </div><!-- /.col-xl-5 -->
+                            <div class="col-xl-4 col-lg-3">
+                                <span class="team-two__designation">
+                                <ul>
+                                    <li>Cloud Computing & Infrastructure Solutions</li>
+                                    <li>Data Engineering & Data Science</li>
+                                    <li>AI and Machine Learning Solutions</li>
+                                </ul>
+                                </span>
+                            </div><!-- /.col-xl-3 -->
+                            <div class="col-xl-2 col-lg-3">
+                                <div class="team-two__image">
+                                    <img src="{% static 'images/technology/cloud.png' %}" alt="Cloud Data and Intelligent Systems">
+                                </div><!-- /.team-two__image -->
+                            </div><!-- /.col-xl-4 -->
+                        </div><!-- /.row -->
+                    </div><!-- /.team-two__item -->
+
+                    <div class="team-two__item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+                        <div class="team-two__item__bg">
+                            <div class="team-two__item__bg__inner" style="background-image: url({% static 'images/shapes/team-card-bg-2-1.png' %});"></div>
+                        </div><!-- /.team-two__item__bg -->
+                        <div class="row gutter-y-10 align-items-center">
+                            <div class="col-xxl-6 col-lg-6">
+                                <h3 class="team-two__name"><a href="{% url 'team_details' %}">Enterprise Systems & Integrations </a></h3>
+                            </div><!-- /.col-xl-5 -->
+                            <div class="col-xl-4 col-lg-3">
+                                <span class="team-two__designation">
+                                <ul>
+                                    <li>Enterprise Systems Integration</li>
+                                    <li>CRM Implementation & Customization</li>
+                                    <li>API Development & Third-Party Integrations</li>
+                                </ul>
+                                </span>
+                            </div><!-- /.col-xl-3 -->
+                            <div class="col-xl-2 col-lg-3">
+                                <div class="team-two__image">
+                                    <img src="{% static 'images/technology/enterprise.jpg' %}" alt="Enterprise Systems and Integrations">
+                                </div><!-- /.team-two__image -->
+                            </div><!-- /.col-xl-4 -->
+                        </div><!-- /.row -->
+                    </div><!-- /.team-two__item -->
+
+                    <div class="team-two__item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+                        <div class="team-two__item__bg">
+                            <div class="team-two__item__bg__inner" style="background-image: url({% static 'images/shapes/team-card-bg-2-1.png' %});"></div>
+                        </div><!-- /.team-two__item__bg -->
+                        <div class="row gutter-y-10 align-items-center">
+                            <div class="col-xxl-6 col-lg-6">
+                                <h3 class="team-two__name"><a href="{% url 'team_details' %}">Emerging & Advanced Technologies </a></h3>
+                            </div><!-- /.col-xl-5 -->
+                            <div class="col-xl-4 col-lg-3">
+                                <span class="team-two__designation">
+                                <ul>
+                                    <li>Blockchain Development</li>
+                                    <li>IoT & Hardware Engineering</li>
+                                    <li>Embedded Systems & Smart Device Solutions</li>
+                                </ul>
+                                </span>
+                            </div><!-- /.col-xl-3 -->
+                            <div class="col-xl-2 col-lg-3">
+                                <div class="team-two__image">
+                                    <img src="{% static 'images/technology/advanced.png' %}" alt="Emerging and Advanced Technologies">
+                                </div><!-- /.team-two__image -->
+                            </div><!-- /.col-xl-4 -->
+                        </div><!-- /.row -->
+                    </div><!-- /.team-two__item -->
+
+                     <div class="team-two__item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+                        <div class="team-two__item__bg">
+                            <div class="team-two__item__bg__inner" style="background-image: url({% static 'images/shapes/team-card-bg-2-1.png' %});"></div>
+                        </div><!-- /.team-two__item__bg -->
+                        <div class="row gutter-y-10 align-items-center">
+                            <div class="col-xxl-6 col-lg-6">
+                                <h3 class="team-two__name"><a href="{% url 'team_details' %}">IT Operations & Consulting </a></h3>
+                            </div><!-- /.col-xl-5 -->
+                            <div class="col-xl-4 col-lg-3">
+                                <span class="team-two__designation">
+                                <ul>
+                                    <li>Technology Consulting and Digital Strategy</li>
+                                    <li>Managed IT Services and Support</li>
+                                    <li>Call Center Systems Implementation</li>
+                                </ul>
+                                </span>
+                            </div><!-- /.col-xl-3 -->
+                            <div class="col-xl-2 col-lg-3">
+                                <div class="team-two__image">
+                                    <img src="{% static 'images/technology/it.png' %}" alt="IT Operations and Consulting">
+                                </div><!-- /.team-two__image -->
+                            </div><!-- /.col-xl-4 -->
+                        </div><!-- /.row -->
+                    </div><!-- /.team-two__item -->
+
+                     
+                </div><!-- /.team-two__wrapper -->
+            </div><!-- /.container -->
+            <img src="{% static 'images/shapes/team-shape-2-1.png' %}" alt="team-shape" class="team-two__shape">
+        </section><!-- /.team-two -->
+    </br>
+    </br>
+         <section class="ai-power section-space">
+            <div class="ai-power__bg-1 aigence-jarallax" data-jarallax data-speed="0.3s" style="background-image: url({% static 'images/backgrounds/ai-power-bg.jpg' %});"></div>
+            <div class="ai-power__bg-2" style="background-image: url({% static 'images/shapes/ai-power-bg-shape-1-1.png' %});"></div>
+            <img src="{% static 'images/shapes/ai-power-shape-1-1.png' %}" alt="shape" class="ai-power__shape-1">
+            <img src="{% static 'images/shapes/ai-power-shape-1-2.png' %}" alt="shape" class="ai-power__shape-2">
+            <div class="container">
+                <div class="row gutter-y-40 align-items-center">
+                    <h2  class="hero-two__title wow fadeInUp">Our Experience & Track Record</h2><!-- /.sec-title -->
+                    <div class="col-xl-6 wow fadeInUp" data-wow-duration="1500ms">
+                        <h3 class="ai-power__title">A Glimpse at Our Journey of Innovation & Growth <br> </h3><!-- /.ai-power__title -->
+                        <p>We've built our experience through steady deliveries and strong, lasting relations with customers. And our experience ends when the systems are working smoothly after launch. The things we track to gauge performance are: how many deliveries we done; how many customers repeat; how much tech experience we have in markets; how many countries we deliver to; and real product usage in all markets.</p>
+                        <li>No. of Apps Delivered</li>
+                        <li>Client Satisfaction Rate</li>
+                        <li>Total Experience in Years</li>
+                        <li>No. of skilled Developers</li>
+                        <li>No. of Clients Across the World</li>
+                        <li>No. of Apps Downloaded</li>
+                    </div><!-- /.col-xl-6 -->
+                    <div class="col-xl-6">
+                        <div class="ai-power__content">
+                            <div class="row gutter-y-30">
+                                <div class="col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                                    <div class="ai-power__card">
+                                        <span class="ai-power__card__icon"><i class="icon-performance"></i></span>
+                                        <h3 class="ai-power__card__title">Performance</h3>
+                                        <p class="ai-power__card__text">We prioritize strong security practices, secure coding standards, and data protection measures to keep your business safe from evolving cyber threats.</p>
+                                    </div><!-- /.ai-power__card -->
+                                </div><!-- /.col-md-6 -->
+                                <div class="col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+                                    <div class="ai-power__card">
+                                        <span class="ai-power__card__icon"><i class="icon-protection"></i></span>
+                                        <h3 class="ai-power__card__title">Security</h3>
+                                        <p class="ai-power__card__text">We build high-performing and scalable solutions optimized for speed, reliability, and seamless user experience to ensure your business runs efficiently at all times.</p>
+                                    </div><!-- /.ai-power__card -->
+                                </div><!-- /.col-md-6 -->
+                            </div><!-- /.row -->
+                        </br>
+                            <div class="ai-power__button wow fadeInUp" data-wow-duration="1500ms">
+                                <a href="{% url 'about' %}" class="aigence-btn">
+                                    <span class="aigence-btn__text">Discover More</span>
+                                    <span class="aigence-btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a><!-- /.aigence-btn -->
+                            </div><!-- /.ai-power__button -->
+                        </div><!-- /.ai-power__content -->
+                    </div><!-- /.col-xl-6 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.ai-power -->
+
+         
+
+        <section class="funfact-two funfact-two--about section-space-2">
+            <div class="funfact-two__bg-1" style="background-image: url({% static 'images/shapes/funfact-bg-shape-2-1.png' %});"></div><!-- /.funfact-two__bg -->
+            <div class="funfact-two__bg-2" style="background-image: url({% static 'images/shapes/funfact-bg-shape-2-2.png' %});"></div><!-- /.funfact-two__bg -->
+            <div class="container">
+                <div class="row gutter-y-30">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                        <div class="funfact-two__item">
+                            <div class="funfact-two__item__top">
+                                <div class="funfact-two__item__left">
+                                    <h2 class="funfact-two__item__count count-box">
+                                        <span> Core dependable</span>
+                                    </h2><!-- /.funfact-two__item__count -->
+                                    <h3 class="funfact-two__item__title">Active Customer</h3>
+                                </div><!-- /.funfact-two__item__left -->
+                                <img src="{% static 'images/shapes/funfact-shape-2-1.png' %}" alt="shape" class="funfact-two__item__shape">
+                            </div><!-- /.funfact-two__item__top -->
+                            <p class="funfact-two__item__text">
+Every project requires planning and the use of technology. We have been able to develop solutions that are stable, secure, and aligned to your business requirements.</p>
+                        </div><!-- /.funfact-two__item -->
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+                        <div class="funfact-two__item">
+                            <div class="funfact-two__item__top">
+                                <div class="funfact-two__item__left">
+                                    <h2 class="funfact-two__item__count count-box">
+                                        <span>Manage Time</span>
+                                    </h2><!-- /.funfact-two__item__count -->
+                                    <h3 class="funfact-two__item__title">Without compromising on Qualilty</h3>
+                                </div><!-- /.funfact-two__item__left -->
+                                <img src="{% static 'images/shapes/funfact-shape-2-2.png' %}" alt="shape" class="funfact-two__item__shape">
+                            </div><!-- /.funfact-two__item__top -->
+                            <p class="funfact-two__item__text">Use our AR app to view ancient ruins as they once stood, bringing history to life with detailed.</p>
+                        </div><!-- /.funfact-two__item -->
+                    </div><!-- /.col-lg-4 -->
+                    
+                </div><!-- /.row gutter-y-30 -->
+            </div><!-- /.container -->
+        </section><!-- /.funfact-two -->
+        </br></br>
+         <section class="gallery-one section-space-top-2">
+            <div class="container">
+                <h2 class="sec-title sec-title--center bw-split-in-left">Explore & Enjoy the <br> Photo Gallery</h2><!-- /.sec-title -->
+            </div><!-- /.container -->
+            <div class="container-fluid">
+                <div class="gallery-one__carousel aigence-owl__carousel aigence-owl__carousel--basic-nav owl-carousel owl-theme" data-owl-options='{
+				"items": 1,
+				"margin": 20,
+				"autoplay": true,
+				"loop": true,
+				"smartSpeed": 700,
+				"nav": false,
+				"dots": false,
+                "navText": ["<i class=\"icon-left-arrow\"></i>","<i class=\"icon-right-arrow\"></i>"],
+                "responsive": {
+                    "0": {
+                        "items": 1,
+                        "nav": true,
+                        "margin": 10
+                    },
+                    "576": {
+                        "items": 2,
+                        "margin": 20
+                    },
+                    "992": {
+                        "items": 3,
+                        "margin": 20
+                    },
+                    "1200": {
+                        "items": 4,
+                        "margin": 20
+                    },
+                    "1400": {
+                        "items": 4,
+                        "margin": 20
+                    },
+                    "1600": {
+                        "items": 5,
+                        "margin": 20
+                    }
+			    }
+			}'>
+                    <div class="item">
+                        <div class="gallery-one__card">
+                            <img src="{% static 'images/gallery/gallery-1-16.png' %}" alt="gallery">
+                            <div class="gallery-one__card__hover">
+                                <a href="{% static 'images/gallery/gallery-1-16.png' %}" class="img-popup">
+                                    <span class="gallery-one__card__icon"></span>
+                                </a>
+                            </div><!-- /.gallery-one__card__hover -->
+                        </div><!-- /.gallery-one__card -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="gallery-one__card">
+                            <img src="{% static 'images/gallery/gallery-1-17.png' %}" alt="gallery">
+                            <div class="gallery-one__card__hover">
+                                <a href="{% static 'images/gallery/gallery-1-17.png' %}" class="img-popup">
+                                    <span class="gallery-one__card__icon"></span>
+                                </a>
+                            </div><!-- /.gallery-one__card__hover -->
+                        </div><!-- /.gallery-one__card -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="gallery-one__card">
+                            <img src="{% static 'images/gallery/gallery-1-18.png' %}" alt="gallery">
+                            <div class="gallery-one__card__hover">
+                                <a href="{% static 'images/gallery/gallery-1-18.png' %}" class="img-popup">
+                                    <span class="gallery-one__card__icon"></span>
+                                </a>
+                            </div><!-- /.gallery-one__card__hover -->
+                        </div><!-- /.gallery-one__card -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="gallery-one__card">
+                            <img src="{% static 'images/gallery/gallery-1-19.png' %}" alt="gallery">
+                            <div class="gallery-one__card__hover">
+                                <a href="{% static 'images/gallery/gallery-1-19.png' %}" class="img-popup">
+                                    <span class="gallery-one__card__icon"></span>
+                                </a>
+                            </div><!-- /.gallery-one__card__hover -->
+                        </div><!-- /.gallery-one__card -->
+                    </div><!-- /.item -->
+                    
+                     
+                </div><!-- /.gallery-one__carousel -->
+            </div><!-- /.container-fluid -->
+        </section><!-- /.gallery-one -->
+         
+    </br></br></br></br></br></br></br>
+        <section class="newsletter ">
+            <div class="newsletter__wrapper">
+                <div class="newsletter__inner">
+                    <div class="newsletter__bg" style="background-image: url({% static 'images/shapes/newsletter-bg-shape-1-1.png' %});"></div><!-- /.newsletter__bg -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 order-1 order-lg-0 wow fadeInLeft" data-wow-duration="1500ms">
+                                <div class="newsletter__image">
+                                    <img src="{% static 'images/resources/newsletter-1-1.png' %}" alt="newsletter">
+                                </div><!-- /.newsletter__image -->
+                            </div><!-- /.col-lg-6 -->
+                            <div class="col-lg-6 order-0 order-lg-1 wow fadeInUp" data-wow-duration="1500ms">
+                                <div class="newsletter__content">
+                                    <h2 class="sec-title bw-split-in-left">Join our AI-driven Creative Community!</h2><!-- /.sec-title -->
+                                    <div class="customers">
+                                        <div class="customers__inner">
+                                            <div class="customers__image">
+                                                <img src="{% static 'images/resources/customer-1.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-2.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-3.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-4.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-5.png' %}" alt="customer">
+                                            </div><!-- /.customers__image -->
+                                        </div><!-- /.customers__inner -->
+                                        <p class="customers__text">3860 weekly subscribe</p>
+                                    </div><!-- /.customers -->
+                                    <form action="#" data-url="MAILCHIMP_FORM_URL" class="newsletter__form mc-form">
+                                        <input type="email" name="EMAIL" placeholder="Email Address">
+                                        <button type="submit" class="aigence-btn">
+                                            <span class="aigence-btn__text">Subscribe</span>
+                                        </button>
+                                    </form><!-- /. mc-form -->
+                                    <div class="mc-form__response"></div><!-- /.mc-form__response -->
+                                    <div class="newsletter__check-box">
+                                        <input type="checkbox" name="agree" id="agree">
+                                        <label for="agree">I Agree To The Terms, Privacy Policy.<span></span></label>
+                                    </div><!-- /.newsletter__check-box -->
+                                </div><!-- /.newsletter__content -->
+                            </div><!-- /.col-lg-6 -->
+                        </div><!-- /.row gutter-y-40 -->
+                    </div><!-- /.container -->
+                    <img src="{% static 'images/shapes/newsletter-shape-1-1.png' %}" alt="shape" class="newsletter__shape">
+                </div><!-- /.newsletter__inner -->
+            </div><!-- /.newsletter__wrapper -->
+        </section><!-- /.newsletter -->
+{% endblock %}
+

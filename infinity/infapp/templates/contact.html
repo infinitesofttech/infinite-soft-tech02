@@ -1,0 +1,215 @@
+﻿{% extends "index.html" %}
+{% load static %}
+{% block content %}
+        <section class="page-header">
+            <div class="page-header__bg" style="background-image: url({% static 'images/backgrounds/page-header-bg.jpg' %});"></div>
+            <div class="container">
+                <div class="page-header__content">
+                    <h2 class="page-header__title">Contact Us</h2>
+                    <ul class="aigence-breadcrumb list-unstyled">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><span>Contact Us</span></li>
+                    </ul><!-- /.aigence-breadcrumb list-unstyled -->
+                </div><!-- /.page-header__content -->
+            </div><!-- /.container -->
+        </section><!-- /.page-header -->
+
+        <section class="contact-page section-space">
+            <div class="container">
+                <div class="contact-page__content">
+                    <div class="contact-page__image wow fadeInUp" data-wow-duration="1500ms">
+                        <img src="{% static 'images/resources/contact-1-1.jpg' %}" alt="contact" class="contact-page__image__main">
+                        <div class="contact-page__logo">
+                            <img src="{% static 'images/shapes/contact-logo.png' %}" alt="logo">
+                        </div><!-- /.contact-page__logo -->
+                    </div><!-- /.contact-page__image -->
+                    <h4 class="contact-page__text wow fadeInUp" data-wow-duration="1500ms">
+                        Have a project in mind or need expert IT solutions? 
+                    </br>WeÃ¢â‚¬â„¢re here to help. At Infinite Soft Tech,
+                    </br> we believe in building strong relationships through clear communication and reliable support. 
+                </br> you have questions, need a consultation, or want to start your next digital project,
+            </br> our team is ready to assist you. Reach out to us today and letÃ¢â‚¬â„¢s create something innovative together.</span>
+                    </h4><!-- /.contact-page__text -->
+                </div><!-- /.contact-page__content -->
+            </div><!-- /.container -->
+        </section><!-- /.contact-page -->
+
+        
+
+       
+
+        <section class="contact-one  section-space-bottom">
+            <div class="contact-one__bg" style="background-image: url({% static 'images/shapes/contact-bg-shape-1-1.png' %});"></div>
+            <div class="container">
+                <div class="contact-one__content wow fadeInUp" data-wow-duration="1500ms">
+                    <h2 class="sec-title sec-title--center">Feel Free to Write us Anytime</h2><!-- /.sec-title -->
+                    <form class="contact-one__form contact-form-validated form-one" action="your-backend-url">
+
+                            <div class="form-one__group">
+
+                                <!-- Name -->
+                                <div class="form-one__control">
+                                    <input type="text" name="name" placeholder="Your Name" required>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="form-one__control">
+                                    <input type="email" name="email" placeholder="Email Address" required>
+                                </div>
+
+                                <!-- Mobile -->
+                                <div class="form-one__control">
+                                    <input type="tel" name="mobile" placeholder="Mobile Number" required>
+                                </div>
+
+                                <!-- Service Dropdown -->
+                                <div class="form-one__control">
+                                    <select class="selectpicker" name="service" required>
+                                        <option value="">Select Service</option>
+                                        <option>Mobile Development</option>
+                                        <option>App Development</option>
+                                        <option>QA Services</option>
+                                        <option>Requirement Analysis</option>
+                                        <option>Digital Marketing Service</option>
+                                        <option>Support and Maintenance Expert</option>
+                                        <option>Business Analysis</option>
+                                    </select>
+                                </div>
+
+                                <!-- Budget Dropdown -->
+                                <div class="form-one__control">
+                                    <select class="selectpicker" name="budget" required>
+                                        <option value="">Select Budget</option>
+                                        <option>Below $500</option>
+                                        <option>$1K to $10K</option>
+                                        <option>$10K to $50K</option>
+                                        <option>Above $50K</option>
+                                    </select>
+                                </div>
+
+                                <!-- Project Type Dropdown -->
+                                <div class="form-one__control">
+                                    <select class="selectpicker" name="project_type" required>
+                                        <option value="">Select Project Type</option>
+                                        <option>New Project</option>
+                                        <option>Existing Project</option>
+                                        <option>Support & Maintenance</option>
+                                    </select>
+                                </div>
+
+                                <!-- Message -->
+                                <div class="form-one__control form-one__control--full">
+                                    <textarea name="message" placeholder="Write a Message"></textarea>
+                                </div>
+
+                                <!-- Button -->
+                                <div class="form-one__control form-one__control--full text-center">
+                                    <button type="submit" class="aigence-btn aigence-btn--black">
+                                        <span class="aigence-btn__text">Send a Message</span>
+                                        <span class="aigence-btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </form><!-- /.contact-one__form -->
+                    </br></br>
+                </div><!-- /.contact-one__content -->
+            </div><!-- /.container -->
+        </section><!-- /.contact-one -->
+
+     
+
+         <section class="contact-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                        <div class="contact-info__card">
+                            <div class="contact-info__icon-box">
+                                <span class="contact-info__icon"><i class="icon-location-2"></i></span>
+                            </div>
+                            <h3 class="contact-info__title">Our Address</h3>
+                            <p class="contact-info__text">205 Emerald Complex CG Road, <br> Ahmedabad 380009</p>
+                        </div><!-- /.contact-info__card -->
+                    </div><!-- /.col-xl-3 col-md-6 -->
+                    <div class="col-xl-3 col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+                        <div class="contact-info__card">
+                            <div class="contact-info__icon-box">
+                                <span class="contact-info__icon"><i class="icon-email-2"></i></span>
+                            </div>
+                            <h3 class="contact-info__title">info@infinitesofttech.com</h3>
+                            <p class="contact-info__text">Email us anytime for any kind <br> ofquety.</p>
+                        </div><!-- /.contact-info__card -->
+                    </div><!-- /.col-xl-3 col-md-6 -->
+                    <div class="col-xl-3 col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+                        <div class="contact-info__card">
+                            <div class="contact-info__icon-box">
+                                <span class="contact-info__icon"><i class="icon-phone-3"></i></span>
+                            </div>
+                            <h3 class="contact-info__title">Mob: +91 9409259294</h3>
+                            <p class="contact-info__text">24/7/365 priority Live Chat and <br> ticketing support.</p>
+                        </div><!-- /.contact-info__card -->
+                    </div><!-- /.col-xl-3 col-md-6 -->
+                    <div class="col-xl-3 col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="300ms">
+                        <div class="contact-info__card">
+                            <div class="contact-info__icon-box">
+                                <span class="contact-info__icon"><i class="icon-clock"></i></span>
+                            </div>
+                            <h3 class="contact-info__title">Opening Hour</h3>
+                            <p class="contact-info__text">
+                                <span>Mon-Fri: 9AM Ã¢â‚¬â€œ 7PM</span> <br>
+                                <span>Saturday: 9AM Ã¢â‚¬â€œ 4M</span>
+                            </p>
+                        </div><!-- /.contact-info__card -->
+                    </div><!-- /.col-xl-3 col-md-6 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.contact-info -->
+
+        </br></br></br></br></br></br></br></br></br>
+
+        <section class="newsletter ">
+            <div class="newsletter__wrapper">
+                <div class="newsletter__inner">
+                    <div class="newsletter__bg" style="background-image: url({% static 'images/shapes/newsletter-bg-shape-1-1.png' %});"></div><!-- /.newsletter__bg -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 order-1 order-lg-0 wow fadeInLeft" data-wow-duration="1500ms">
+                                <div class="newsletter__image">
+                                    <img src="{% static 'images/resources/newsletter-1-1.png' %}" alt="newsletter">
+                                </div><!-- /.newsletter__image -->
+                            </div><!-- /.col-lg-6 -->
+                            <div class="col-lg-6 order-0 order-lg-1 wow fadeInUp" data-wow-duration="1500ms">
+                                <div class="newsletter__content">
+                                    <h2 class="sec-title bw-split-in-left">Join our AI-driven Creative Community!</h2><!-- /.sec-title -->
+                                    <div class="customers">
+                                        <div class="customers__inner">
+                                            <div class="customers__image">
+                                                <img src="{% static 'images/resources/customer-1.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-2.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-3.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-4.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-5.png' %}" alt="customer">
+                                            </div><!-- /.customers__image -->
+                                        </div><!-- /.customers__inner -->
+                                        <p class="customers__text">3860 weekly subscribe</p>
+                                    </div><!-- /.customers -->
+                                    <form action="#" data-url="MAILCHIMP_FORM_URL" class="newsletter__form mc-form">
+                                        <input type="email" name="EMAIL" placeholder="Email Address">
+                                        <button type="submit" class="aigence-btn">
+                                            <span class="aigence-btn__text">Subscribe</span>
+                                        </button>
+                                    </form><!-- /. mc-form -->
+                                    <div class="mc-form__response"></div><!-- /.mc-form__response -->
+                                    <div class="newsletter__check-box">
+                                        <input type="checkbox" name="agree" id="agree">
+                                        <label for="agree">I Agree To The Terms, Privacy Policy.<span></span></label>
+                                    </div><!-- /.newsletter__check-box -->
+                                </div><!-- /.newsletter__content -->
+                            </div><!-- /.col-lg-6 -->
+                        </div><!-- /.row gutter-y-40 -->
+                    </div><!-- /.container -->
+                    <img src="{% static 'images/shapes/newsletter-shape-1-1.png' %}" alt="shape" class="newsletter__shape">
+                </div><!-- /.newsletter__inner -->
+            </div><!-- /.newsletter__wrapper -->
+        </section><!-- /.newsletter -->
+{% endblock %}

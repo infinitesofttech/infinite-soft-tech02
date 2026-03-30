@@ -1,0 +1,274 @@
+﻿{% extends "index.html" %}
+{% load static %}
+{% block content %}
+        <section class="page-header">
+            <div class="page-header__bg" style="background-image: url({% static 'images/backgrounds/page-header-bg.jpg' %});"></div>
+            <div class="container">
+                <div class="page-header__content">
+                    <h2 class="page-header__title">Services Carousel 03</h2>
+                    <ul class="aigence-breadcrumb list-unstyled">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><span>our services</span></li>
+                    </ul><!-- /.aigence-breadcrumb list-unstyled -->
+                </div><!-- /.page-header__content -->
+            </div><!-- /.container -->
+        </section><!-- /.page-header -->
+
+        <section class="services-page section-space">
+            <div class="container">
+                <div class="services-page__carousel aigence-owl__carousel aigence-owl__carousel--with-shadow aigence-owl__carousel--basic-nav owl-carousel owl-theme" data-owl-options='{
+            "items": 1,
+            "margin": 10,
+            "loop": true,
+            "smartSpeed": 700,
+            "nav": false,
+            "dots": true,
+            "navText": ["<i class=\"icon-left-arrow\"></i>","<i class=\"icon-right-arrow\"></i>"],
+            "autoplay": true,
+            "responsive": {
+                "0": {
+                    "items": 1,
+                    "nav": true,
+                    "dots": false,
+                    "margin": 10
+                },
+                "768": {
+                    "items": 2,
+                    "margin": 30
+                },
+                "1200": {
+                    "items": 3,
+                    "margin": 30
+                }
+            }
+        }'>
+                    <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                        <div class="service-card-three">
+                            <div class="service-card-three__bg">
+                                <img src="{% static 'images/shapes/service-card-shape-3-1.png' %}" alt="shape" class="service-card-three__shape">
+                            </div><!-- /.service-card-three__bg -->
+                            <div class="service-card-three__content">
+                                <h3 class="service-card-three__title"><a href="{% url 'service_details' %}">AI-Data <br> Analytics</a></h3>
+                                <img src="{% static 'images/services/service-3-1.png' %}" alt="AI-Data <br> Analytics" class="service-card-three__image">
+                                <p class="service-card-three__text">We extract actionable insights from data using machine learning and predictive analytics.</p>
+                                <a href="{% url 'service_details' %}" class="service-card-three__btn">
+                                    <span class="service-card-three__btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a><!-- /.service-card-three__btn -->
+                            </div><!-- /.service-card-three__content -->
+                        </div><!-- /.service-card-three -->
+                    </div><!-- /.item -->
+                    <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+                        <div class="service-card-three">
+                            <div class="service-card-three__bg">
+                                <img src="{% static 'images/shapes/service-card-shape-3-1.png' %}" alt="shape" class="service-card-three__shape">
+                            </div><!-- /.service-card-three__bg -->
+                            <div class="service-card-three__content">
+                                <h3 class="service-card-three__title"><a href="{% url 'service_details' %}">AI <br> Development</a></h3>
+                                <img src="{% static 'images/services/service-3-2.png' %}" alt="AI <br> Development" class="service-card-three__image">
+                                <p class="service-card-three__text">We build intelligent systems tailored with deep learning, neural networks, scalable software.</p>
+                                <a href="{% url 'service_details' %}" class="service-card-three__btn">
+                                    <span class="service-card-three__btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a><!-- /.service-card-three__btn -->
+                            </div><!-- /.service-card-three__content -->
+                        </div><!-- /.service-card-three -->
+                    </div><!-- /.item -->
+                    <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+                        <div class="service-card-three">
+                            <div class="service-card-three__bg">
+                                <img src="{% static 'images/shapes/service-card-shape-3-1.png' %}" alt="shape" class="service-card-three__shape">
+                            </div><!-- /.service-card-three__bg -->
+                            <div class="service-card-three__content">
+                                <h3 class="service-card-three__title"><a href="{% url 'service_details' %}">AI-Design <br> Mystery</a></h3>
+                                <img src="{% static 'images/services/service-3-3.png' %}" alt="AI-Design <br> Mystery" class="service-card-three__image">
+                                <p class="service-card-three__text">We craft futuristic AI interfaces blending creativity, technology, interactive elements, and design.</p>
+                                <a href="{% url 'service_details' %}" class="service-card-three__btn">
+                                    <span class="service-card-three__btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a><!-- /.service-card-three__btn -->
+                            </div><!-- /.service-card-three__content -->
+                        </div><!-- /.service-card-three -->
+                    </div><!-- /.item -->
+                    <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                        <div class="service-card-three">
+                            <div class="service-card-three__bg">
+                                <img src="{% static 'images/shapes/service-card-shape-3-1.png' %}" alt="shape" class="service-card-three__shape">
+                            </div><!-- /.service-card-three__bg -->
+                            <div class="service-card-three__content">
+                                <h3 class="service-card-three__title"><a href="{% url 'service_details' %}">AI <br> Integration</a></h3>
+                                <img src="{% static 'images/services/service-3-4.png' %}" alt="AI <br> Integration" class="service-card-three__image">
+                                <p class="service-card-three__text">We seamlessly connect AI with existing platforms for optimized workflows, improved efficiency.</p>
+                                <a href="{% url 'service_details' %}" class="service-card-three__btn">
+                                    <span class="service-card-three__btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a><!-- /.service-card-three__btn -->
+                            </div><!-- /.service-card-three__content -->
+                        </div><!-- /.service-card-three -->
+                    </div><!-- /.item -->
+                    <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+                        <div class="service-card-three">
+                            <div class="service-card-three__bg">
+                                <img src="{% static 'images/shapes/service-card-shape-3-1.png' %}" alt="shape" class="service-card-three__shape">
+                            </div><!-- /.service-card-three__bg -->
+                            <div class="service-card-three__content">
+                                <h3 class="service-card-three__title"><a href="{% url 'service_details' %}">AI <br> Chatbots</a></h3>
+                                <img src="{% static 'images/services/service-3-5.png' %}" alt="AI <br> Chatbots" class="service-card-three__image">
+                                <p class="service-card-three__text">We design conversational agents to automate customer engagement, support queries.</p>
+                                <a href="{% url 'service_details' %}" class="service-card-three__btn">
+                                    <span class="service-card-three__btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a><!-- /.service-card-three__btn -->
+                            </div><!-- /.service-card-three__content -->
+                        </div><!-- /.service-card-three -->
+                    </div><!-- /.item -->
+                    <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+                        <div class="service-card-three">
+                            <div class="service-card-three__bg">
+                                <img src="{% static 'images/shapes/service-card-shape-3-1.png' %}" alt="shape" class="service-card-three__shape">
+                            </div><!-- /.service-card-three__bg -->
+                            <div class="service-card-three__content">
+                                <h3 class="service-card-three__title"><a href="{% url 'service_details' %}">AI-Driven <br> Automation</a></h3>
+                                <img src="{% static 'images/services/service-3-6.png' %}" alt="AI-Driven <br> Automation" class="service-card-three__image">
+                                <p class="service-card-three__text">We streamline operations using intelligent task automation, smart systems, real-time monitoring.</p>
+                                <a href="{% url 'service_details' %}" class="service-card-three__btn">
+                                    <span class="service-card-three__btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a><!-- /.service-card-three__btn -->
+                            </div><!-- /.service-card-three__content -->
+                        </div><!-- /.service-card-three -->
+                    </div><!-- /.item -->
+                    <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                        <div class="service-card-three">
+                            <div class="service-card-three__bg">
+                                <img src="{% static 'images/shapes/service-card-shape-3-1.png' %}" alt="shape" class="service-card-three__shape">
+                            </div><!-- /.service-card-three__bg -->
+                            <div class="service-card-three__content">
+                                <h3 class="service-card-three__title"><a href="{% url 'service_details' %}">AI-Data <br> Analytics</a></h3>
+                                <img src="{% static 'images/services/service-3-1.png' %}" alt="AI-Data <br> Analytics" class="service-card-three__image">
+                                <p class="service-card-three__text">We extract actionable insights from data using machine learning and predictive analytics.</p>
+                                <a href="{% url 'service_details' %}" class="service-card-three__btn">
+                                    <span class="service-card-three__btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a><!-- /.service-card-three__btn -->
+                            </div><!-- /.service-card-three__content -->
+                        </div><!-- /.service-card-three -->
+                    </div><!-- /.item -->
+                    <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+                        <div class="service-card-three">
+                            <div class="service-card-three__bg">
+                                <img src="{% static 'images/shapes/service-card-shape-3-1.png' %}" alt="shape" class="service-card-three__shape">
+                            </div><!-- /.service-card-three__bg -->
+                            <div class="service-card-three__content">
+                                <h3 class="service-card-three__title"><a href="{% url 'service_details' %}">AI <br> Development</a></h3>
+                                <img src="{% static 'images/services/service-3-2.png' %}" alt="AI <br> Development" class="service-card-three__image">
+                                <p class="service-card-three__text">We build intelligent systems tailored with deep learning, neural networks, scalable software.</p>
+                                <a href="{% url 'service_details' %}" class="service-card-three__btn">
+                                    <span class="service-card-three__btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a><!-- /.service-card-three__btn -->
+                            </div><!-- /.service-card-three__content -->
+                        </div><!-- /.service-card-three -->
+                    </div><!-- /.item -->
+                    <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+                        <div class="service-card-three">
+                            <div class="service-card-three__bg">
+                                <img src="{% static 'images/shapes/service-card-shape-3-1.png' %}" alt="shape" class="service-card-three__shape">
+                            </div><!-- /.service-card-three__bg -->
+                            <div class="service-card-three__content">
+                                <h3 class="service-card-three__title"><a href="{% url 'service_details' %}">AI-Design <br> Mystery</a></h3>
+                                <img src="{% static 'images/services/service-3-3.png' %}" alt="AI-Design <br> Mystery" class="service-card-three__image">
+                                <p class="service-card-three__text">We craft futuristic AI interfaces blending creativity, technology, interactive elements, and design.</p>
+                                <a href="{% url 'service_details' %}" class="service-card-three__btn">
+                                    <span class="service-card-three__btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a><!-- /.service-card-three__btn -->
+                            </div><!-- /.service-card-three__content -->
+                        </div><!-- /.service-card-three -->
+                    </div><!-- /.item -->
+                    <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                        <div class="service-card-three">
+                            <div class="service-card-three__bg">
+                                <img src="{% static 'images/shapes/service-card-shape-3-1.png' %}" alt="shape" class="service-card-three__shape">
+                            </div><!-- /.service-card-three__bg -->
+                            <div class="service-card-three__content">
+                                <h3 class="service-card-three__title"><a href="{% url 'service_details' %}">AI <br> Integration</a></h3>
+                                <img src="{% static 'images/services/service-3-4.png' %}" alt="AI <br> Integration" class="service-card-three__image">
+                                <p class="service-card-three__text">We seamlessly connect AI with existing platforms for optimized workflows, improved efficiency.</p>
+                                <a href="{% url 'service_details' %}" class="service-card-three__btn">
+                                    <span class="service-card-three__btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a><!-- /.service-card-three__btn -->
+                            </div><!-- /.service-card-three__content -->
+                        </div><!-- /.service-card-three -->
+                    </div><!-- /.item -->
+                    <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+                        <div class="service-card-three">
+                            <div class="service-card-three__bg">
+                                <img src="{% static 'images/shapes/service-card-shape-3-1.png' %}" alt="shape" class="service-card-three__shape">
+                            </div><!-- /.service-card-three__bg -->
+                            <div class="service-card-three__content">
+                                <h3 class="service-card-three__title"><a href="{% url 'service_details' %}">AI <br> Chatbots</a></h3>
+                                <img src="{% static 'images/services/service-3-5.png' %}" alt="AI <br> Chatbots" class="service-card-three__image">
+                                <p class="service-card-three__text">We design conversational agents to automate customer engagement, support queries.</p>
+                                <a href="{% url 'service_details' %}" class="service-card-three__btn">
+                                    <span class="service-card-three__btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a><!-- /.service-card-three__btn -->
+                            </div><!-- /.service-card-three__content -->
+                        </div><!-- /.service-card-three -->
+                    </div><!-- /.item -->
+                    <div class="item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+                        <div class="service-card-three">
+                            <div class="service-card-three__bg">
+                                <img src="{% static 'images/shapes/service-card-shape-3-1.png' %}" alt="shape" class="service-card-three__shape">
+                            </div><!-- /.service-card-three__bg -->
+                            <div class="service-card-three__content">
+                                <h3 class="service-card-three__title"><a href="{% url 'service_details' %}">AI-Driven <br> Automation</a></h3>
+                                <img src="{% static 'images/services/service-3-6.png' %}" alt="AI-Driven <br> Automation" class="service-card-three__image">
+                                <p class="service-card-three__text">We streamline operations using intelligent task automation, smart systems, real-time monitoring.</p>
+                                <a href="{% url 'service_details' %}" class="service-card-three__btn">
+                                    <span class="service-card-three__btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a><!-- /.service-card-three__btn -->
+                            </div><!-- /.service-card-three__content -->
+                        </div><!-- /.service-card-three -->
+                    </div><!-- /.item -->
+                </div><!-- /.services-page__carousel -->
+            </div><!-- /.container -->
+        </section><!-- /.services-page section-space -->
+
+        <section class="newsletter ">
+            <div class="newsletter__wrapper">
+                <div class="newsletter__inner">
+                    <div class="newsletter__bg" style="background-image: url({% static 'images/shapes/newsletter-bg-shape-1-1.png' %});"></div><!-- /.newsletter__bg -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 order-1 order-lg-0 wow fadeInLeft" data-wow-duration="1500ms">
+                                <div class="newsletter__image">
+                                    <img src="{% static 'images/resources/newsletter-1-1.png' %}" alt="newsletter">
+                                </div><!-- /.newsletter__image -->
+                            </div><!-- /.col-lg-6 -->
+                            <div class="col-lg-6 order-0 order-lg-1 wow fadeInUp" data-wow-duration="1500ms">
+                                <div class="newsletter__content">
+                                    <h2 class="sec-title bw-split-in-left">Join our AI-driven Creative Community!</h2><!-- /.sec-title -->
+                                    <div class="customers">
+                                        <div class="customers__inner">
+                                            <div class="customers__image">
+                                                <img src="{% static 'images/resources/customer-1.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-2.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-3.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-4.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-5.png' %}" alt="customer">
+                                            </div><!-- /.customers__image -->
+                                        </div><!-- /.customers__inner -->
+                                        <p class="customers__text">3860 weekly subscribe</p>
+                                    </div><!-- /.customers -->
+                                    <form action="#" data-url="MAILCHIMP_FORM_URL" class="newsletter__form mc-form">
+                                        <input type="email" name="EMAIL" placeholder="Email Address">
+                                        <button type="submit" class="aigence-btn">
+                                            <span class="aigence-btn__text">Subscribe</span>
+                                        </button>
+                                    </form><!-- /. mc-form -->
+                                    <div class="mc-form__response"></div><!-- /.mc-form__response -->
+                                    <div class="newsletter__check-box">
+                                        <input type="checkbox" name="agree" id="agree">
+                                        <label for="agree">I Agree To The Terms, Privacy Policy.<span></span></label>
+                                    </div><!-- /.newsletter__check-box -->
+                                </div><!-- /.newsletter__content -->
+                            </div><!-- /.col-lg-6 -->
+                        </div><!-- /.row gutter-y-40 -->
+                    </div><!-- /.container -->
+                    <img src="{% static 'images/shapes/newsletter-shape-1-1.png' %}" alt="shape" class="newsletter__shape">
+                </div><!-- /.newsletter__inner -->
+            </div><!-- /.newsletter__wrapper -->
+        </section><!-- /.newsletter -->
+{% endblock %}

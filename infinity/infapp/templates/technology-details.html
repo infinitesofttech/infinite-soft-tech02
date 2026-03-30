@@ -1,0 +1,246 @@
+{% extends "index.html" %}
+{% load static %}
+{% block content %}
+        <section class="page-header">
+            <div class="page-header__bg" style="background-image: url({% static 'images/backgrounds/page-header-bg.jpg' %});"></div>
+            <div class="container">
+                <div class="page-header__content">
+                    <h2 class="page-header__title">Technology Details</h2>
+                    <ul class="aigence-breadcrumb list-unstyled">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'technology' %}">Technology</a></li>
+                        <li><span>Technology Details</span></li>
+                    </ul><!-- /.aigence-breadcrumb list-unstyled -->
+                </div><!-- /.page-header__content -->
+            </div><!-- /.container -->
+        </section><!-- /.page-header -->
+
+        <section class="service-details section-space">
+            <div class="container">
+                <div class="row gutter-y-50">
+                    <div class="col-md-12 col-lg-4">
+                        <div class="service-sidebar">
+                            <div class="service-sidebar__pages service-sidebar__single wow fadeInLeft" data-wow-duration="1500ms">
+                                <h3 class="service-sidebar__pages__title">Technology Stack</h3><!-- /.service-sidebar__pages__title -->
+                                <div class="service-sidebar__pages__list">
+                                    <ul class="list-unstyled service-sidebar__nav">
+                                        <li><a href="{% url 'technology_backend' %}">Backend Technology</a></li>
+                                        <li><a href="{% url 'technology_frontend' %}">Frontend Technology</a></li>
+                                        <li><a href="{% url 'technology_mobile' %}">Mobile</a></li>
+                                        <li><a href="{% url 'technology_cloud_devops' %}">Cloud & DevOps</a></li>
+                                        <li><a href="{% url 'technology_database' %}">Database</a></li>
+                                        <li><a href="{% url 'technology_testing' %}">Testing</a></li>
+                                        <li><a href="{% url 'technology_other' %}">Other</a></li>
+                                        <li><a href="{% url 'technology' %}">View All Technology</a></li>
+                                    </ul><!-- /.list-unstyled service-sidebar__nav -->
+                                </div><!-- /.service-sidebar__pages__list -->
+                            </div><!-- /.service-sidebar__pages service-sidebar__single -->
+                            <div class="service-sidebar__contact service-sidebar__single wow fadeInLeft" data-wow-duration="1500ms">
+                                <div class="service-sidebar__contact__content" style="background: linear-gradient(135deg, #a259ff 0%, #377dff 100%); border-radius: 24px; padding: 24px 16px; text-align: center; color: #fff;">
+                                    <h3 class="service-sidebar__contact__title" style="font-size: 1.5rem; font-weight: 700; margin-bottom: 18px;">Explore the technologies we use to build products, platforms, apps, and business systems.</h3>
+                                    <a href="{% url 'contact' %}" class="service-sidebar__contact__btn" style="background: #fff; color: #222; font-weight: 700; border-radius: 24px; padding: 10px 28px; display: inline-block; margin-bottom: 18px;">START YOUR PROJECT</a>
+                                </div><!-- /.service-sidebar__contact__content -->
+                                <img src="{% static 'images/services/gcloud.png' %}" alt="Technology Circular Stack" class="service-sidebar__contact__image" style="width:100%;max-width:350px;display:block;margin:auto;">
+                                <div class="service-sidebar__contact__shape"></div><!-- /.service-sidebar__contact__shape -->
+                            </div><!-- /.service-sidebar__contact service-sidebar__single -->
+                        </div><!-- /.sidebar -->
+                    </div><!-- /.col-md-12 col-lg-4 -->
+                    <div class="col-md-12 col-lg-8">
+                        <div class="service-details__content" style="padding: 32px 24px 32px 24px;">
+                            <div class="service-details__thumbnail wow fadeInUp" data-wow-duration="1500ms" style="margin-bottom: 28px;">
+                                <img src="{% static 'images/technology/service-d-1-4.jpg' %}" alt="Backend Technology" style="border-radius: 10px; max-width: 100%; height: auto;">
+                            </div><!-- /.service-details__thumbnail -->
+                            <div id="backend-overview" class="service-details__box service-details__box--1 wow fadeInUp" data-wow-duration="1500ms" style="margin-bottom: 24px;">
+                                <h3 class="service-details__title" style="margin-bottom: 14px;">Technology Stack for Real Business Products</h3><!-- /.service-details__title -->
+                                <p class="service-details__text" style="margin-bottom: 0.8em; line-height: 1.7;">
+                                    Infinite Soft Tech selects technologies around the product outcome, not around trends. We combine backend, frontend, mobile, database, testing, cloud, and commerce-ready tools so websites, software products, admin systems, marketplaces, and mobile apps are practical to launch and easy to scale.
+                                </p><!-- /.service-details__text -->
+                            </div><!-- /.service-details__box -->
+                            <div class="service-details__box service-details__box--2 wow fadeInUp" data-wow-duration="1500ms" style="margin-bottom: 24px;">
+                                <h3 class="service-details__sm-title service-details__sm-title--base" style="margin-bottom: 12px;">How we choose the right technology stack</h3><!-- /.service-details__title -->
+                                <p class="service-details__text" style="margin-bottom: 0.8em; line-height: 1.7;">
+                                    Every technology choice starts with the project model: what the product does, who uses it, what integrations it depends on, and how the team will maintain it after launch. That keeps delivery practical instead of over-engineered.
+                                </p><!-- /.service-details__text -->
+                                <ul class="service-details__benefits__list list-unstyled" style="margin-bottom: 0;">
+                                    <li style="margin-bottom: 8px;">
+                                        <span class="service-details__benefits__list__icon"><i class="icon-check"></i></span>
+                                        Product-led delivery for web, mobile, and third-party integrations
+                                    </li>
+                                    <li style="margin-bottom: 8px;">
+                                        <span class="service-details__benefits__list__icon"><i class="icon-check"></i></span>
+                                        Clean user experience, admin flow, and reporting support for business teams
+                                    </li>
+                                    <li style="margin-bottom: 8px;">
+                                        <span class="service-details__benefits__list__icon"><i class="icon-check"></i></span>
+                                        Secure data handling, performance planning, and release readiness
+                                    </li>
+                                    <li style="margin-bottom: 8px;">
+                                        <span class="service-details__benefits__list__icon"><i class="icon-check"></i></span>
+                                        Stack selection based on growth stage, budget, timelines, and maintenance needs
+                                    </li>
+                                </ul><!-- /service-details__benefits__list -->
+                            </div><!-- /.service-details__box -->
+                            <div class="service-details__why-choose" style="margin-bottom: 24px;">
+                                <h3 class="service-details__title wow fadeInUp" data-wow-duration="1500ms" style="margin-bottom: 12px;">Why clients choose our technology approach</h3>
+                                <!-- /.service-details__title -->
+                                <div class="row gutter-y-30" style="row-gap: 14px;">
+                                    <div class="col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                                        <div class="service-details__why-choose__card">
+                                            <div class="service-details__why-choose__icon-box">
+                                                <span class="service-details__why-choose__icon"><i class="icon-light"></i></span>
+                                            </div><!-- /.service-details__why-choose__icon-box -->
+                                            <div class="service-details__why-choose__content">
+                                                <h3 class="service-details__why-choose__title">Architecture built around the product</h3>
+                                                <p class="service-details__why-choose__text">We map the technology stack to actual workflows, user roles, data rules, and commercial goals.</p>
+                                            </div><!-- /.service-details__why-choose__content -->
+                                        </div><!-- /.service-details__why-choose__card -->
+                                    </div><!-- /.col-md-6 -->
+                                    <div class="col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+                                        <div class="service-details__why-choose__card">
+                                            <div class="service-details__why-choose__icon-box">
+                                                <span class="service-details__why-choose__icon"><i class="icon-user-3"></i></span>
+                                            </div><!-- /.service-details__why-choose__icon-box -->
+                                            <div class="service-details__why-choose__content">
+                                                <h3 class="service-details__why-choose__title">Production-ready delivery</h3>
+                                                <p class="service-details__why-choose__text">Our work covers interfaces, APIs, data layers, testing, deployment flow, and future scaling paths.</p>
+                                            </div><!-- /.service-details__why-choose__content -->
+                                        </div><!-- /.service-details__why-choose__card -->
+                                    </div><!-- /.col-md-6 -->
+                                </div><!-- /.row gutter-y-30 -->
+                            </div><!-- /.service-details__why-choose -->
+                            <div class="service-details__benefits" style="margin-bottom: 24px;">
+                                <div class="row gutter-y-30" style="row-gap: 14px;">
+                                    <div class="service-details__benefits__col-1 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                                        <div class="service-details__benefits__image">
+                                            <img src="{% static 'images/technology/service-d-benefits-1-1.jpg' %}" alt="Technology delivery benefits">
+                                        </div><!-- /.service-details__benefits__image -->
+                                    </div><!-- /.service-details__benefits__col-1 -->
+                                    <div class="service-details__benefits__col-2 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+                                        <div class="service-details__benefits__content">
+                                            <h3 class="service-details__benefits__title service-details__sm-title">What your technology delivery includes</h3>
+                                            <p class="service-details__benefits__text">We build with the same project-first mindset used across your site work, software products, and client solutions.</p>
+                                            <h4 class="service-details__benefits__sm-title">Core delivery scope</h4>
+                                            <ul class="service-details__benefits__list list-unstyled">
+                                                <li>
+                                                    <span class="service-details__benefits__list__icon"><i class="icon-check"></i></span>
+                                                    Clear interface layers, secure APIs, and structured business logic
+                                                </li>
+                                                <li>
+                                                    <span class="service-details__benefits__list__icon"><i class="icon-check"></i></span>
+                                                    Database planning, performance-minded queries, and release readiness
+                                                </li>
+                                                <li>
+                                                    <span class="service-details__benefits__list__icon"><i class="icon-check"></i></span>
+                                                    Admin workflows, reporting, testing coverage, and integrations
+                                                </li>
+                                                <li>
+                                                    <span class="service-details__benefits__list__icon"><i class="icon-check"></i></span>
+                                                    Handover-ready code for future upgrades and long-term support
+                                                </li>
+                                            </ul><!-- /service-details__benefits__list -->
+                                        </div><!-- /.service-details__benefits__content -->
+                                    </div><!-- /.service-details__benefits__col-2 -->
+                                </div><!-- /.row gutter-y-30 -->
+                            </div><!-- /.service-details__benefits -->
+                            <div class="service-details__box wow fadeInUp" data-wow-duration="1500ms" style="margin-bottom: 24px;">
+                                <h3 class="service-details__sm-title service-details__sm-title--base" style="margin-bottom: 12px;">Explore Technology Categories in Individual Pages</h3>
+                                <p class="service-details__text" style="margin-bottom: 0.8em; line-height: 1.7;">Detailed technology content has been moved into dedicated pages so visitors can open each stack directly with cleaner navigation and focused content.</p>
+                                <ul class="service-details__benefits__list list-unstyled" style="margin-bottom: 0;">
+                                    <li style="margin-bottom: 8px;"><span class="service-details__benefits__list__icon"><i class="icon-check"></i></span><a href="{% url 'technology_backend' %}">Backend Technology</a></li>
+                                    <li style="margin-bottom: 8px;"><span class="service-details__benefits__list__icon"><i class="icon-check"></i></span><a href="{% url 'technology_frontend' %}">Frontend Technology</a></li>
+                                    <li style="margin-bottom: 8px;"><span class="service-details__benefits__list__icon"><i class="icon-check"></i></span><a href="{% url 'technology_mobile' %}">Mobile Technology</a></li>
+                                    <li style="margin-bottom: 8px;"><span class="service-details__benefits__list__icon"><i class="icon-check"></i></span><a href="{% url 'technology_cloud_devops' %}">Cloud & DevOps</a></li>
+                                    <li style="margin-bottom: 8px;"><span class="service-details__benefits__list__icon"><i class="icon-check"></i></span><a href="{% url 'technology_database' %}">Database Technology</a></li>
+                                    <li style="margin-bottom: 8px;"><span class="service-details__benefits__list__icon"><i class="icon-check"></i></span><a href="{% url 'technology_testing' %}">Testing Technology</a></li>
+                                    <li style="margin-bottom: 8px;"><span class="service-details__benefits__list__icon"><i class="icon-check"></i></span><a href="{% url 'technology_other' %}">Other Technology</a></li>
+                                </ul><!-- /service-details__benefits__list -->
+                            </div><!-- /.service-details__box -->
+                            <div class="service-details__faq">
+                                <div class="faq-accordion aigence-accordion" data-grp-name="aigence-accordion">
+                                    <div class="accordion active">
+                                        <div class="accordion-title">
+                                            <h4>Which technology is right for my project?</h4>
+                                            <span class="accordion-title__icon"></span>
+                                        </div><!-- /.accordion-title -->
+                                        <div class="accordion-content">
+                                            <div class="inner">
+                                                <div class="accordion-content__inner">
+                                                    <div class="accordion-content__box">
+                                                        <div class="accordion-content__title">
+                                                            <h4>Which technology is right for my project?</h4>
+                                                            <span class="accordion-content__title__icon"></span>
+                                                        </div><!-- /.accordion-title -->
+                                                        <p>The best stack depends on your product type, expected traffic, user journey, admin workflow, integrations, and future roadmap. We align the final choice with your actual business needs rather than forcing one technology everywhere.</p>
+                                                    </div><!-- /.accordion-content__box -->
+                                                </div><!-- /.accordion-content__inner -->
+                                            </div><!-- /.inner -->
+                                        </div><!-- /.accordion-content -->
+                                    </div><!-- /.accordion-item -->
+                                    <div class="accordion">
+                                        <div class="accordion-title">
+                                            <h4>Do you work across web, mobile, backend, and cloud together?</h4>
+                                            <span class="accordion-title__icon"></span>
+                                        </div><!-- /.accordion-title -->
+                                        <div class="accordion-content">
+                                            <div class="inner">
+                                                <div class="accordion-content__inner">
+                                                    <div class="accordion-content__box">
+                                                        <div class="accordion-content__title">
+                                                            <h4>Do you work across web, mobile, backend, and cloud together?</h4>
+                                                            <span class="accordion-content__title__icon"></span>
+                                                        </div><!-- /.accordion-title -->
+                                                        <p>Yes. We build complete solutions across interfaces, APIs, databases, testing flows, and cloud environments so the final product works as one system.</p>
+                                                    </div><!-- /.accordion-content__box -->
+                                                </div><!-- /.accordion-content__inner -->
+                                            </div><!-- /.inner -->
+                                        </div><!-- /.accordion-content -->
+                                    </div><!-- /.accordion-item -->
+                                    <div class="accordion">
+                                        <div class="accordion-title">
+                                            <h4>Can you modernize an existing product stack instead of rebuilding it?</h4>
+                                            <span class="accordion-title__icon"></span>
+                                        </div><!-- /.accordion-title -->
+                                        <div class="accordion-content">
+                                            <div class="inner">
+                                                <div class="accordion-content__inner">
+                                                    <div class="accordion-content__box">
+                                                        <div class="accordion-content__title">
+                                                            <h4>Can you modernize an existing product stack instead of rebuilding it?</h4>
+                                                            <span class="accordion-content__title__icon"></span>
+                                                        </div><!-- /.accordion-title -->
+                                                        <p>Yes. We can extend, refactor, or migrate an existing stack when that is the better commercial option. The goal is to improve maintainability, performance, and usability without unnecessary disruption.</p>
+                                                    </div><!-- /.accordion-content__box -->
+                                                </div><!-- /.accordion-content__inner -->
+                                            </div><!-- /.inner -->
+                                        </div><!-- /.accordion-content -->
+                                    </div><!-- /.accordion-item -->
+                                    <div class="accordion">
+                                        <div class="accordion-title">
+                                            <h4>Do you have separate pages for each technology category?</h4>
+                                            <span class="accordion-title__icon"></span>
+                                        </div><!-- /.accordion-title -->
+                                        <div class="accordion-content">
+                                            <div class="inner">
+                                                <div class="accordion-content__inner">
+                                                    <div class="accordion-content__box">
+                                                        <div class="accordion-content__title">
+                                                                <h4>Do you have separate pages for each technology category?</h4>
+                                                            <span class="accordion-content__title__icon"></span>
+                                                        </div><!-- /.accordion-title -->
+                                                            <p>Yes. Each category now has its own dedicated page with focused content, and the navigation links open those pages directly.</p>
+                                                    </div><!-- /.accordion-content__box -->
+                                                </div><!-- /.accordion-content__inner -->
+                                            </div><!-- /.inner -->
+                                        </div><!-- /.accordion-content -->
+                                    </div><!-- /.accordion-item -->
+                                </div><!-- /.faq-accordion -->
+                            </div><!-- /.service-details__faq -->
+                        </div><!-- /.service-details__content -->
+                    </div><!-- /.col-md-12 col-lg-8 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.service-details section-space -->
+
+        <section class="newsletter "><div class="newsletter__wrapper"><div class="newsletter__inner"><div class="newsletter__bg" style="background-image: url({% static 'images/shapes/newsletter-bg-shape-1-1.png' %});"></div><div class="container"><div class="row"><div class="col-lg-6 order-1 order-lg-0 wow fadeInLeft" data-wow-duration="1500ms"><div class="newsletter__image"><img src="{% static 'images/shapes/why-choose-shape-3-1.png' %}" alt="newsletter"></div></div><div class="col-lg-6 order-0 order-lg-1 wow fadeInUp" data-wow-duration="1500ms"><div class="newsletter__content"><h2 class="sec-title bw-split-in-left"> Starts Your First-Ever  AI Software Development With Us!</h2><a href="{% url 'contact' %}" class="aigence-btn__text">Get In Touch</a></div></div></div></div><img src="{% static 'images/shapes/newsletter-shape-1-1.png' %}" alt="shape" class="newsletter__shape"></div></div></section>
+    </br></br></br></br>
+      {% endblock %}

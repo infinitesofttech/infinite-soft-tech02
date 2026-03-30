@@ -1,0 +1,195 @@
+{% extends "index.html" %}
+{% load static %}
+{% block content %}
+        <section class="page-header">
+            <div class="page-header__bg" style="background-image: url({% static 'images/backgrounds/page-header-bg.jpg' %});"></div>
+            <div class="container">
+                <div class="page-header__content">
+                    <h2 class="page-header__title"> Technology</h2>
+                    <ul class="aigence-breadcrumb list-unstyled">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><span> Technology</span></li>
+                    </ul><!-- /.aigence-breadcrumb list-unstyled -->
+                </div><!-- /.page-header__content -->
+            </div><!-- /.container -->
+        </section><!-- /.page-header -->
+
+        <section class="services-page section-space">
+            <div class="container">
+                <div class="row gutter-y-30">
+                    <div id="backend-technology" class="col-xl-4 col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                        <div class="service-card-three">
+                            <div class="service-card-three__bg">
+                                <img src="{% static 'images/shapes/service-card-shape-3-1.png' %}" alt="shape" class="service-card-three__shape">
+                            </div><!-- /.service-card-three__bg -->
+                            <div class="service-card-three__content">
+                                <h3 class="service-card-three__title"><a href="{% url 'technology_backend' %}">Backend <br> Technology</a></h3>
+                                <img src="{% static 'images/technology/custom.png' %}" alt="Backend Technology" class="service-card-three__image">
+                                            <ul class="service-card-three__text two-column-list">
+                                                <li id="python-django">Python - Django</li>
+                                                <li id="spring-boot">Java - SpringBoot</li>
+                                                <li id="nodejs-platform">NodeJS</li>
+                                                <li id="php-laravel">PHP - Laravel</li>
+                                                <li id="dotnet-platform">.Net</li>
+                                                <li>API Architecture</li>
+                                            </ul> <a href="{% url 'technology_backend' %}" class="service-card-three__btn">
+                                    <span class="service-card-three__btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a><!-- /.service-card-three__btn -->
+                            </div><!-- /.service-card-three__content -->
+                        </div><!-- /.service-card-three -->
+                    </div><!-- /.col-xl-4 col-md-6 -->
+                    <div id="frontend-technology" class="col-xl-4 col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+                        <div class="service-card-three">
+                            <div class="service-card-three__bg">
+                                <img src="{% static 'images/shapes/service-card-shape-3-1.png' %}" alt="shape" class="service-card-three__shape">
+                            </div><!-- /.service-card-three__bg -->
+                            <div class="service-card-three__content">
+                                <h3 class="service-card-three__title"><a href="{% url 'technology_frontend' %}">Frontend <br> Technology</a></h3>
+                                <img src="{% static 'images/technology/custom.png' %}" alt="Frontend Technology" class="service-card-three__image">
+                                            <ul class="service-card-three__text two-column-list">
+                                                <li id="react-js">React</li>
+                                                <li id="javascript-ui">JavaScript</li>
+                                                <li id="angular-framework">Angular</li>
+                                                <li>Vue.js</li>
+                                                <li>Next.js</li>
+                                                <li>HTML</li>
+                                            </ul> <a href="{% url 'technology_frontend' %}" class="service-card-three__btn">
+                                    <span class="service-card-three__btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a><!-- /.service-card-three__btn -->
+                            </div><!-- /.service-card-three__content -->
+                        </div><!-- /.service-card-three -->
+                    </div><!-- /.col-xl-4 col-md-6 -->
+                    <div id="mobile-technology" class="col-xl-4 col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+                        <div class="service-card-three">
+                            <div class="service-card-three__bg">
+                                <img src="{% static 'images/shapes/service-card-shape-3-1.png' %}" alt="shape" class="service-card-three__shape">
+                            </div><!-- /.service-card-three__bg -->
+                            <div class="service-card-three__content">
+                                <h3 class="service-card-three__title"><a href="{% url 'technology_mobile' %}">Mobile <br> Technology</a></h3>
+                                <img src="{% static 'images/technology/advanced.png' %}" alt="Mobile Technology" class="service-card-three__image">
+                                            <ul class="service-card-three__text two-column-list">
+                                                <li id="react-native">React Native</li>
+                                                <li id="flutter-sdk">Flutter</li>
+                                                <li id="android-native">Android</li>
+                                                <li id="ios-native">IOS</li>
+                                                <li id="xamarin-platform">Xamarin</li>
+                                                <li>Ionic</li>
+                                            </ul><a href="{% url 'technology_mobile' %}" class="service-card-three__btn">
+                                    <span class="service-card-three__btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a><!-- /.service-card-three__btn -->
+                            </div><!-- /.service-card-three__content -->
+                        </div><!-- /.service-card-three -->
+                    </div><!-- /.col-xl-4 col-md-6 -->
+                    <div id="database-technology" class="col-xl-4 col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                        <div class="service-card-three">
+                            <div class="service-card-three__bg">
+                                <img src="{% static 'images/shapes/service-card-shape-3-1.png' %}" alt="shape" class="service-card-three__shape">
+                            </div><!-- /.service-card-three__bg -->
+                            <div class="service-card-three__content">
+                                <h3 class="service-card-three__title"><a href="{% url 'technology_database' %}">Database <br> Technology</a></h3>
+                                <img src="{% static 'images/technology/enterprise.jpg' %}" alt="Database Technology" class="service-card-three__image">
+                                            <ul class="service-card-three__text two-column-list">
+                                                <li id="mongodb-db">MongoDB</li>
+                                                <li id="postgresql-db">PostgreSQL</li>
+                                                <li>Firebase</li>
+                                                <li id="mysql-db">MySQL</li>
+                                                <li id="oracle-db">Oracle</li>
+                                                
+                                            </ul><a href="{% url 'technology_database' %}" class="service-card-three__btn">
+                                    <span class="service-card-three__btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a><!-- /.service-card-three__btn -->
+                            </div><!-- /.service-card-three__content -->
+                        </div><!-- /.service-card-three -->
+                    </div><!-- /.col-xl-4 col-md-6 -->
+                    <div id="testing-technology" class="col-xl-4 col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+                        <div class="service-card-three">
+                            <div class="service-card-three__bg">
+                                <img src="{% static 'images/shapes/service-card-shape-3-1.png' %}" alt="shape" class="service-card-three__shape">
+                            </div><!-- /.service-card-three__bg -->
+                            <div class="service-card-three__content">
+                                <h3 class="service-card-three__title"><a href="{% url 'technology_testing' %}">Testing <br> Technology</a></h3>
+                                <img src="{% static 'images/technology/it.png' %}" alt="Testing Technology" class="service-card-three__image">
+                                           <ul class="service-card-three__text two-column-list">
+                                                <li id="selenium-testing">Selenium</li>
+                                                <li>Cypress</li>
+                                                <li id="postman-testing">Postman</li>
+                                                <li>Swagger </li>
+                                                <li id="appium-testing">Appium</li>
+                                                
+                                            </ul> <a href="{% url 'technology_testing' %}" class="service-card-three__btn">
+                                    <span class="service-card-three__btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a><!-- /.service-card-three__btn -->
+                            </div><!-- /.service-card-three__content -->
+                        </div><!-- /.service-card-three -->
+                    </div><!-- /.col-xl-4 col-md-6 -->
+                    <div id="cloud-devops-technology" class="col-xl-4 col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+                        <div class="service-card-three">
+                            <div class="service-card-three__bg">
+                                <img src="{% static 'images/shapes/service-card-shape-3-1.png' %}" alt="shape" class="service-card-three__shape">
+                            </div><!-- /.service-card-three__bg -->
+                            <div class="service-card-three__content">
+                                <h3 class="service-card-three__title"><a href="{% url 'technology_cloud_devops' %}">Cloud & <br> DevOps</a></h3>
+                               <img src="{% static 'images/technology/cloud.png' %}" alt="AI-Driven <br> Automation" class="service-card-three__image">
+                                            <ul class="service-card-three__text two-column-list">
+                                                <li id="aws-cloud">AWS</li>
+                                                <li id="azure-cloud">Azure</li>
+                                                <li id="gcp-cloud">GCP</li>
+                                                <li>Docker</li>
+                                                <li>Kubernetes</li>
+                                                <li>CI/CD</li>
+                                            </ul> <a href="{% url 'technology_cloud_devops' %}" class="service-card-three__btn">
+                                    <span class="service-card-three__btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a><!-- /.service-card-three__btn -->
+                            </div><!-- /.service-card-three__content -->
+                        </div><!-- /.service-card-three -->
+                    </div><!-- /.col-xl-4 col-md-6 -->
+                    <div id="other-technology" class="col-xl-4 col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                        <div class="service-card-three">
+                            <div class="service-card-three__bg">
+                                <img src="{% static 'images/shapes/service-card-shape-3-1.png' %}" alt="shape" class="service-card-three__shape">
+                            </div><!-- /.service-card-three__bg -->
+                            <div class="service-card-three__content">
+                                <h3 class="service-card-three__title"><a href="{% url 'technology_other' %}">Other <br> Technology</a></h3>
+                                <img src="{% static 'images/technology/custom.png' %}" alt="Other Technology" class="service-card-three__image">
+                                            <ul class="service-card-three__text two-column-list">
+                                                <li id="shopify-platform">Shopify</li>
+                                                <li id="magento-platform">Magento</li>
+                                                <li id="themeforest-platform">Themeforest</li>
+                                                <li>WordPress</li>
+                                                <li>WooCommerce</li>
+                                                <li>Marketplace Setup</li>
+                                            </ul> <a href="{% url 'technology_other' %}" class="service-card-three__btn">
+                                    <span class="service-card-three__btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a><!-- /.service-card-three__btn -->
+                            </div><!-- /.service-card-three__content -->
+                        </div><!-- /.service-card-three -->
+                    </div><!-- /.col-xl-4 col-md-6 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.services-page section-space -->
+
+        <section class="newsletter ">
+            <div class="newsletter__wrapper">
+                <div class="newsletter__inner">
+                    <div class="newsletter__bg" style="background-image: url({% static 'images/shapes/newsletter-bg-shape-1-1.png' %});"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 order-1 order-lg-0 wow fadeInLeft" data-wow-duration="1500ms">
+                                <div class="newsletter__image">
+                                    <img src="{% static 'images/shapes/why-choose-shape-3-1.png' %}" alt="newsletter">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 order-0 order-lg-1 wow fadeInUp" data-wow-duration="1500ms">
+                                <div class="newsletter__content">
+                                    <h2 class="sec-title bw-split-in-left"> Starts Your First-Ever  AI Software Development With Us!</h2>
+                                    <a href="{% url 'contact' %}" class="aigence-btn__text">Get In Touch</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="{% static 'images/shapes/newsletter-shape-1-1.png' %}" alt="shape" class="newsletter__shape">
+                </div>
+            </div>
+        </section>
+    </br></br></br></br>
+ {% endblock %}

@@ -1,0 +1,129 @@
+{% extends "index.html" %}
+{% load static %}
+{% block content %}
+        <section class="page-header">
+            <div class="page-header__bg" style="background-image: url({% static 'images/backgrounds/page-header-bg.jpg' %});"></div>
+            <div class="container">
+                <div class="page-header__content">
+                    <h2 class="page-header__title">Database Technology</h2>
+                    <p class="service-details__text" style="max-width: 840px; margin: 14px auto 0;">Dedicated page for Database Technology with focused implementation details, delivery approach, and project-fit guidance.</p>
+                    <ul class="aigence-breadcrumb list-unstyled">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'technology' %}">Technology</a></li>
+                        <li><span>Database Technology</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-page section-space">
+            <div class="container">
+                <div class="row gutter-y-30 justify-content-center">
+                    <div class="col-12 text-center">
+                        <h3 class="service-details__title">Database Technology</h3>
+                    </div>
+                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                        <div class="service-card-three backend-tech-card">
+                            <div class="service-card-three__bg">
+                                <img src="{% static 'images/shapes/service-card-shape-3-1.png' %}" alt="shape" class="service-card-three__shape">
+                            </div>
+                            <div class="service-card-three__content">
+                                <h3 class="service-card-three__title"><a href="{% url 'technology_mongodb' %}">MongoDB</a></h3>
+                                <p class="service-card-three__text">Design flexible, document-based databases built for high velocity product development.</p>
+                                <a href="{% url 'technology_mongodb' %}" class="service-card-three__btn">
+                                    <span class="service-card-three__btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+                        <div class="service-card-three backend-tech-card">
+                            <div class="service-card-three__bg">
+                                <img src="{% static 'images/shapes/service-card-shape-3-1.png' %}" alt="shape" class="service-card-three__shape">
+                            </div>
+                            <div class="service-card-three__content">
+                                <h3 class="service-card-three__title"><a href="{% url 'technology_mysql' %}">My SQL</a></h3>
+                                <p class="service-card-three__text">Build reliable relational data layers for transactional systems and analytics workflows.</p>
+                                <a href="{% url 'technology_mysql' %}" class="service-card-three__btn">
+                                    <span class="service-card-three__btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+                        <div class="service-card-three backend-tech-card">
+                            <div class="service-card-three__bg">
+                                <img src="{% static 'images/shapes/service-card-shape-3-1.png' %}" alt="shape" class="service-card-three__shape">
+                            </div>
+                            <div class="service-card-three__content">
+                                <h3 class="service-card-three__title"><a href="{% url 'technology_postgresql' %}">PostgreSQL</a></h3>
+                                <p class="service-card-three__text">Deliver advanced SQL capabilities with strong consistency and extensible data features.</p>
+                                <a href="{% url 'technology_postgresql' %}" class="service-card-three__btn">
+                                    <span class="service-card-three__btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                        <div class="service-card-three backend-tech-card">
+                            <div class="service-card-three__bg">
+                                <img src="{% static 'images/shapes/service-card-shape-3-1.png' %}" alt="shape" class="service-card-three__shape">
+                            </div>
+                            <div class="service-card-three__content">
+                                <h3 class="service-card-three__title"><a href="{% url 'technology_oracle' %}">Oracle</a></h3>
+                                <p class="service-card-three__text">Support enterprise-grade databases with strong security, scale, and performance controls.</p>
+                                <a href="{% url 'technology_oracle' %}" class="service-card-three__btn">
+                                    <span class="service-card-three__btn__icon"><i class="icon-right-arrow"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="newsletter ">
+            <div class="newsletter__wrapper">
+                <div class="newsletter__inner">
+                    <div class="newsletter__bg" style="background-image: url({% static 'images/shapes/newsletter-bg-shape-1-1.png' %});"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 order-1 order-lg-0 wow fadeInLeft" data-wow-duration="1500ms">
+                                <div class="newsletter__image">
+                                    <img src="{% static 'images/resources/newsletter-1-1.png' %}" alt="newsletter bot">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 order-0 order-lg-1 wow fadeInUp" data-wow-duration="1500ms">
+                                <div class="newsletter__content">
+                                    <h2 class="sec-title bw-split-in-left">Join our AI-driven Creative Community!</h2>
+                                    <div class="customers">
+                                        <div class="customers__inner">
+                                            <div class="customers__image">
+                                                <img src="{% static 'images/resources/customer-1.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-2.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-3.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-4.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-5.png' %}" alt="customer">
+                                            </div>
+                                        </div>
+                                        <p class="customers__text">3860 weekly subscribe</p>
+                                    </div>
+                                    <form action="#" data-url="MAILCHIMP_FORM_URL" class="newsletter__form mc-form">
+                                        <input type="email" name="EMAIL" placeholder="Email Address">
+                                        <button type="submit" class="aigence-btn">
+                                            <span class="aigence-btn__text">Subscribe</span>
+                                        </button>
+                                    </form>
+                                    <div class="mc-form__response"></div>
+                                    <div class="newsletter__check-box">
+                                        <input type="checkbox" name="agree" id="agree-database">
+                                        <label for="agree-database">I Agree To The Terms, Privacy Policy.<span></span></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="{% static 'images/shapes/newsletter-shape-1-1.png' %}" alt="shape" class="newsletter__shape">
+                </div>
+            </div>
+        </section>
+  {% endblock %}

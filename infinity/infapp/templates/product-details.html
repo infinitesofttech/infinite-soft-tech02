@@ -1,0 +1,159 @@
+﻿{% extends "index.html" %}
+{% load static %}
+{% block content %}
+        <section class="page-header">
+            <div class="page-header__bg" style="background-image: url({% static 'images/backgrounds/page-header-bg.jpg' %});"></div>
+            <div class="container">
+                <div class="page-header__content">
+                    <h2 class="page-header__title">Product Details</h2>
+                    <ul class="aigence-breadcrumb list-unstyled">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><span>Our Product</span></li>
+                        <li><span>Infinite Employee HRMS</span></li>
+                    </ul><!-- /.aigence-breadcrumb list-unstyled -->
+                </div><!-- /.page-header__content -->
+            </div><!-- /.container -->
+        </section><!-- /.page-header -->
+
+        <section class="blog-details section-space">
+            <div class="container">
+                <div class="row gutter-y-50">
+                    <div class="col-lg-12">
+                        <div class="blog-details__content">
+                            <div class="blog-card-three">
+                                <div class="blog-card-three__image wow fadeInUp" data-wow-duration="1500ms">
+                                        <img src="{% static 'images/products/Employee.png' %}" alt="10 Simple Practices that Will Help You Get 1%" style="width: 100%; height: 520px; object-fit: cover;">
+                                    <div class="blog-card-three__date">
+                                        <span class="blog-card-three__date__day">26</span>
+                                        <span class="blog-card-three__date__month">Feb</span>
+                                    </div><!-- /.blog-card-three__date -->
+                                </div><!-- /.blog-card-three__image -->
+                                <div class="blog-card-three__content wow fadeInUp" data-wow-duration="1500ms">
+                                    <ul class="blog-card-three__meta list-unstyled">
+                                        <li>
+                                            <a href="#">
+                                                <span class="blog-card-three__meta__icon"><i class="icon-user-2"></i></span>
+                                                By Admin
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="blog-card-three__meta__icon"><i class="icon-bubble-chat"></i></span>
+                                                2 Comment
+                                            </a>
+                                        </li>
+                                    </ul><!-- /.blog-card-three__meta -->
+                                    <h3 class="blog-card-three__title">10 Simple Practices that Will Help You Get 1%</h3><!-- /.blog-card-three__title -->
+                                    <div class="blog-card-three__description">
+                                        <p class="blog-card-three__text">Managing employees efficiently is essential for every organization, and Employee ERP makes it simple, smart, and effective. From attendance tracking to leave management, the application is designed to handle all workforce operations in one place. With a user-friendly interface and real-time updates, businesses can reduce manual work and improve productivity. Whether it’s tracking employee performance or managing daily activities, Employee ERP ensures smooth and transparent operations across the organization. 
+                                                
+                                        </p>
+                                        <p class="blog-card-three__text">This application focuses on accuracy, efficiency, and ease of use. It helps organizations streamline HR processes, improve communication, and maintain proper records without complexity. With advanced features and a secure system, Employee ERP becomes a reliable solution for modern workforce management.</p>
+                                    </div><!-- /.blog-card-three__description -->
+                                </div><!-- /.blog-card-three__content -->
+                            </div><!-- /.blog-card-three -->
+                           
+                            <div class="comments-one">
+                                <h3 class="comments-one__title wow fadeInUp" data-wow-duration="1500ms">Features</h3><!-- /.comments-one__title -->
+                                <ul class="list-unstyled comments-one__list">
+                                    <li class="comments-one__card wow fadeInUp" data-wow-duration="1500ms">
+                                        <div class="comments-one__image">
+                                            <img src="{% static 'images/blog/blog-comment-1-1.jpg' %}" alt="David Shon">
+                                        </div><!-- /.comments-one__image -->
+                                        <div class="comments-one__content">
+                                            <h3 class="comments-one__name">Attendance Management</h3><!-- /.comments-one__name -->
+                                            <p class="comments-one__text">Track daily attendance with easy swipe punch-in and punch-out functionality. Monitor working hours, late check-ins, and generate accurate attendance records in real time.</p><!-- /.comments-one__text -->
+                                            <button type="button" class="comments-one__reply aigence-btn-two">
+                                                <!-- <span>Reply</span> -->
+                                            </button><!-- /.comments-one__reply -->
+                                        </div><!-- /.comments-one__content -->
+                                    </li><!-- /.comments-one__card -->
+                                    <li class="comments-one__card wow fadeInUp" data-wow-duration="1500ms">
+                                        <div class="comments-one__image">
+                                            <img src="{% static 'images/blog/blog-comment-1-2.jpg' %}" alt="Jhon Watchson">
+                                        </div><!-- /.comments-one__image -->
+                                        <div class="comments-one__content">
+                                            <h3 class="comments-one__name">Leave Management</h3><!-- /.comments-one__name -->
+                                            <p class="comments-one__text">Apply for leave, track application status, and manage leave approvals efficiently. Admins can define leave types and allocate leaves seamlessly.</p><!-- /.comments-one__text -->
+                                            <button type="button" class="comments-one__reply aigence-btn-two">
+                                                <!-- <span>Reply</span> -->
+                                            </button><!-- /.comments-one__reply -->
+                                        </div><!-- /.comments-one__content -->
+                                    </li><!-- /.comments-one__card -->
+                                </ul><!-- /.list-unstyled comments-one__list -->
+                            </div><!-- /.comments-one -->
+
+                             <div class="blog-details__meta">
+                                <div class="blog-details__post wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                                    <h4 class="blog-details__meta__title">Post In:</h4><!-- /.blog-details__meta__title -->
+                                    <div class="blog-details__post__box">
+                                        <a href="{% url 'blog_grid_2' %}" class="aigence-btn">
+                                            <span class="aigence-btn__text">Ai Agency</span>
+                                        </a>
+                                        <a href="{% url 'blog_grid_2' %}" class="aigence-btn">
+                                            <span class="aigence-btn__text">Machine</span>
+                                        </a>
+                                    </div><!-- /.blog-details__tag__box-->
+                                </div><!-- /.blog-details__post -->
+                                <div class="blog-details__tags wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+                                    <h4 class="blog-details__meta__title">Tags:</h4><!-- /.blog-details__meta__title -->
+                                    <div class="blog-details__tags__box">
+                                        <a href="{% url 'blog_grid_2' %}" class="blog-details__tags__btn">Mobile Apps</a>
+                                        <a href="{% url 'blog_grid_2' %}" class="blog-details__tags__btn">Neural</a>
+                                    </div>
+                                    <!--blog-details__tags__box -->
+                                </div><!-- /.blog-details__tags -->
+                            </div><!-- /.blog-details__meta -->
+                             
+                        </div><!-- /.blog-details__content -->
+                    </div><!-- /.col-lg-8 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.blog-details -->
+
+        <section class="newsletter ">
+            <div class="newsletter__wrapper">
+                <div class="newsletter__inner">
+                    <div class="newsletter__bg" style="background-image: url({% static 'images/shapes/newsletter-bg-shape-1-1.png' %});"></div><!-- /.newsletter__bg -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 order-1 order-lg-0 wow fadeInLeft" data-wow-duration="1500ms">
+                                <div class="newsletter__image">
+                                    <img src="{% static 'images/resources/newsletter-1-1.png' %}" alt="newsletter">
+                                </div><!-- /.newsletter__image -->
+                            </div><!-- /.col-lg-6 -->
+                            <div class="col-lg-6 order-0 order-lg-1 wow fadeInUp" data-wow-duration="1500ms">
+                                <div class="newsletter__content">
+                                    <h2 class="sec-title bw-split-in-left">Join our AI-driven Creative Community!</h2><!-- /.sec-title -->
+                                    <div class="customers">
+                                        <div class="customers__inner">
+                                            <div class="customers__image">
+                                                <img src="{% static 'images/resources/customer-1.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-2.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-3.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-4.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-5.png' %}" alt="customer">
+                                            </div><!-- /.customers__image -->
+                                        </div><!-- /.customers__inner -->
+                                        <p class="customers__text">3860 weekly subscribe</p>
+                                    </div><!-- /.customers -->
+                                    <form action="#" data-url="MAILCHIMP_FORM_URL" class="newsletter__form mc-form">
+                                        <input type="email" name="EMAIL" placeholder="Email Address">
+                                        <button type="submit" class="aigence-btn">
+                                            <span class="aigence-btn__text">Subscribe</span>
+                                        </button>
+                                    </form><!-- /. mc-form -->
+                                    <div class="mc-form__response"></div><!-- /.mc-form__response -->
+                                    <div class="newsletter__check-box">
+                                        <input type="checkbox" name="agree" id="agree">
+                                        <label for="agree">I Agree To The Terms, Privacy Policy.<span></span></label>
+                                    </div><!-- /.newsletter__check-box -->
+                                </div><!-- /.newsletter__content -->
+                            </div><!-- /.col-lg-6 -->
+                        </div><!-- /.row gutter-y-40 -->
+                    </div><!-- /.container -->
+                    <img src="{% static 'images/shapes/newsletter-shape-1-1.png' %}" alt="shape" class="newsletter__shape">
+                </div><!-- /.newsletter__inner -->
+            </div><!-- /.newsletter__wrapper -->
+        </section><!-- /.newsletter -->
+{% endblock %}

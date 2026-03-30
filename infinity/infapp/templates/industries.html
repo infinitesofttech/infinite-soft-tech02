@@ -1,0 +1,320 @@
+﻿{% extends "index.html" %}
+{% load static %}
+{% block content %}
+        <section class="page-header">
+            <div class="page-header__bg" style="background-image: url({% static 'images/backgrounds/page-header-bg.jpg' %});"></div>
+            <div class="container">
+                <div class="page-header__content">
+                    <h2 class="page-header__title">Industries</h2>
+                    <ul class="aigence-breadcrumb list-unstyled">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><span>Industries</span></li>
+                    </ul><!-- /.aigence-breadcrumb list-unstyled -->
+                </div><!-- /.page-header__content -->
+            </div><!-- /.container -->
+        </section><!-- /.page-header -->
+
+    </br></br>
+
+        <section class="client-carousel section-space-bottom">
+            <div class="container">
+                <div class="client-carousel__content">
+                     <h2 class="sec-title sec-title--center">Industries We Serve</h2>
+                </div><!-- /.client-carousel__content -->
+                <div class="client-carousel__carousel aigence-owl__carousel owl-theme owl-carousel" data-owl-options='{
+            "items": 5,
+            "margin": 65,
+            "smartSpeed": 700,
+            "loop": true,
+            "autoplay": 6000,
+            "nav": false,
+            "dots": false,
+            "navText": ["<i class=\"icon-left-arrow\"></i>","<i class=\"icon-right-arrow\"></i>"],
+            "responsive":{
+                "0":{
+                    "items": 2,
+                    "margin": 40
+                },
+                "500":{
+                    "items": 3,
+                    "margin": 40
+                },
+                "768":{
+                    "items": 3,
+                    "margin": 80
+                },
+                "992":{
+                    "items": 4,
+                    "margin": 60
+                },
+                "1200":{
+                    "items": 5,
+                    "margin": 109
+                }
+            }
+            }'>
+                    <div class="client-carousel__item">
+                         <p>Healthcare</p>
+                        <img src="{% static 'images/blog/hower- (1).png' %}" alt="aigence" class="client-carousel__image">
+                        <img src="{% static 'images/blog/ind (1).png' %}" alt="aigence" class="client-carousel__hover-image">
+                        <p>_</p>
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__item">
+                        <p>Education </p> 
+                        <img src="{% static 'images/blog/hower- (2).png' %}" alt="aigence" class="client-carousel__image">
+                        <img src="{% static 'images/blog/ind (2).png' %}" alt="aigence" class="client-carousel__hover-image">
+                         <p>_</p> 
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__item">
+                        <p>Banking </p> 
+                        <img src="{% static 'images/blog/hower- (3).png' %}" alt="aigence" class="client-carousel__image">
+                        <img src="{% static 'images/blog/ind (3).png' %}" alt="aigence" class="client-carousel__hover-image">
+                        <p>_</p>  
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__item">
+                         <p>Retail</p>
+                        <img src="{% static 'images/blog/hower- (4).png' %}" alt="aigence" class="client-carousel__image">
+                        <img src="{% static 'images/blog/ind (4).png' %}" alt="aigence" class="client-carousel__hover-image">
+                        <p>_</p>
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__item">
+                        <p>Agriculture</p>
+                        <img src="{% static 'images/blog/hower- (5).png' %}" alt="aigence" class="client-carousel__image">
+                        <img src="{% static 'images/blog/ind (5).png' %}" alt="aigence" class="client-carousel__hover-image">
+                        <p>_</p>
+                    </div><!-- /.owl-slide-item-->
+                </div><!-- /.client-carousel__carousel -->
+
+
+                
+            </div><!-- /.container -->
+        </section><!-- /.client-carousel -->
+    </br> 
+
+        <section class="client-carousel section-space-bottom">
+            <div class="container">
+                 
+                <div class="client-carousel__carousel aigence-owl__carousel owl-theme owl-carousel" data-owl-options='{
+            "items": 5,
+            "margin": 65,
+            "smartSpeed": 700,
+            "loop": true,
+            "autoplay": 6000,
+            "nav": false,
+            "dots": false,
+            "navText": ["<i class=\"icon-left-arrow\"></i>","<i class=\"icon-right-arrow\"></i>"],
+            "responsive":{
+                "0":{
+                    "items": 2,
+                    "margin": 40
+                },
+                "500":{
+                    "items": 3,
+                    "margin": 40
+                },
+                "768":{
+                    "items": 3,
+                    "margin": 80
+                },
+                "992":{
+                    "items": 4,
+                    "margin": 60
+                },
+                "1200":{
+                    "items": 5,
+                    "margin": 109
+                }
+            }
+            }'>
+                    <div class="client-carousel__item"><p>Travel</p>
+                        <img src="{% static 'images/blog/hower- (6).png' %}" alt="aigence" class="client-carousel__image">
+                        <img src="{% static 'images/blog/ind (6).png' %}" alt="aigence" class="client-carousel__hover-image"> <p>_</p>
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__item"><P>Hospitality</P>
+                        <img src="{% static 'images/blog/hower- (7).png' %}" alt="aigence" class="client-carousel__image">
+                        <img src="{% static 'images/blog/ind (7).png' %}" alt="aigence" class="client-carousel__hover-image"> <p>_</p>
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__item"><P>Food & Restorant</P>
+                        <img src="{% static 'images/blog/hower- (8).png' %}" alt="aigence" class="client-carousel__image">
+                        <img src="{% static 'images/blog/ind (8).png' %}" alt="aigence" class="client-carousel__hover-image"> <p>_</p>
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__item"><P>Entertainment</P>
+                        <img src="{% static 'images/blog/hower- (9).png' %}" alt="aigence" class="client-carousel__image">
+                        <img src="{% static 'images/blog/ind (9).png' %}" alt="aigence" class="client-carousel__hover-image"> <p>_</p>
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__item"><P>Real Estate</P>
+                        <img src="{% static 'images/blog/hower- (10).png' %}" alt="aigence" class="client-carousel__image">
+                        <img src="{% static 'images/blog/ind (10).png' %}" alt="aigence" class="client-carousel__hover-image"> <p>_</p>
+                    </div><!-- /.owl-slide-item-->
+                </div><!-- /.client-carousel__carousel -->
+            </div><!-- /.container -->
+        </section><!-- /.client-carousel -->
+
+
+        <section class="client-carousel section-space-bottom">
+            <div class="container">
+                <div class="client-carousel__content">
+                     
+                </div><!-- /.client-carousel__content -->
+                <div class="client-carousel__carousel aigence-owl__carousel owl-theme owl-carousel" data-owl-options='{
+            "items": 5,
+            "margin": 65,
+            "smartSpeed": 700,
+            "loop": true,
+            "autoplay": 6000,
+            "nav": false,
+            "dots": false,
+            "navText": ["<i class=\"icon-left-arrow\"></i>","<i class=\"icon-right-arrow\"></i>"],
+            "responsive":{
+                "0":{
+                    "items": 2,
+                    "margin": 40
+                },
+                "500":{
+                    "items": 3,
+                    "margin": 40
+                },
+                "768":{
+                    "items": 3,
+                    "margin": 80
+                },
+                "992":{
+                    "items": 4,
+                    "margin": 60
+                },
+                "1200":{
+                    "items": 5,
+                    "margin": 109
+                }
+            }
+            }'>
+                    <div class="client-carousel__item">
+                         <p>Healthcare</p>
+                        <img src="{% static 'images/blog/hower- (1).png' %}" alt="aigence" class="client-carousel__image">
+                        <img src="{% static 'images/blog/ind (1).png' %}" alt="aigence" class="client-carousel__hover-image">
+                        <p>_</p>
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__item">
+                        <p>Education </p> 
+                        <img src="{% static 'images/blog/hower- (2).png' %}" alt="aigence" class="client-carousel__image">
+                        <img src="{% static 'images/blog/ind (2).png' %}" alt="aigence" class="client-carousel__hover-image">
+                         <p>_</p> 
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__item">
+                        <p>Banking </p> 
+                        <img src="{% static 'images/blog/hower- (3).png' %}" alt="aigence" class="client-carousel__image">
+                        <img src="{% static 'images/blog/ind (3).png' %}" alt="aigence" class="client-carousel__hover-image">
+                        <p>_</p>  
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__item">
+                         <p>Retail</p>
+                        <img src="{% static 'images/blog/hower- (4).png' %}" alt="aigence" class="client-carousel__image">
+                        <img src="{% static 'images/blog/ind (4).png' %}" alt="aigence" class="client-carousel__hover-image">
+                        <p>_</p>
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__item">
+                        <p>Agriculture</p>
+                        <img src="{% static 'images/blog/hower- (5).png' %}" alt="aigence" class="client-carousel__image">
+                        <img src="{% static 'images/blog/ind (5).png' %}" alt="aigence" class="client-carousel__hover-image">
+                        <p>_</p>
+                    </div><!-- /.owl-slide-item-->
+                </div><!-- /.client-carousel__carousel -->
+
+
+                
+            </div><!-- /.container -->
+        </section><!-- /.client-carousel -->
+    </br> 
+
+        <section class="client-carousel section-space-bottom">
+            <div class="container">
+                 
+                <div class="client-carousel__carousel aigence-owl__carousel owl-theme owl-carousel" data-owl-options='{
+            "items": 5,
+            "margin": 65,
+            "smartSpeed": 700,
+            "loop": true,
+            "autoplay": 6000,
+            "nav": false,
+            "dots": false,
+            "navText": ["<i class=\"icon-left-arrow\"></i>","<i class=\"icon-right-arrow\"></i>"],
+            "responsive":{
+                "0":{
+                    "items": 2,
+                    "margin": 40
+                },
+                "500":{
+                    "items": 3,
+                    "margin": 40
+                },
+                "768":{
+                    "items": 3,
+                    "margin": 80
+                },
+                "992":{
+                    "items": 4,
+                    "margin": 60
+                },
+                "1200":{
+                    "items": 5,
+                    "margin": 109
+                }
+            }
+            }'>
+                    <div class="client-carousel__item"><p>Travel</p>
+                        <img src="{% static 'images/blog/hower- (6).png' %}" alt="aigence" class="client-carousel__image">
+                        <img src="{% static 'images/blog/ind (6).png' %}" alt="aigence" class="client-carousel__hover-image"> <p>_</p>
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__item"><P>Hospitality</P>
+                        <img src="{% static 'images/blog/hower- (7).png' %}" alt="aigence" class="client-carousel__image">
+                        <img src="{% static 'images/blog/ind (7).png' %}" alt="aigence" class="client-carousel__hover-image"> <p>_</p>
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__item"><P>Food & Restorant</P>
+                        <img src="{% static 'images/blog/hower- (8).png' %}" alt="aigence" class="client-carousel__image">
+                        <img src="{% static 'images/blog/ind (8).png' %}" alt="aigence" class="client-carousel__hover-image"> <p>_</p>
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__item"><P>Entertainment</P>
+                        <img src="{% static 'images/blog/hower- (9).png' %}" alt="aigence" class="client-carousel__image">
+                        <img src="{% static 'images/blog/ind (9).png' %}" alt="aigence" class="client-carousel__hover-image"> <p>_</p>
+                    </div><!-- /.owl-slide-item-->
+                    <div class="client-carousel__item"><P>Real Estate</P>
+                        <img src="{% static 'images/blog/hower- (10).png' %}" alt="aigence" class="client-carousel__image">
+                        <img src="{% static 'images/blog/ind (10).png' %}" alt="aigence" class="client-carousel__hover-image"> <p>_</p>
+                    </div><!-- /.owl-slide-item-->
+                </div><!-- /.client-carousel__carousel -->
+            </div><!-- /.container -->
+        </section><!-- /.client-carousel -->
+
+
+        </br></br></br></br>
+         
+
+        
+        <section class="newsletter ">
+            <div class="newsletter__wrapper">
+                <div class="newsletter__inner">
+                    <div class="newsletter__bg" style="background-image: url({% static 'images/shapes/newsletter-bg-shape-1-1.png' %});"></div><!-- /.newsletter__bg -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 order-1 order-lg-0 wow fadeInLeft" data-wow-duration="1500ms">
+                                <div class="newsletter__image">
+                                    <img src="{% static 'images/shapes/why-choose-shape-3-1.png' %}" alt="newsletter">
+                                </div><!-- /.newsletter__image -->
+                            </div><!-- /.col-lg-6 -->
+                            <div class="col-lg-6 order-0 order-lg-1 wow fadeInUp" data-wow-duration="1500ms">
+                                <div class="newsletter__content">
+                                    <h2 class="sec-title bw-split-in-left"> Starts Your First-Ever  AI Software Development With Us!</h2><!-- /.sec-title -->
+                                    <a  href="{% url 'contact' %}" class="aigence-btn__text">Get In Touch</a>
+                                    
+                                    
+                                     
+                                </div><!-- /.newsletter__content -->
+                            </div><!-- /.col-lg-6 -->
+                        </div><!-- /.row gutter-y-40 -->
+                    </div><!-- /.container -->
+                    <img src="{% static 'images/shapes/newsletter-shape-1-1.png' %}" alt="shape" class="newsletter__shape">
+                </div><!-- /.newsletter__inner -->
+            </div><!-- /.newsletter__wrapper -->
+        </section><!-- /.newsletter -->
+    </br></br></br></br>
+  {% endblock %}

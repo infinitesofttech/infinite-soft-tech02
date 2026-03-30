@@ -1,0 +1,508 @@
+﻿{% extends "index.html" %}
+{% load static %}
+{% block content %}
+        <section class="page-header">
+            <div class="page-header__bg" style="background-image: url({% static 'images/backgrounds/page-header-bg.jpg' %});">
+            </div>
+            <div class="container">
+                <div class="page-header__content">
+                    <h2 class="page-header__title">Portfolio</h2>
+                    <ul class="aigence-breadcrumb list-unstyled">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><span>Our Portfolio</span></li>
+                    </ul><!-- /.aigence-breadcrumb list-unstyled -->
+                </div><!-- /.page-header__content -->
+            </div><!-- /.container -->
+        </section><!-- /.page-header -->
+
+        <section class="gallery-page section-space">
+            <div class="container-fluid">
+                <div class="gallery-page__filter">
+                    <ul class="list-unstyled post-filter gallery-page__filter__list">
+                        <li class="aigence-btn active" data-filter=".filter-item">
+                            <span class="aigence-btn__text">All</span>
+                        </li>
+                        <li class="aigence-btn" data-filter=".neural">
+                            <span class="aigence-btn__text">Mobile Apps</span>
+                        </li>
+                        <li class="aigence-btn" data-filter=".cybernetic">
+                            <span class="aigence-btn__text">Web</span>
+                        </li>
+
+                        <li class="aigence-btn" data-filter=".emotion-ai">
+                            <span class="aigence-btn__text">Software</span>
+                        </li>
+                        <li class="aigence-btn" data-filter=".development">
+                            <span class="aigence-btn__text">Ai</span>
+                        </li>
+                    </ul><!-- /.list-unstyledf -->
+                </div><!-- /.gallery-page__filter -->
+                <div class="row gutter-y-30 filter-layout">
+
+
+
+
+
+
+                    <!-- Mobile Apps  -->
+                    <div class="col-xl-3 col-md-6 filter-item neural  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Mobile apps/borcelle.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">borcelle</a></h3>
+                                    <p class="project-card__tagline">AI Portrait</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div>
+                    <div class="col-xl-3 col-md-6 filter-item neural  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Mobile apps/fau.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">Faugy</a></h3>
+                                    <p class="project-card__tagline">AI Portrait</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div>
+
+
+
+
+                    <div class="col-xl-3 col-md-6 filter-item cybernetic  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Web/Digital.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">Digital Ocean</a>
+                                    </h3>
+                                    <p class="project-card__tagline">AI Portrait</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div><!-- /.item -->
+
+                    <div class="col-xl-3 col-md-6 filter-item cybernetic  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Web/express.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">Express </a></h3>
+                                    <p class="project-card__tagline">AI Portrait</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div><!-- /.item -->
+
+                    <div class="col-xl-3 col-md-6 filter-item cybernetic  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Web/Hashsale.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">Hashsale </a></h3>
+                                    <p class="project-card__tagline">AI Portrait</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div><!-- /.item -->
+
+                    <div class="col-xl-3 col-md-6 filter-item cybernetic  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Web/little pre.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">little </a></h3>
+                                    <p class="project-card__tagline">AI Portrait</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div><!-- /.item -->
+
+                    <div class="col-xl-3 col-md-6 filter-item cybernetic  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Web/Pizzass.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">Pizzass </a></h3>
+                                    <p class="project-card__tagline">AI Portrait</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div><!-- /.item -->
+
+                    <div class="col-xl-3 col-md-6 filter-item cybernetic  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Web/reliable.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">reliable </a></h3>
+                                    <p class="project-card__tagline">AI Portrait</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div><!-- /.item -->
+
+                    <div class="col-xl-3 col-md-6 filter-item cybernetic  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Web/SALFORD & CO.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">SALFORD </a></h3>
+                                    <p class="project-card__tagline">AI Portrait</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div><!-- /.item -->
+
+                    <div class="col-xl-3 col-md-6 filter-item cybernetic  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Web/wardiere.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">wardiere</a></h3>
+                                    <p class="project-card__tagline">AI Portrait</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div><!-- /.item -->
+
+                    <div class="col-xl-3 col-md-6 filter-item neural  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Mobile apps/fauget.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">Fauget</a></h3>
+                                    <p class="project-card__tagline">AI Portrait</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div>
+                    <div class="col-xl-3 col-md-6 filter-item neural  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Mobile apps/rimberio.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">Rimberio</a></h3>
+                                    <p class="project-card__tagline">AI Portrait</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div>
+                    <div class="col-xl-3 col-md-6 filter-item neural  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Mobile apps/shozzz.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">Shozzz</a></h3>
+                                    <p class="project-card__tagline">AI Portrait</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div>
+                    <div class="col-xl-3 col-md-6 filter-item neural  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Mobile apps/skin.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">Skin Tone</a></h3>
+                                    <p class="project-card__tagline">AI Portrait</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div>
+                    <div class="col-xl-3 col-md-6 filter-item neural  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Mobile apps/templetes.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">Template</a></h3>
+                                    <p class="project-card__tagline">AI Portrait</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div>
+                    <div class="col-xl-3 col-md-6 filter-item neural  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Mobile apps/thynk.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">Thynk </a></h3>
+                                    <p class="project-card__tagline">AI Portrait</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div>
+
+
+
+
+                    <!-- Ai  -->
+
+                     <div class="col-xl-3 col-md-6 filter-item development  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/AI/ai power.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">AI power </a></h3>
+                                    <p class="project-card__tagline">Automation  </p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div>
+                    <div class="col-xl-3 col-md-6 filter-item development  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/AI/ai.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">Ai Boost </a></h3>
+                                    <p class="project-card__tagline">AI Automation</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div>
+                    <div class="col-xl-3 col-md-6 filter-item development  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/AI/chat.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">Ai Chatbots </a></h3>
+                                    <p class="project-card__tagline">AI Automation</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div>
+                    <div class="col-xl-3 col-md-6 filter-item development  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/AI/optimiz.png ' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">optimization </a></h3>
+                                    <p class="project-card__tagline">AI Automation</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div>
+
+
+                    <!-- Software  -->
+                     <div class="col-xl-3 col-md-6 filter-item emotion-ai  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Software/Book.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">Study </a></h3>
+                                    <p class="project-card__tagline">Software</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div>
+                     <div class="col-xl-3 col-md-6 filter-item emotion-ai  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Software/travels.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">Travels </a></h3>
+                                    <p class="project-card__tagline">Software</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div>
+                     <div class="col-xl-3 col-md-6 filter-item emotion-ai  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Software/restaurant.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">Restaurant </a></h3>
+                                    <p class="project-card__tagline">Software</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div>
+                     <div class="col-xl-3 col-md-6 filter-item emotion-ai  ">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <img src="{% static 'images/portfolio/Software/Retail.png' %}" alt="Cyber Flame">
+                            </div><!-- /.project-card__image -->
+                            <div class="project-card__content">
+                                <div class="project-card__inner">
+                                    <a href="{% url 'project_details' %}" class="project-card__btn">
+                                        <span class="project-card__btn__icon"><i class="icon-right-arrow"></i></span>
+                                    </a><!-- /.project-card__btn -->
+                                    <h3 class="project-card__title"><a href="{% url 'project_details' %}">Retail </a></h3>
+                                    <p class="project-card__tagline">Software</p>
+                                </div><!-- /.project-card__inner -->
+                            </div><!-- /.project-card__content -->
+                        </div><!-- /.project-card -->
+                    </div>
+
+
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </section><!-- /.gallery-page section-space -->
+
+        <section class="newsletter ">
+            <div class="newsletter__wrapper">
+                <div class="newsletter__inner">
+                    <div class="newsletter__bg"
+                        style="background-image: url({% static 'images/shapes/newsletter-bg-shape-1-1.png' %});"></div>
+                    <!-- /.newsletter__bg -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 order-1 order-lg-0 wow fadeInLeft" data-wow-duration="1500ms">
+                                <div class="newsletter__image">
+                                    <img src="{% static 'images/resources/newsletter-1-1.png' %}" alt="newsletter">
+                                </div><!-- /.newsletter__image -->
+                            </div><!-- /.col-lg-6 -->
+                            <div class="col-lg-6 order-0 order-lg-1 wow fadeInUp" data-wow-duration="1500ms">
+                                <div class="newsletter__content">
+                                    <h2 class="sec-title bw-split-in-left">Join our AI-driven Creative Community!</h2>
+                                    <!-- /.sec-title -->
+                                    <div class="customers">
+                                        <div class="customers__inner">
+                                            <div class="customers__image">
+                                                <img src="{% static 'images/resources/customer-1.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-2.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-3.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-4.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-5.png' %}" alt="customer">
+                                            </div><!-- /.customers__image -->
+                                        </div><!-- /.customers__inner -->
+                                        <p class="customers__text">3860 weekly subscribe</p>
+                                    </div><!-- /.customers -->
+                                    <form action="#" data-url="MAILCHIMP_FORM_URL" class="newsletter__form mc-form">
+                                        <input type="email" name="EMAIL" placeholder="Email Address">
+                                        <button type="submit" class="aigence-btn">
+                                            <span class="aigence-btn__text">Subscribe</span>
+                                        </button>
+                                    </form><!-- /. mc-form -->
+                                    <div class="mc-form__response"></div><!-- /.mc-form__response -->
+                                    <div class="newsletter__check-box">
+                                        <input type="checkbox" name="agree" id="agree">
+                                        <label for="agree">I Agree To The Terms, Privacy Policy.<span></span></label>
+                                    </div><!-- /.newsletter__check-box -->
+                                </div><!-- /.newsletter__content -->
+                            </div><!-- /.col-lg-6 -->
+                        </div><!-- /.row gutter-y-40 -->
+                    </div><!-- /.container -->
+                    <img src="{% static 'images/shapes/newsletter-shape-1-1.png' %}" alt="shape" class="newsletter__shape">
+                </div><!-- /.newsletter__inner -->
+            </div><!-- /.newsletter__wrapper -->
+        </section><!-- /.newsletter -->
+{% endblock %}

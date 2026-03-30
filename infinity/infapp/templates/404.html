@@ -1,0 +1,94 @@
+﻿{% extends "index.html" %}
+{% load static %}
+{% block content %}
+        <section class="page-header">
+            <div class="page-header__bg" style="background-image: url({% static 'images/backgrounds/page-header-bg.jpg' %});"></div>
+            <div class="container">
+                <div class="page-header__content">
+                    <h2 class="page-header__title">404 Error</h2>
+                    <ul class="aigence-breadcrumb list-unstyled">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><span>404 Error</span></li>
+                    </ul><!-- /.aigence-breadcrumb list-unstyled -->
+                </div><!-- /.page-header__content -->
+            </div><!-- /.container -->
+        </section><!-- /.page-header -->
+
+        <section class="error-404 section-space">
+            <div class="container">
+                <div class="error-404__content">
+                    <div class="error-404__top">
+                        <div class="error-404__shapes">
+                            <img src="{% static 'images/shapes/error-404-shape-1-1.png' %}" alt="shape" class="error-404__shape-1">
+                            <img src="{% static 'images/shapes/error-404-shape-1-2.png' %}" alt="shape" class="error-404__shape-2">
+                            <img src="{% static 'images/shapes/error-404-shape-1-3.png' %}" alt="shape" class="error-404__shape-3">
+                            <img src="{% static 'images/shapes/error-404-shape-1-4.png' %}" alt="shape" class="error-404__shape-4">
+                            <img src="{% static 'images/shapes/error-404-shape-1-5.png' %}" alt="shape" class="error-404__shape-5">
+                            <img src="{% static 'images/shapes/error-404-shape-1-6.png' %}" alt="shape" class="error-404__shape-6">
+                            <img src="{% static 'images/shapes/error-404-shape-1-7.png' %}" alt="shape" class="error-404__shape-7">
+                            <img src="{% static 'images/shapes/error-404-shape-1-8.png' %}" alt="shape" class="error-404__shape-8">
+                        </div><!-- /.error-404__shapes -->
+                        <img src="{% static 'images/shapes/error-404.png' %}" alt="Error 404" class="error-404__image">
+                    </div><!-- /.error-404__top -->
+                    <div class="error-404__bottom">
+                        <div class="error-404__bottom__bg" style="background-image: url({% static 'images/shapes/error-404-shape-1-9.png' %});"></div>
+                        <div class="error-404__bottom__inner">
+                            <h3 class="sec-title">Page Not Found</h3>
+                            <p class="error-404__text">Try Using The Button Below To Go To Main Page Of The Site</p>
+                            <a href="{% url 'home' %}" class="aigence-btn">
+                                <span class="aigence-btn__text">back to home</span>
+                                <span class="aigence-btn__icon"><i class="icon-right-arrow"></i></span>
+                            </a>
+                        </div><!-- /.error-404__bottom__inner -->
+                    </div><!-- /.error-404__bottom -->
+                </div>
+            </div><!-- /.container -->
+        </section><!-- /.error-404 section-space -->
+
+        <section class="newsletter ">
+            <div class="newsletter__wrapper">
+                <div class="newsletter__inner">
+                    <div class="newsletter__bg" style="background-image: url({% static 'images/shapes/newsletter-bg-shape-1-1.png' %});"></div><!-- /.newsletter__bg -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 order-1 order-lg-0 wow fadeInLeft" data-wow-duration="1500ms">
+                                <div class="newsletter__image">
+                                    <img src="{% static 'images/resources/newsletter-1-1.png' %}" alt="newsletter">
+                                </div><!-- /.newsletter__image -->
+                            </div><!-- /.col-lg-6 -->
+                            <div class="col-lg-6 order-0 order-lg-1 wow fadeInUp" data-wow-duration="1500ms">
+                                <div class="newsletter__content">
+                                    <h2 class="sec-title bw-split-in-left">Join our AI-driven Creative Community!</h2><!-- /.sec-title -->
+                                    <div class="customers">
+                                        <div class="customers__inner">
+                                            <div class="customers__image">
+                                                <img src="{% static 'images/resources/customer-1.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-2.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-3.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-4.png' %}" alt="customer">
+                                                <img src="{% static 'images/resources/customer-5.png' %}" alt="customer">
+                                            </div><!-- /.customers__image -->
+                                        </div><!-- /.customers__inner -->
+                                        <p class="customers__text">3860 weekly subscribe</p>
+                                    </div><!-- /.customers -->
+                                    <form action="#" data-url="MAILCHIMP_FORM_URL" class="newsletter__form mc-form">
+                                        <input type="email" name="EMAIL" placeholder="Email Address">
+                                        <button type="submit" class="aigence-btn">
+                                            <span class="aigence-btn__text">Subscribe</span>
+                                        </button>
+                                    </form><!-- /. mc-form -->
+                                    <div class="mc-form__response"></div><!-- /.mc-form__response -->
+                                    <div class="newsletter__check-box">
+                                        <input type="checkbox" name="agree" id="agree">
+                                        <label for="agree">I Agree To The Terms, Privacy Policy.<span></span></label>
+                                    </div><!-- /.newsletter__check-box -->
+                                </div><!-- /.newsletter__content -->
+                            </div><!-- /.col-lg-6 -->
+                        </div><!-- /.row gutter-y-40 -->
+                    </div><!-- /.container -->
+                    <img src="{% static 'images/shapes/newsletter-shape-1-1.png' %}" alt="shape" class="newsletter__shape">
+                </div><!-- /.newsletter__inner -->
+            </div><!-- /.newsletter__wrapper -->
+        </section><!-- /.newsletter -->
+{% endblock %}
+
