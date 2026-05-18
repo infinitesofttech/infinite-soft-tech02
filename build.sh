@@ -4,7 +4,7 @@ set -o errexit
 cd infinity
 
 echo "Installing Python dependencies..."
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 
 echo "Collecting static files..."
 python manage.py collectstatic --noinput --verbosity 2

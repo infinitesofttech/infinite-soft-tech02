@@ -147,6 +147,12 @@ STORAGES = {
     },
 }
 
+STATICFILES_STORAGE = (
+    'django.contrib.staticfiles.storage.StaticFilesStorage'
+    if DEBUG else
+    'whitenoise.storage.CompressedStaticFilesStorage'
+)
+
 # WhiteNoise Configuration
 WHITENOISE_MIMETYPES = {
     '.woff': 'font/woff',
