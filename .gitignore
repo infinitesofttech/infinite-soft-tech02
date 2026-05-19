@@ -1,8 +1,0 @@
-# Python cache artifacts
-__pycache__/
-*.pyc
-
-# Django collected static output
-infinity/staticfiles/
-__pycache__/ 
-*.pyc 
