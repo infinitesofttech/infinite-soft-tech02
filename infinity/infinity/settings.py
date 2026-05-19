@@ -30,7 +30,7 @@ DEBUG = os.environ.get('DEBUG', 'False').lower() == 'true'
 
 ALLOWED_HOSTS = os.environ.get(
     'ALLOWED_HOSTS',
-    '.onrender.com,localhost,127.0.0.1'
+    '.onrender.com,.infinitesofttech.com,infinitesofttech.com,www.infinitesofttech.com,localhost,127.0.0.1'
 ).split(',')
 
 CSRF_TRUSTED_ORIGINS = [
@@ -127,7 +127,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# Add staticfiles directory to the static file finder paths
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'infapp', 'static'),
+]
 
 STORAGES = {
     'default': {
@@ -141,3 +146,26 @@ STORAGES = {
         ),
     },
 }
+
+STATICFILES_STORAGE = (
+    'django.contrib.staticfiles.storage.StaticFilesStorage'
+    if DEBUG else
+    'whitenoise.storage.CompressedStaticFilesStorage'
+)
+
+# WhiteNoise Configuration
+WHITENOISE_MIMETYPES = {
+    '.woff': 'font/woff',
+    '.woff2': 'font/woff2',
+}
+
+WHITENOISE_COMPRESS_OFFLINE = True
+WHITENOISE_COMPRESS_OFFLINE_CONTEXT = {
+    'static_url': STATIC_URL,
+}
+
+# Static files finders
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+]

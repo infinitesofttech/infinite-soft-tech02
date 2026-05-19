@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
+from .models import Project, Service, TeamMember, Product
 
 # Create your views here.
 
@@ -42,24 +43,27 @@ def portfolio(request):
     return render(request, "portfolio.html")
 
 
-def product_details(request):
-    return render(request, "product-details.html")
+def product_details(request, slug):
+    product = get_object_or_404(Product, slug=slug)
+    return render(request, "product-details.html", {"product": product})
 
 
 def product(request):
     return render(request, "product.html")
 
 
-def project_details(request):
-    return render(request, "project-details.html")
+def project_details(request, slug):
+    project = get_object_or_404(Project, slug=slug)
+    return render(request, "project-details.html", {"project": project})
 
 
 def projects(request):
     return render(request, "projects.html")
 
 
-def service_details(request):
-    return render(request, "service-details.html")
+def service_details(request, slug):
+    service = get_object_or_404(Service, slug=slug)
+    return render(request, "service-details.html", {"service": service})
 
 
 def services_2(request):
@@ -74,8 +78,9 @@ def services(request):
     return render(request, "services.html")
 
 
-def team_details(request):
-    return render(request, "team-details.html")
+def team_details(request, slug):
+    member = get_object_or_404(TeamMember, slug=slug)
+    return render(request, "team-details.html", {"member": member})
 
 
 def team(request):

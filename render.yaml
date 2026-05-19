@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: infinite-soft-tech02
+    env: python
+    plan: free
+    buildCommand: bash build.sh
+    startCommand: gunicorn infinity.wsgi:application
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: infinity.settings
+      - key: PYTHONUNBUFFERED
+        value: '1'
