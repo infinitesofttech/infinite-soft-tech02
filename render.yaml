@@ -4,7 +4,7 @@ services:
     env: python
     plan: free
     buildCommand: bash build.sh
-    startCommand: gunicorn infinity.wsgi:application
+    startCommand: cd infinity && gunicorn infinity.wsgi:application --bind 0.0.0.0:${PORT:-10000}
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: infinity.settings

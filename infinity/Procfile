@@ -1,1 +1,1 @@
-web: gunicorn infinity.wsgi:application
+web: gunicorn infinity.wsgi:application --bind 0.0.0.0:${PORT:-10000}
